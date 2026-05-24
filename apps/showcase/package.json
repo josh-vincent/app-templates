@@ -1,0 +1,53 @@
+{
+  "name": "@jv/showcase",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start --clear",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "catalog": "tsx scripts/build-catalog.ts",
+    "prestart": "pnpm catalog",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~55.0.11",
+    "@expo/vector-icons": "^15.1.1",
+    "@jv/forms": "workspace:*",
+    "@jv/tailwind-preset": "workspace:*",
+    "@jv/tokens": "workspace:*",
+    "@jv/ui": "workspace:*",
+    "@react-native-community/datetimepicker": "8.6.0",
+    "@react-navigation/native": "^7.0.0",
+    "clsx": "^2.1.1",
+    "expo": "~55.0.0",
+    "expo-blur": "^14.0.0",
+    "expo-linear-gradient": "^14.0.0",
+    "expo-navigation-bar": "^4.0.0",
+    "expo-router": "~55.0.16",
+    "expo-status-bar": "~2.0.0",
+    "lucide-react-native": "^0.469.0",
+    "nativewind": "^2.0.11",
+    "react": "19.0.0",
+    "react-native": "0.83.0",
+    "react-native-actions-sheet": "^0.9.7",
+    "react-native-gesture-handler": "~2.30.1",
+    "react-native-modal": "^13.0.1",
+    "react-native-reanimated": "~4.2.1",
+    "react-native-safe-area-context": "5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-svg": "15.15.3",
+    "react-native-worklets": "0.7.4",
+    "tailwind-merge": "^2.5.4",
+    "whatwg-fetch": "^3.6.20"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@jv/tsconfig": "workspace:*",
+    "@types/react": "~19.0.0",
+    "tailwindcss": "3.3.2",
+    "tsx": "^4.19.2",
+    "typescript": "~5.9.2"
+  }
+}

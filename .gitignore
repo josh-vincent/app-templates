@@ -1,0 +1,32 @@
+node_modules/
+.turbo/
+dist/
+build/
+lib/
+.expo/
+*.log
+.DS_Store
+.env*
+!.env.example
+
+# Local tooling
+**/.agents/
+**/.claude/
+**/.gemini/
+**/.opencode/
+opencode.json
+
+# Non-template projects
+agent-canvas/
+agent-sim/
+baguette/
+emulate/
+screen-canvas/
+taskr-address-enhance/
+taskr-biz-hours/
+taskr-convex-test/
+taskr-elec/
+taskr-fire/
+taskr-hvac/
+taskr-soil/
+tradingview-mcp-jackson/

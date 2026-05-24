@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "skills": {
+    "argent-android-emulator-setup": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "2e7edc2c85093d10dbb1e7f4b08db3ec64a85d42cdaac8838209cb0d7cbb6361"
+    },
+    "argent-create-flow": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "c17157ca41296c05b3750649550df102764f37423e437ffc9627c971766f5f6d"
+    },
+    "argent-device-interact": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "53064d866faf34cad5d1f9b28d3f4bfecd264443c58fa18655ea814f7905d9e9"
+    },
+    "argent-ios-profiler": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "2a5e205a190f24b89a5781a439255ce5ac2b0ad1db62ff68d1aebda06706eb3b"
+    },
+    "argent-ios-simulator-setup": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "0b17edd8badb600e02e43ecacc07d2bb991e31d7ab2ca8cb5d02aef7d276c743"
+    },
+    "argent-metro-debugger": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "e5faa1950ddbe6bd90de9d358367b563f0ca4d22c117e3acade543d96161870d"
+    },
+    "argent-native-profiler": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "a6230e85a2a61112e3aaa593ec33fc63e4206593ef5cabaaa289d086945e6be7"
+    },
+    "argent-react-native-app-workflow": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "4635f2e67a590940a2e054b18fac0cf620456223fbeb23a60373db87f0cdfee7"
+    },
+    "argent-react-native-optimization": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "96aaa7bbb28df0b33ce4332ab1e866fb765c8f54015d4f0205a77d4f07c11162"
+    },
+    "argent-react-native-profiler": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "553945dae8b923dc37bff5e7251e615f5191dcf8c668663ddf4b10e18754f734"
+    },
+    "argent-simulator-interact": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "c6c6a3fa8fd08723ffaa06cd6a0af2e7e67a4d74187edb1f43b916694d6c3923"
+    },
+    "argent-simulator-setup": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "73f1f2f086b299b0678b5524c331d383f4b22e3ab442f166babf54e33e89ec53"
+    },
+    "argent-test-ui-flow": {
+      "source": "/opt/homebrew/lib/node_modules/@swmansion/argent/skills",
+      "sourceType": "local",
+      "computedHash": "5a18f567f25a25924dc3856c4ef4158671d373a575d6e7ca235fe2ffa0205c9c"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "skillPath": "skill/SKILL.md",
+      "computedHash": "9aec36a70b0c2cafd3ded7e2c523c77beddcdb814fac86cda42f395ef719a924"
+    },
+    "revenuecat": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat/SKILL.md",
+      "computedHash": "7c8d9eab04e322ce851cf9d0c68d23f778abb1e3909b5a1f07a90e6c6fd3c3f1"
+    },
+    "revenuecat-charts": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-charts/SKILL.md",
+      "computedHash": "1100f4498113accfd4f5aa6c11197af6d25098d231da2c0dc2c5950aace6d78e"
+    },
+    "revenuecat-customer-center": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-customer-center/SKILL.md",
+      "computedHash": "d529993f4b8731b1b4480c4deab3063e10661fcff4031f2888fe711831e2a2ae"
+    },
+    "revenuecat-entitlements-gate": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-entitlements-gate/SKILL.md",
+      "computedHash": "137b725af76eac6250e80b1b562af7a41ffe33bfc9ed569d39f1d4959cf21270"
+    },
+    "revenuecat-identify-user": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-identify-user/SKILL.md",
+      "computedHash": "50661df3ddc3e12ccf50d478405fb8ffa4c94dc05859a30786ecfc5dcbcc6025"
+    },
+    "revenuecat-migrate": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-migrate/SKILL.md",
+      "computedHash": "ca614ac37748f21fa7dc46d35f9f4f84bad8bc18225a1527d56d2f2366097fbe"
+    },
+    "revenuecat-paywall": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-paywall/SKILL.md",
+      "computedHash": "d74338e47fab76e53f87d395052e42e0bc6660dab3e4babc8ea142505db3c902"
+    },
+    "revenuecat-purchase-flow": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-purchase-flow/SKILL.md",
+      "computedHash": "b5c3f941634c976ac8b656b78429153a2c5e2420788bc54f48470e3a9d8edd85"
+    },
+    "revenuecat-status": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-status/SKILL.md",
+      "computedHash": "35634aacd5b525093c1b625a1ec553c6609369fe73f2661a5aa2e3f31bdc0b84"
+    },
+    "revenuecat-testing-setup": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-testing-setup/SKILL.md",
+      "computedHash": "c18dfc4a93054d4cdf8389357d63ba3ca9fd92d17a484818c2c51f18f78d7777"
+    },
+    "revenuecat-troubleshoot": {
+      "source": "RevenueCat/ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "revenuecat/skills/revenuecat-troubleshoot/SKILL.md",
+      "computedHash": "aa8a4569930f779848e7f719ce988239168ea04689a1671f7a89e5656c99ecdf"
+    }
+  }
+}

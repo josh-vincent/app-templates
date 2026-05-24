@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1285 2778">
+  <defs>
+    <radialGradient id="iron" cx="50%" cy="18%" r="78%">
+      <stop offset="0" stop-color="#202833"/>
+      <stop offset=".55" stop-color="#0d1014"/>
+      <stop offset="1" stop-color="#080a0d"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="372" y1="680" x2="912" y2="1290">
+      <stop offset="0" stop-color="#ffd86a"/>
+      <stop offset=".5" stop-color="#f4b942"/>
+      <stop offset="1" stop-color="#a96d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1285" height="2778" fill="url(#iron)"/>
+  <circle cx="642.5" cy="1116" r="330" fill="none" stroke="#242e36" stroke-width="78"/>
+  <path d="M642.5 786a330 330 0 0 1 294 476" fill="none" stroke="#b7ff4a" stroke-width="78" stroke-linecap="round"/>
+  <path d="M894 1314a330 330 0 0 1-444 74" fill="none" stroke="#f4b942" stroke-width="78" stroke-linecap="round"/>
+  <path d="M390 918a330 330 0 0 0-68 184" fill="none" stroke="#ff6b35" stroke-width="78" stroke-linecap="round"/>
+  <circle cx="642.5" cy="1116" r="224" fill="url(#gold)"/>
+  <circle cx="642.5" cy="1116" r="176" fill="#111820" stroke="#ffe08a" stroke-width="18"/>
+  <path d="M550 1244V987h194c49 0 84 33 84 76 0 31-16 55-43 67 35 10 56 37 56 78 0 48-39 82-94 82H550zm80-152h91c17 0 29-11 29-27 0-17-12-28-29-28h-91v55zm0 101h103c18 0 30-12 30-30 0-17-12-29-30-29H630v59z" fill="#f3ead8"/>
+  <path d="M486 960h298" stroke="#f3ead8" stroke-width="44" stroke-linecap="round"/>
+  <path d="M460 1278h366" stroke="#f3ead8" stroke-width="44" stroke-linecap="round"/>
+  <path d="M416 735l96-54 89 66 88-106 90 142 116-42" fill="none" stroke="#b7ff4a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

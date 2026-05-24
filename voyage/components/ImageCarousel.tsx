@@ -1,0 +1,178 @@
+import React, { useState, useEffect } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Dimensions,
+  Pressable,
+  StyleSheet,
+  LayoutChangeEvent,
+  ImageSourcePropType,
+} from 'react-native';
+import ThemedText from '@/components/ThemedText';
+
+interface ImageCarouselProps {
+  images: string[] | ImageSourcePropType[];
+  width?: number;
+  height?: number;
+  showPagination?: boolean;
+  paginationStyle?: 'dots' | 'numbers';
+  onImagePress?: (index: number) => void;
+  autoPlay?: boolean;
+  autoPlayInterval?: number;
+  loop?: boolean;
+  className?: string;
+  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'full';
+  onAllFailed?: () => void;
+}
+
+const ImageCarousel: React.FC<ImageCarouselProps> = ({
+  images,
+  width: propWidth,
+  height = 200,
+  showPagination = true,
+  paginationStyle = 'dots',
+  onImagePress,
+  autoPlay = false,
+  autoPlayInterval = 3000,
+  loop = true,
+  className = '',
+  rounded = 'none',
+  onAllFailed,
+}) => {
+  const [containerWidth, setContainerWidth] = useState(propWidth || Dimensions.get('window').width);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [failedIndices, setFailedIndices] = useState<Set<number>>(new Set());
+  const flatListRef = React.useRef<FlatList>(null);
+
+  const handleLayout = (event: LayoutChangeEvent) => {
+    const { width } = event.nativeEvent.layout;
+    setContainerWidth(width);
+  };
+
+  const getRoundedClass = () => {
+    switch (rounded) {
+      case 'none':
+        return '';
+      case 'sm':
+        return 'rounded-sm';
+      case 'md':
+        return 'rounded-md';
+      case 'lg':
+        return 'rounded-lg';
+      case 'xl':
+        return 'rounded-xl';
+      case '2xl':
+        return 'rounded-2xl';
+      case 'full':
+        return 'rounded-full';
+      default:
+        return '';
+    }
+  };
+
+  const handleImageChange = (contentOffsetX: number) => {
+    const index = Math.round(contentOffsetX / containerWidth);
+    setActiveIndex(index);
+  };
+
+  const handleImagePress = () => {
+    if (onImagePress) {
+      onImagePress(activeIndex);
+    }
+  };
+
+  const renderPagination = () => {
+    if (!showPagination || images.length <= 1) return null;
+
+    return (
+      <View className="absolute bottom-4 w-full flex-row justify-center">
+        {paginationStyle === 'dots' ? (
+          images.map((_, index) => (
+            <View
+              key={index}
+              className={`mx-1 h-2 w-2 rounded-full ${
+                index === activeIndex ? 'bg-white' : 'bg-white/40'
+              }`}
+            />
+          ))
+        ) : (
+          <View className="rounded-full bg-black/50 px-3 py-1">
+            <ThemedText className="text-white">
+              {activeIndex + 1} / {images.length}
+            </ThemedText>
+          </View>
+        )}
+      </View>
+    );
+  };
+
+  const handleImageError = (index: number) => {
+    setFailedIndices((prev) => {
+      const next = new Set(prev);
+      next.add(index);
+      if (next.size >= images.length && onAllFailed) {
+        onAllFailed();
+      }
+      return next;
+    });
+  };
+
+  const renderItem = ({ item, index }: { item: string | ImageSourcePropType; index: number }) => (
+    <View style={{ width: containerWidth, height }}>
+      <Image
+        source={typeof item === 'string' ? { uri: item } : item}
+        style={[
+          styles.image,
+          {
+            width: containerWidth,
+            height,
+          },
+        ]}
+        resizeMode="cover"
+        onError={() => handleImageError(index)}
+      />
+    </View>
+  );
+
+  return (
+    <View
+      className={`${getRoundedClass()} ${className}`}
+      style={[
+        styles.container,
+        {
+          height,
+          overflow: 'hidden',
+        },
+      ]}
+      onLayout={handleLayout}>
+      <FlatList
+        ref={flatListRef}
+        data={images}
+        horizontal
+        pagingEnabled
+        showsHorizontalScrollIndicator={false}
+        keyExtractor={(_, index) => index.toString()}
+        renderItem={renderItem}
+        onMomentumScrollEnd={(e) => {
+          const contentOffsetX = e.nativeEvent.contentOffset.x;
+          handleImageChange(contentOffsetX);
+        }}
+        style={{ height }}
+        contentContainerStyle={{ width: containerWidth * images.length }}
+      />
+      {renderPagination()}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    position: 'relative',
+  },
+  image: {
+    backgroundColor: '#f0f0f0',
+  },
+});
+
+export default ImageCarousel;

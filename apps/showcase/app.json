@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "@jv/showcase",
+    "slug": "jv-showcase",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "jvshowcase",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.jv.showcase",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.jv.showcase"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "LuckyChips",
+    "slug": "luckychips",
+    "version": "0.1.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "scheme": "luckychips",
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": false
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/PLACEHOLDER-PROJECT-ID-RUN-EAS-INIT"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ],
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-notifications",
+        {
+          "enableBackgroundRemoteNotifications": false
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d1014"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tocld.luckychips",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.tocld.luckychips",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d1014"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "predictiveBackGestureEnabled": false
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}

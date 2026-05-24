@@ -1,0 +1,11 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+  - "fitstake"
+  - "aurora"
+  - "casino-app"
+  - "health-app"
+  - "travel-app"
+  - "voyage"
+  - "propia"
+  - "expo-convex-template"

@@ -1,0 +1,130 @@
+{
+  "expo": {
+    "name": "Aurora",
+    "slug": "aurora",
+    "version": "0.1.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "scheme": "aurora",
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": false
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/PLACEHOLDER-PROJECT-ID-RUN-EAS-INIT"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ],
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-notifications",
+        {
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Aurora uses Face ID to confirm wagers and protect your wallet."
+        }
+      ],
+      [
+        "react-native-health",
+        {
+          "isClinicalDataEnabled": false,
+          "healthSharePermission": "Aurora reads your steps and workouts to verify you hit your goals.",
+          "healthUpdatePermission": "Aurora writes nothing back to Health — it only reads."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Aurora uses your photos to attach proof to a bet.",
+          "cameraPermission": "Aurora uses the camera to capture proof of completed bets."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Aurora records location during your active bet window so we can verify you were at the gym/court even if you forget to open the app.",
+          "locationWhenInUsePermission": "Aurora reads your location to verify proof when you submit a bet.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-task-manager",
+      "react-native-health-connect"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d1014"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tocld.aurora",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSHealthShareUsageDescription": "Aurora reads your steps and workouts from Apple Health to verify you hit your goals.",
+        "NSHealthUpdateUsageDescription": "Aurora does not write to Apple Health.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Aurora records location during your active bet window so we can verify you were at the gym/court even if you forget to open the app.",
+        "NSLocationAlwaysUsageDescription": "Aurora records location during your active bet window so we can verify you were at the gym/court even if you forget to open the app.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": []
+      }
+    },
+    "android": {
+      "package": "com.tocld.aurora",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d1014"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_DISTANCE",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}

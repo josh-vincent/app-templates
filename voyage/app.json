@@ -1,0 +1,136 @@
+{
+  "expo": {
+    "name": "Voyage",
+    "slug": "voyage",
+    "version": "0.1.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "scheme": "voyage",
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": false
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "web": {
+      "output": "server",
+      "bundler": "metro"
+    },
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/94443fbd-292b-4373-92c6-4a0164fe7bd3"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ],
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      "expo-asset",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Voyage lets you choose photos from your library for your profile and trips."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Voyage uses your location to suggest nearby airports and destinations."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Voyage uses Face ID to unlock sensitive travel details and saved trips."
+        }
+      ],
+      [
+        "expo-maps",
+        {
+          "requestLocationPermission": true,
+          "locationPermission": "Voyage uses your location to center the map around nearby airports and destinations."
+        }
+      ],
+      [
+        "expo-widgets",
+        {
+          "bundleIdentifier": "com.tocld.voyage.widgets",
+          "groupIdentifier": "group.com.tocld.voyage",
+          "widgets": [
+            {
+              "name": "TripStatusWidget",
+              "displayName": "Trip Status",
+              "description": "See your next trip at a glance from the Home Screen.",
+              "supportedFamilies": [
+                "systemSmall",
+                "systemMedium"
+              ]
+            }
+          ]
+        }
+      ],
+      "expo-sharing",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Voyage uses your calendar to save flights and trip plans."
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tocld.voyage",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.tocld.voyage",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR"
+      ]
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "94443fbd-292b-4373-92c6-4a0164fe7bd3"
+      }
+    },
+    "owner": "taskr"
+  }
+}

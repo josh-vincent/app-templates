@@ -1,0 +1,8 @@
+{
+  "/[...404]": {
+    "...404": "screen-canvas-missing"
+  },
+  "/screens/chat/[id]": {
+    "id": "screen-canvas-chat"
+  }
+}

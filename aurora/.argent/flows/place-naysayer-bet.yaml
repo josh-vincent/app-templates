@@ -1,0 +1,12 @@
+executionPrerequisite: Aurora installed and launched on iPhone 17 Pro (UDID
+  494EE0A0-179A-4464-A2E3-26C26DBB3650). User is on the Today tab. Convex
+  backend reachable. Dev profile has at least one friend in the friendships
+  table so naysayer create is allowed.
+steps:
+  - echo: Switch to Bets tab
+  - tool: gesture-tap
+    args:
+      udid: 494EE0A0-179A-4464-A2E3-26C26DBB3650
+      x: 0.299
+      y: 0.93
+  - echo: Tap +New to start the create flow

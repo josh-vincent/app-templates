@@ -1,0 +1,13 @@
+{
+  "name": "@jv/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "rules"
+  ],
+  "peerDependencies": {
+    "eslint": ">=8"
+  }
+}

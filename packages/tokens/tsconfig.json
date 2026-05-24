@@ -1,0 +1,7 @@
+{
+  "extends": "@jv/tsconfig/tsconfig.lib.json",
+  "compilerOptions": {
+    "types": []
+  },
+  "include": ["src/**/*"]
+}
