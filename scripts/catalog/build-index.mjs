@@ -163,11 +163,16 @@ if (fs.existsSync(fatesFile)) {
     fl.push('**Checklist:**', '', ...f.checklist.map((c) => `- [ ] ${c.text}${c.detect === 'manual' ? ' *(manual)*' : ''}`));
   }
   fl.push('', '## Capabilities', '');
-  fl.push('| Capability | What it adds | Packages | Screens pulled |');
-  fl.push('|---|---|---|---|');
+  fl.push('| Capability | What it adds | Platforms | Packages | Screens pulled |');
+  fl.push('|---|---|---|---|---|');
   for (const [name, c] of Object.entries(fd.capabilities)) {
     const pulls = (c.pulls || []).map((p) => p.match || p.category).join(', ') || '—';
-    fl.push(`| \`${name}\` — ${c.title} | ${c.description.split('.')[0]}. | ${(c.packages || []).join(', ') || '—'} | ${pulls} |`);
+    fl.push(`| \`${name}\` — ${c.title} | ${c.description.split('.')[0]}. | ${(c.platforms || ['ios', 'android']).join('+')} | ${(c.packages || []).join(', ') || '—'} | ${pulls} |`);
+  }
+  const refs = Object.entries(fd.capabilities).filter(([, c]) => c.reference);
+  if (refs.length) {
+    fl.push('', '### Reference implementations', '');
+    for (const [name, c] of refs) fl.push(`- \`${name}\` — ${c.reference}`);
   }
   fl.push('', '## Archetypes', '');
   fl.push('| Archetype | Shape | Screen categories | Best base templates |');

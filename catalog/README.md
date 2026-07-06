@@ -67,15 +67,25 @@ screen lands. Every override is listed in the target's `REMIX.md` provenance.
 A plan also declares what the app is destined to be — see the generated
 [`FATES.md`](./FATES.md) reference:
 
-- **Fate** (maturity tier): `spike` → `mvp` → `beta` → `store-ready`. Each fate
-  requires capabilities and screen categories and carries a review checklist
-  (store-ready includes Apple's account-deletion rule, permission priming,
-  legal screens, IAP compliance, offline behavior, i18n, …).
-- **Capability** (composable feature): `ota-updates`, `skeleton-shell` (login
-  gate + loading + network boundaries + all error screens), `local-first`,
-  `no-auth`, `demo-mode`, `push-notifications`, `payments-iap`,
+- **Fate** (maturity tier): `spike` → `mvp` → `beta` → `store-ready` →
+  `flagship`. Each fate requires capabilities and screen categories and
+  carries a review checklist (store-ready includes Apple's account-deletion
+  rule, permission priming, legal screens, IAP compliance, offline behavior,
+  i18n; flagship adds the native-polish surfaces below plus explicit
+  ship-or-rule-out decisions for the rest).
+- **Capability** (31 composable features): `ota-updates`, `skeleton-shell`
+  (login gate + loading + network boundaries + all error screens),
+  `local-first`, `no-auth`, `demo-mode`, `push-notifications`, `payments-iap`,
   `error-reporting`, `analytics`, `deep-links`, `i18n`, `permission-priming`,
-  `legal`, `account-deletion`, `maps`, `widgets`, …
+  `legal`, `account-deletion`, `maps`, … and the **native tier**:
+  `live-activities` (ActivityKit + Dynamic Island), `widgets` (WidgetKit /
+  Glance), `watch-app`, `app-intents` (Siri/Shortcuts/Spotlight/interactive
+  widgets), `quick-actions`, `share-extension`, `app-clips`, `biometrics`,
+  `health-data` (HealthKit/Health Connect), `camera-media`,
+  `background-tasks`, `haptics`, `store-review`. Native capabilities carry
+  platform tags, real detection rules, and reference implementations in this
+  repo (fitstake ships working WidgetKit widgets + a Live Activity via
+  `@bacons/apple-targets`).
 - **Archetype** (app shape): `game`, `directory`, `marketplace`, `social`,
   `tracker`, `ai-assistant`, `events`, `on-demand`, `travel`, `media-feed`,
   `utility`, `saas-companion` — each maps to screen categories and the best

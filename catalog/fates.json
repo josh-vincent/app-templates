@@ -57,6 +57,22 @@
         { "id": "a11y", "text": "Accessibility pass: labels on touchables, dynamic type doesn't break layouts", "detect": "manual" },
         { "id": "store-collateral", "text": "Screenshots, description, privacy nutrition labels, review notes", "detect": "manual" }
       ]
+    },
+    "flagship": {
+      "title": "Flagship — native-polish tier beyond store-ready",
+      "description": "Everything store-ready demands, plus the native surfaces that make an app feel first-party: haptics on core interactions, home-screen widgets, quick actions, an in-app review loop — and a deliberate decision on Live Activities, watch app, App Intents, share extension, and App Clips for the domains where they fit.",
+      "capabilities": ["skeleton-shell", "ota-updates", "error-reporting", "analytics", "onboarding", "feedback", "permission-priming", "legal", "deep-links", "i18n", "haptics", "widgets", "quick-actions", "store-review"],
+      "screenCategories": ["home", "settings", "profile", "onboarding", "support", "permissions", "auth"],
+      "checklist": [
+        { "id": "widgets-shipped", "text": "At least one widget shipped (fed by the app-group snapshot)", "detect": "capability:widgets" },
+        { "id": "haptics-core", "text": "Haptics on primary success, destructive confirm, selection", "detect": "capability:haptics" },
+        { "id": "quick-actions", "text": "Icon quick actions deep-link to top actions", "detect": "capability:quick-actions" },
+        { "id": "review-loop", "text": "In-app review prompt wired to a delight moment", "detect": "capability:store-review" },
+        { "id": "live-activities-decision", "text": "Live Activities: shipped for long-running state, or explicitly ruled out for this domain", "detect": "manual" },
+        { "id": "watch-decision", "text": "Watch app / complication: shipped or ruled out", "detect": "manual" },
+        { "id": "app-intents-decision", "text": "App Intents (Siri/Shortcuts/interactive widgets): shipped or ruled out", "detect": "manual" },
+        { "id": "share-clip-decision", "text": "Share extension / App Clip: shipped or ruled out", "detect": "manual" }
+      ]
     }
   },
 
@@ -217,11 +233,123 @@
     },
     "widgets": {
       "title": "Home-screen widgets",
-      "description": "iOS widget target sharing a snapshot with the app (pattern in fitstake: targets/ + useWidgetSnapshot).",
-      "packages": [],
-      "detect": { "files": ["targets", "widgets"] },
+      "description": "WidgetKit widgets (small/medium/lock-screen) fed by a snapshot the app writes to the shared app group; Android equivalent via Glance. Reference implementation: fitstake.",
+      "platforms": ["ios", "android"],
+      "packages": ["@bacons/apple-targets"],
+      "detect": { "packages": ["@bacons/apple-targets", "expo-apple-targets"], "files": ["targets", "widgets"], "sources": ["WidgetKit", "useWidgetSnapshot"] },
       "pulls": [],
-      "setup": ["Mirror fitstake's targets/ setup; write snapshot JSON the widget reads"]
+      "reference": "fitstake: targets/widgets/*.swift (SparklineWidget, TrackerWidget, CountdownWidget), expo-target.config.js, plugins/withWidgetBridge.js, app/hooks/useWidgetSnapshot.ts",
+      "setup": ["npx expo install @bacons/apple-targets", "Create targets/widgets with expo-target.config.js + a WidgetKit bundle", "Write a snapshot JSON to the shared app group whenever core data changes (useWidgetSnapshot pattern)", "Reload timelines via WidgetCenter after each snapshot write"]
+    },
+    "live-activities": {
+      "title": "Live Activities & Dynamic Island",
+      "description": "ActivityKit Live Activities for long-running, glanceable state (order tracking, workout in progress, countdown, ride ETA) with Dynamic Island presentations; updatable via push. Reference implementation: fitstake.",
+      "platforms": ["ios"],
+      "packages": ["@bacons/apple-targets"],
+      "detect": { "sources": ["ActivityKit", "LiveActivity"], "packages": ["expo-live-activity", "react-native-live-activity"] },
+      "pulls": [],
+      "reference": "fitstake: targets/widgets/FitStakeLiveActivity.swift + FitStakeAttributes.swift (ActivityAttributes + Dynamic Island regions), bridged through plugins/withWidgetBridge.js",
+      "setup": ["Define ActivityAttributes (static) + ContentState (dynamic) in the widget target", "Provide lock-screen + Dynamic Island (compact/minimal/expanded) presentations", "Bridge start/update/end to JS via a native module or config-plugin bridge", "Set NSSupportsLiveActivities in Info.plist; use APNs 'liveactivity' pushes for remote updates", "End activities deterministically — stale Live Activities are a review flag"]
+    },
+    "watch-app": {
+      "title": "Apple Watch companion",
+      "description": "watchOS target mirroring the one core loop (glance + log + complication), sharing data via the app group or WatchConnectivity.",
+      "platforms": ["ios"],
+      "packages": ["@bacons/apple-targets"],
+      "detect": { "sources": ["WatchConnectivity", "watchOS", "ClockKit"], "files": ["targets/watch"] },
+      "pulls": [],
+      "setup": ["Add a watch target via @bacons/apple-targets", "Share state through the app group (same snapshot the widgets read)", "Ship one complication — it's the retention surface"]
+    },
+    "app-intents": {
+      "title": "Siri / Shortcuts / Spotlight (App Intents)",
+      "description": "Expose the core action as an App Intent so it works from Siri, Shortcuts, Spotlight, Action Button, and (with widgets) interactive widget buttons.",
+      "platforms": ["ios"],
+      "packages": [],
+      "detect": { "sources": ["AppIntent", "AppShortcutsProvider", "INIntent"] },
+      "pulls": [],
+      "setup": ["Define an AppIntent per core action in the native target", "Add an AppShortcutsProvider with natural phrases", "Reuse the intents for interactive widget buttons (iOS 17+)"]
+    },
+    "quick-actions": {
+      "title": "Home-screen quick actions",
+      "description": "Long-press app icon shortcuts (and Android app shortcuts) that deep-link into the top 2–3 actions.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-quick-actions"],
+      "detect": { "packages": ["expo-quick-actions"] },
+      "pulls": [],
+      "setup": ["npx expo install expo-quick-actions", "Route each action through the deep-link scheme so it also works from widgets/notifications"]
+    },
+    "share-extension": {
+      "title": "Share extension",
+      "description": "Receive content from other apps via the share sheet (save a link/photo/place into the app) — a growth loop for directory/collection apps.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-share-intent"],
+      "detect": { "packages": ["expo-share-intent", "expo-share-extension"], "files": ["targets/share"] },
+      "pulls": [],
+      "setup": ["Handle incoming share payloads at the router entry", "Map shared URLs/images to a create/save flow"]
+    },
+    "app-clips": {
+      "title": "App Clip",
+      "description": "Sub-10MB instant experience for one transaction (view a listing, join a game, pay) launched from QR/NFC/links — pairs with no-auth flows.",
+      "platforms": ["ios"],
+      "packages": ["@bacons/apple-targets"],
+      "detect": { "sources": ["AppClip"], "files": ["targets/clip"] },
+      "pulls": [],
+      "setup": ["Add a clip target; keep it under the size budget", "Scope to one flow; hand off state to the full app on install"]
+    },
+    "biometrics": {
+      "title": "Biometric auth (Face ID / fingerprint)",
+      "description": "Local authentication gate for sensitive screens (wallet, journal, health data) and faster re-login.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-local-authentication"],
+      "detect": { "packages": ["expo-local-authentication"], "sources": ["LocalAuthentication", "FaceID"] },
+      "pulls": [],
+      "setup": ["npx expo install expo-local-authentication", "Set NSFaceIDUsageDescription", "Always offer a passcode fallback"]
+    },
+    "health-data": {
+      "title": "Health data (HealthKit / Health Connect)",
+      "description": "Read/write steps, workouts, and vitals with explicit priming — verification patterns (anti-cheat step reads) in fitstake.",
+      "platforms": ["ios", "android"],
+      "packages": ["react-native-health"],
+      "detect": { "packages": ["react-native-health", "react-native-health-connect", "expo-health-connect"] },
+      "pulls": [{ "category": "settings", "match": "devices" }],
+      "reference": "fitstake: HealthKit step verification for wagers; caloria-v2: devices screen for wearable connections",
+      "setup": ["Prime before the HealthKit permission sheet", "Request the minimum read/write set — over-asking is a review flag", "Handle 'denied' gracefully; health data may be absent"]
+    },
+    "camera-media": {
+      "title": "Camera & media",
+      "description": "Capture/pick/store photos and video with permission priming and graceful degradation.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-image-picker"],
+      "detect": { "packages": ["expo-camera", "expo-image-picker", "expo-media-library"] },
+      "pulls": [{ "category": "creation" }],
+      "setup": ["Prime camera/library permissions", "Compress before upload; cache thumbnails locally"]
+    },
+    "background-tasks": {
+      "title": "Background tasks & location",
+      "description": "Background fetch/processing and (where justified) background location — refresh widgets, sync local-first queues, track an active session.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-task-manager"],
+      "detect": { "packages": ["expo-task-manager", "expo-background-fetch", "expo-background-task", "expo-location"] },
+      "pulls": [],
+      "setup": ["Register tasks with expo-task-manager", "Declare UIBackgroundModes only for what you use — unjustified modes get rejected", "Budget work: background time is scarce and OS-throttled"]
+    },
+    "haptics": {
+      "title": "Haptics",
+      "description": "Tactile feedback on core interactions (success, selection, game events) — cheap native polish.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-haptics"],
+      "detect": { "packages": ["expo-haptics"], "sources": ["Haptics."] },
+      "pulls": [],
+      "setup": ["Feedback on: primary action success, destructive confirm, selection changes, game outcomes", "Respect the system reduce-motion/haptics settings"]
+    },
+    "store-review": {
+      "title": "In-app review prompt",
+      "description": "SKStoreReviewController / Play in-app review, asked at a moment of delight (goal hit, streak, booking confirmed) — never on launch.",
+      "platforms": ["ios", "android"],
+      "packages": ["expo-store-review"],
+      "detect": { "packages": ["expo-store-review"] },
+      "pulls": [],
+      "setup": ["Trigger after a success event, max ~3 prompts/year per Apple's budget", "Gate behind: used N days AND just succeeded at the core action"]
     }
   },
 

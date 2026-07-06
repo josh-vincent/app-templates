@@ -75,29 +75,66 @@ Everything reviewers and real users hit: permission priming, legal screens, acco
 - [ ] Accessibility pass: labels on touchables, dynamic type doesn't break layouts *(manual)*
 - [ ] Screenshots, description, privacy nutrition labels, review notes *(manual)*
 
+### `flagship` — Flagship — native-polish tier beyond store-ready
+
+Everything store-ready demands, plus the native surfaces that make an app feel first-party: haptics on core interactions, home-screen widgets, quick actions, an in-app review loop — and a deliberate decision on Live Activities, watch app, App Intents, share extension, and App Clips for the domains where they fit.
+
+**Requires capabilities:** `skeleton-shell`, `ota-updates`, `error-reporting`, `analytics`, `onboarding`, `feedback`, `permission-priming`, `legal`, `deep-links`, `i18n`, `haptics`, `widgets`, `quick-actions`, `store-review`
+
+**Requires screen categories:** home, settings, profile, onboarding, support, permissions, auth
+
+**Checklist:**
+
+- [ ] At least one widget shipped (fed by the app-group snapshot)
+- [ ] Haptics on primary success, destructive confirm, selection
+- [ ] Icon quick actions deep-link to top actions
+- [ ] In-app review prompt wired to a delight moment
+- [ ] Live Activities: shipped for long-running state, or explicitly ruled out for this domain *(manual)*
+- [ ] Watch app / complication: shipped or ruled out *(manual)*
+- [ ] App Intents (Siri/Shortcuts/interactive widgets): shipped or ruled out *(manual)*
+- [ ] Share extension / App Clip: shipped or ruled out *(manual)*
+
 ## Capabilities
 
-| Capability | What it adds | Packages | Screens pulled |
-|---|---|---|---|
-| `skeleton-shell` — Skeleton shell — login, loading, network boundaries, all error screens | The connective tissue every real app needs: welcome/login gate (or bypass), splash/loading states, ErrorBoundary, 404 catch-all, empty states, offline banner, and slots for maintenance / force-update screens. | @react-native-community/netinfo | welcome, login, empty |
-| `ota-updates` — OTA updates (EAS Update) | Ship JS/asset fixes without a store review. | expo-updates | — |
-| `auth` — Full auth | Login, signup, forgot/reset password, session persistence, edit profile, sign out — and account deletion for store review. | — | login, signup, forgot-password, edit-profile |
-| `no-auth` — No auth | Guest-only app: no accounts, no login wall. | — | — |
-| `demo-mode` — Demo mode | Try-before-signup: a 'Try Demo' path that runs the whole app on local storage with seeded data (pattern already in the boilerplate templates via EXPO_PUBLIC_DEMO_MODE). | @react-native-async-storage/async-storage | welcome |
-| `local-first` — Local-first | Device is the source of truth: AsyncStorage/SQLite/MMKV persistence, instant reads/writes, optional background sync when a backend appears later. | @react-native-async-storage/async-storage | — |
-| `onboarding` — Onboarding | First-run value pitch + progressive setup wizard (MultiStep pattern exists in all boilerplate templates). | — | onboarding |
-| `permission-priming` — Permission priming | Explain-then-ask screens shown before each OS permission dialog (location, notifications, camera) — most templates ship location-permission and notification-permission screens. | — | permissions |
-| `push-notifications` — Push notifications | Expo push tokens, notification settings screen, opt-in tied to permission priming. | expo-notifications | notification-settings, notifications |
-| `payments-iap` — Payments (IAP via RevenueCat) | Subscription/paywall through StoreKit/Play Billing with RevenueCat; restore purchases; price + term shown on the paywall (review requirement). | react-native-purchases | monetization |
-| `error-reporting` — Crash & error reporting | Sentry (or similar) wired into the ErrorBoundary and global handlers so beta crashes are visible. | @sentry/react-native | — |
-| `analytics` — Product analytics | Screen views + core-loop events (PostHog/Amplitude/etc. | posthog-react-native | — |
-| `deep-links` — Deep links | URL scheme + universal/app links so shares, notifications, and marketing land on the right screen (expo-router gives you paths for free). | — | — |
-| `i18n` — Internationalization scaffold | Strings externalized into locales/ (en/es already present in the boilerplate templates) with a language settings screen. | — | languages |
-| `legal` — Legal & support | Privacy policy, terms, and help/FAQ reachable in-app — reviewers look for these. | — | support |
-| `account-deletion` — Account deletion | In-app account deletion flow — Apple rejects account-based apps without it (Guideline 5. | — | security |
-| `feedback` — Feedback channel | Help screen with contact/feedback so testers and users can reach you (all templates ship a help screen). | — | help |
-| `maps` — Maps & location | react-native-maps with live tracking patterns (drivo's DriveMap, propia/evento map screens). | react-native-maps | maps, location-permission |
-| `widgets` — Home-screen widgets | iOS widget target sharing a snapshot with the app (pattern in fitstake: targets/ + useWidgetSnapshot). | — | — |
+| Capability | What it adds | Platforms | Packages | Screens pulled |
+|---|---|---|---|---|
+| `skeleton-shell` — Skeleton shell — login, loading, network boundaries, all error screens | The connective tissue every real app needs: welcome/login gate (or bypass), splash/loading states, ErrorBoundary, 404 catch-all, empty states, offline banner, and slots for maintenance / force-update screens. | ios+android | @react-native-community/netinfo | welcome, login, empty |
+| `ota-updates` — OTA updates (EAS Update) | Ship JS/asset fixes without a store review. | ios+android | expo-updates | — |
+| `auth` — Full auth | Login, signup, forgot/reset password, session persistence, edit profile, sign out — and account deletion for store review. | ios+android | — | login, signup, forgot-password, edit-profile |
+| `no-auth` — No auth | Guest-only app: no accounts, no login wall. | ios+android | — | — |
+| `demo-mode` — Demo mode | Try-before-signup: a 'Try Demo' path that runs the whole app on local storage with seeded data (pattern already in the boilerplate templates via EXPO_PUBLIC_DEMO_MODE). | ios+android | @react-native-async-storage/async-storage | welcome |
+| `local-first` — Local-first | Device is the source of truth: AsyncStorage/SQLite/MMKV persistence, instant reads/writes, optional background sync when a backend appears later. | ios+android | @react-native-async-storage/async-storage | — |
+| `onboarding` — Onboarding | First-run value pitch + progressive setup wizard (MultiStep pattern exists in all boilerplate templates). | ios+android | — | onboarding |
+| `permission-priming` — Permission priming | Explain-then-ask screens shown before each OS permission dialog (location, notifications, camera) — most templates ship location-permission and notification-permission screens. | ios+android | — | permissions |
+| `push-notifications` — Push notifications | Expo push tokens, notification settings screen, opt-in tied to permission priming. | ios+android | expo-notifications | notification-settings, notifications |
+| `payments-iap` — Payments (IAP via RevenueCat) | Subscription/paywall through StoreKit/Play Billing with RevenueCat; restore purchases; price + term shown on the paywall (review requirement). | ios+android | react-native-purchases | monetization |
+| `error-reporting` — Crash & error reporting | Sentry (or similar) wired into the ErrorBoundary and global handlers so beta crashes are visible. | ios+android | @sentry/react-native | — |
+| `analytics` — Product analytics | Screen views + core-loop events (PostHog/Amplitude/etc. | ios+android | posthog-react-native | — |
+| `deep-links` — Deep links | URL scheme + universal/app links so shares, notifications, and marketing land on the right screen (expo-router gives you paths for free). | ios+android | — | — |
+| `i18n` — Internationalization scaffold | Strings externalized into locales/ (en/es already present in the boilerplate templates) with a language settings screen. | ios+android | — | languages |
+| `legal` — Legal & support | Privacy policy, terms, and help/FAQ reachable in-app — reviewers look for these. | ios+android | — | support |
+| `account-deletion` — Account deletion | In-app account deletion flow — Apple rejects account-based apps without it (Guideline 5. | ios+android | — | security |
+| `feedback` — Feedback channel | Help screen with contact/feedback so testers and users can reach you (all templates ship a help screen). | ios+android | — | help |
+| `maps` — Maps & location | react-native-maps with live tracking patterns (drivo's DriveMap, propia/evento map screens). | ios+android | react-native-maps | maps, location-permission |
+| `widgets` — Home-screen widgets | WidgetKit widgets (small/medium/lock-screen) fed by a snapshot the app writes to the shared app group; Android equivalent via Glance. | ios+android | @bacons/apple-targets | — |
+| `live-activities` — Live Activities & Dynamic Island | ActivityKit Live Activities for long-running, glanceable state (order tracking, workout in progress, countdown, ride ETA) with Dynamic Island presentations; updatable via push. | ios | @bacons/apple-targets | — |
+| `watch-app` — Apple Watch companion | watchOS target mirroring the one core loop (glance + log + complication), sharing data via the app group or WatchConnectivity. | ios | @bacons/apple-targets | — |
+| `app-intents` — Siri / Shortcuts / Spotlight (App Intents) | Expose the core action as an App Intent so it works from Siri, Shortcuts, Spotlight, Action Button, and (with widgets) interactive widget buttons. | ios | — | — |
+| `quick-actions` — Home-screen quick actions | Long-press app icon shortcuts (and Android app shortcuts) that deep-link into the top 2–3 actions. | ios+android | expo-quick-actions | — |
+| `share-extension` — Share extension | Receive content from other apps via the share sheet (save a link/photo/place into the app) — a growth loop for directory/collection apps. | ios+android | expo-share-intent | — |
+| `app-clips` — App Clip | Sub-10MB instant experience for one transaction (view a listing, join a game, pay) launched from QR/NFC/links — pairs with no-auth flows. | ios | @bacons/apple-targets | — |
+| `biometrics` — Biometric auth (Face ID / fingerprint) | Local authentication gate for sensitive screens (wallet, journal, health data) and faster re-login. | ios+android | expo-local-authentication | — |
+| `health-data` — Health data (HealthKit / Health Connect) | Read/write steps, workouts, and vitals with explicit priming — verification patterns (anti-cheat step reads) in fitstake. | ios+android | react-native-health | devices |
+| `camera-media` — Camera & media | Capture/pick/store photos and video with permission priming and graceful degradation. | ios+android | expo-image-picker | creation |
+| `background-tasks` — Background tasks & location | Background fetch/processing and (where justified) background location — refresh widgets, sync local-first queues, track an active session. | ios+android | expo-task-manager | — |
+| `haptics` — Haptics | Tactile feedback on core interactions (success, selection, game events) — cheap native polish. | ios+android | expo-haptics | — |
+| `store-review` — In-app review prompt | SKStoreReviewController / Play in-app review, asked at a moment of delight (goal hit, streak, booking confirmed) — never on launch. | ios+android | expo-store-review | — |
+
+### Reference implementations
+
+- `widgets` — fitstake: targets/widgets/*.swift (SparklineWidget, TrackerWidget, CountdownWidget), expo-target.config.js, plugins/withWidgetBridge.js, app/hooks/useWidgetSnapshot.ts
+- `live-activities` — fitstake: targets/widgets/FitStakeLiveActivity.swift + FitStakeAttributes.swift (ActivityAttributes + Dynamic Island regions), bridged through plugins/withWidgetBridge.js
+- `health-data` — fitstake: HealthKit step verification for wagers; caloria-v2: devices screen for wearable connections
 
 ## Archetypes
 

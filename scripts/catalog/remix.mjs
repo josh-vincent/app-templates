@@ -386,7 +386,13 @@ function applyPlan(planFile, args) {
   for (const capName of effCaps) {
     const cap = fatesData.capabilities[capName];
     if (!cap) continue;
-    capLines.push(`### ${cap.title}`, '', ...(cap.setup || []).map((s) => `- [ ] ${s}`), '');
+    capLines.push(
+      `### ${cap.title}`,
+      '',
+      ...(cap.reference ? [`Reference: ${cap.reference}`, ''] : []),
+      ...(cap.setup || []).map((s) => `- [ ] ${s}`),
+      '',
+    );
   }
   const checklistLines = plan.fate
     ? [
