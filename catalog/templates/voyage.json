@@ -74,7 +74,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-router"
       ],
@@ -109,7 +108,6 @@
         "utils/travelerProfileStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@ai-sdk/react",
         "ai",
         "expo",
@@ -141,7 +139,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context",
         "react-native-svg"
@@ -174,7 +171,6 @@
         "utils/travelerProfileStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -204,7 +200,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@react-native-async-storage/async-storage",
         "expo-router",
         "react-native-safe-area-context"
@@ -234,7 +229,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -259,7 +253,6 @@
         "utils/bundleStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -320,7 +313,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -353,7 +345,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@react-native-async-storage/async-storage",
         "@tanstack/react-query",
         "expo-image",
@@ -390,7 +381,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-linear-gradient",
         "expo-router",
@@ -422,7 +412,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-navigation/native",
         "expo-image-picker"
       ],
@@ -451,7 +440,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -482,7 +470,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -534,9 +521,7 @@
         "ThemedText"
       ],
       "modules": [],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": []
     },
     {
@@ -564,7 +549,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -611,7 +595,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -640,7 +623,6 @@
         "widgets/TripStatusWidget.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-constants",
         "expo-local-authentication",
         "expo-maps",
@@ -689,7 +671,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -721,7 +702,6 @@
         "utils/notificationsStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -749,7 +729,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -775,9 +754,7 @@
       "modules": [
         "contexts/PremiumContext.tsx"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": []
     },
     {
@@ -800,7 +777,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-router",
         "react-native-safe-area-context"
@@ -858,7 +834,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "@react-navigation/native"
       ],
       "assets": []
@@ -896,7 +871,6 @@
         "utils/useShadow.ts"
       ],
       "packages": [
-        "@/lib",
         "@expo/vector-icons",
         "expo-linear-gradient",
         "expo-router"
@@ -931,9 +905,7 @@
         "contexts/ThemeColors.tsx",
         "utils/travelerProfileStorage.ts"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": []
     },
     {
@@ -963,9 +935,7 @@
         "utils/currencyStorage.ts",
         "utils/travelerProfileStorage.ts"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": []
     },
     {
@@ -987,7 +957,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -1019,7 +988,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-linear-gradient",
         "expo-router",
@@ -1056,7 +1024,6 @@
         "utils/staysStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-image",
         "expo-router",
@@ -1085,7 +1052,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context",
         "react-native-svg"
@@ -1120,7 +1086,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -1146,7 +1111,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@expo/vector-icons",
         "expo-router",
         "react-native-safe-area-context"

@@ -14,7 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  walk, parseImports, resolveLocalImport, isAssetPath, packageNameOf,
+  walk, parseImports, resolveLocalImport, isAssetPath, packageNameOf, isLocalSpec,
   categorize, tagsFor, readJson, writeJson, exists, fail, parseArgs,
   loadRegistry, TEMPLATES_DIR, REPO_ROOT,
 } from './lib.mjs';
@@ -67,8 +67,8 @@ function firstParagraph(file) {
 
 export function scanTemplate(root, { name, repo } = {}) {
   root = path.resolve(root);
-  if (!exists(path.join(root, 'package.json'))) fail(`${root} has no package.json`);
-  const pkg = readJson(path.join(root, 'package.json'));
+  // Tolerate a missing package.json (e.g. a freshly remixed target being audited)
+  const pkg = exists(path.join(root, 'package.json')) ? readJson(path.join(root, 'package.json')) : {};
   name = name || path.basename(root);
 
   const appDir = path.join(root, 'app');
@@ -113,6 +113,7 @@ export function scanTemplate(root, { name, repo } = {}) {
     for (const spec of parseImports(src)) {
       const local = resolveLocalImport(spec, full, root);
       if (!local) {
+        if (isLocalSpec(spec)) continue; // dangling local import — not a package
         const p = packageNameOf(spec);
         if (!['react', 'react-native'].includes(p)) packages.add(p);
         continue;

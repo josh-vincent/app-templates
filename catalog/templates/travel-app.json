@@ -70,7 +70,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@expo/vector-icons",
         "expo-router",
@@ -94,7 +93,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -118,7 +116,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": []
@@ -141,7 +138,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -160,7 +156,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": []
@@ -186,7 +181,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -212,7 +206,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -239,7 +232,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],

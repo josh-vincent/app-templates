@@ -17,6 +17,7 @@
     "catalog:search": "node scripts/catalog/search.mjs",
     "catalog:pull": "node scripts/catalog/pull.mjs",
     "catalog:remix": "node scripts/catalog/remix.mjs",
+    "catalog:check": "node scripts/catalog/check.mjs",
     "showcase": "pnpm --filter @jv/showcase start",
     "codemod": "tsx scripts/codemod-imports.ts",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",

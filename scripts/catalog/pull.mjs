@@ -17,7 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  parseImports, resolveLocalImport, isAssetPath, packageNameOf, readJson,
+  parseImports, resolveLocalImport, isAssetPath, packageNameOf, isLocalSpec, readJson,
   exists, fail, parseArgs, resolveTemplateRoot, loadManifests,
 } from './lib.mjs';
 
@@ -35,6 +35,7 @@ export function collectDependencyClosure(rootAbs, entryRel) {
     for (const spec of parseImports(src)) {
       const local = resolveLocalImport(spec, full, rootAbs);
       if (!local) {
+        if (isLocalSpec(spec)) continue; // dangling local import — not a package
         const p = packageNameOf(spec);
         if (!['react', 'react-native'].includes(p)) packages.add(p);
         continue;

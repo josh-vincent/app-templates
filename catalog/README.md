@@ -62,6 +62,43 @@ pulled screen adopt them — e.g. `buttons:pill` claims `components/Button.tsx`
 from its provider, and `settings:toggles` guarantees a toggle-style settings
 screen lands. Every override is listed in the target's `REMIX.md` provenance.
 
+## Fates, capabilities & archetypes
+
+A plan also declares what the app is destined to be — see the generated
+[`FATES.md`](./FATES.md) reference:
+
+- **Fate** (maturity tier): `spike` → `mvp` → `beta` → `store-ready`. Each fate
+  requires capabilities and screen categories and carries a review checklist
+  (store-ready includes Apple's account-deletion rule, permission priming,
+  legal screens, IAP compliance, offline behavior, i18n, …).
+- **Capability** (composable feature): `ota-updates`, `skeleton-shell` (login
+  gate + loading + network boundaries + all error screens), `local-first`,
+  `no-auth`, `demo-mode`, `push-notifications`, `payments-iap`,
+  `error-reporting`, `analytics`, `deep-links`, `i18n`, `permission-priming`,
+  `legal`, `account-deletion`, `maps`, `widgets`, …
+- **Archetype** (app shape): `game`, `directory`, `marketplace`, `social`,
+  `tracker`, `ai-assistant`, `events`, `on-demand`, `travel`, `media-feed`,
+  `utility`, `saas-companion` — each maps to screen categories and the best
+  base templates.
+
+All three are recognized in idea text ("…no auth, local first, app store
+ready") or pinned with flags:
+
+```bash
+pnpm catalog:remix suggest "local directory of dog parks" \
+  --fate store-ready --archetype directory --capabilities no-auth,local-first --out plan.json
+pnpm catalog:remix apply plan.json --to ../dogparks     # pulls capability screens,
+                                                        # scaffolds package.json + configs,
+                                                        # writes fate checklist into REMIX.md
+pnpm catalog:check ../dogparks --plan plan.json         # audit the gate: pass/fail/manual
+```
+
+`check` scans the real target (screens, package.json, app.json, source
+greps) and exits non-zero while detectable requirements fail — usable as a
+CI gate per fate. `no-auth` waives auth requirements and strips login/signup
+from every suggestion; capability packages are merged into the scaffolded
+package.json with real versions from the source templates.
+
 ## Files
 
 ```
@@ -72,9 +109,12 @@ catalog/
   index.json             # generated: flattened cross-template index + identifiers
   CATALOG.md             # generated: human-browsable screen catalog
   STYLES.md              # generated: style & pattern identifier reference
+  fates.json             # fates / capabilities / archetypes definitions (editable)
+  FATES.md               # generated: fates reference
   examples/              # example remix plans
 scripts/catalog/
-  scan.mjs   style.mjs   build-index.mjs   search.mjs   pull.mjs   remix.mjs
+  scan.mjs   style.mjs   fates.mjs   build-index.mjs
+  search.mjs   pull.mjs   remix.mjs   check.mjs
 ```
 
 All scripts are dependency-free Node ESM — they run against any checkout

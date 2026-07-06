@@ -1,0 +1,242 @@
+{
+  "$comment": "Fates (maturity tiers), capabilities (composable features), and archetypes (app shapes) for the mobile app factory. A remix plan declares fate + archetype + capabilities; `remix.mjs apply` materializes what it can and `check.mjs` audits a target app against its fate's checklist.",
+
+  "fates": {
+    "spike": {
+      "title": "Spike — prove the idea",
+      "description": "One happy path, hardcoded mock data, no auth, no error handling. Throwaway by design; exists to feel the core loop on a device.",
+      "capabilities": [],
+      "screenCategories": ["home"],
+      "checklist": [
+        { "id": "runs-expo-go", "text": "Runs in Expo Go / dev client", "detect": "manual" },
+        { "id": "core-loop", "text": "The one core-loop screen works end to end with mock data", "detect": "manual" }
+      ]
+    },
+    "mvp": {
+      "title": "MVP — first real users",
+      "description": "The full skeleton: navigation shell, auth decision made (auth, no-auth, or demo-mode), loading/empty/error states everywhere a user can reach, settings, and the core feature set.",
+      "capabilities": ["skeleton-shell"],
+      "screenCategories": ["home", "settings", "profile"],
+      "checklist": [
+        { "id": "auth-decision", "text": "Auth strategy decided and implemented (auth screens, no-auth, or demo-mode)", "detect": "auth-decision" },
+        { "id": "error-screens", "text": "404 catch-all, error boundary, and empty states present", "detect": "capability:skeleton-shell" },
+        { "id": "dark-mode", "text": "Light and dark mode both render correctly", "detect": "files:global.css" },
+        { "id": "settings", "text": "Settings screen exists", "detect": "category:settings" },
+        { "id": "typecheck", "text": "npx tsc --noEmit passes", "detect": "manual" }
+      ]
+    },
+    "beta": {
+      "title": "Beta — TestFlight / internal track",
+      "description": "Updatable and observable: OTA updates wired, crashes and errors reported, basic analytics on the core loop, onboarding for first-run, a way for testers to give feedback.",
+      "capabilities": ["skeleton-shell", "ota-updates", "error-reporting", "analytics", "onboarding", "feedback"],
+      "screenCategories": ["home", "settings", "profile", "onboarding", "support"],
+      "checklist": [
+        { "id": "ota", "text": "EAS Update configured (channels, runtimeVersion policy)", "detect": "capability:ota-updates" },
+        { "id": "crash", "text": "Crash/error reporting SDK installed and initialized", "detect": "capability:error-reporting" },
+        { "id": "analytics", "text": "Core-loop events tracked", "detect": "capability:analytics" },
+        { "id": "onboarding", "text": "First-run onboarding flow", "detect": "category:onboarding" },
+        { "id": "feedback", "text": "Help/feedback screen reachable from settings", "detect": "category:support" },
+        { "id": "eas-profiles", "text": "eas.json has preview + production build profiles", "detect": "files:eas.json" },
+        { "id": "versioning", "text": "Version/build-number strategy set in app.json", "detect": "manual" }
+      ]
+    },
+    "store-ready": {
+      "title": "Store-ready — App Store / Play review",
+      "description": "Everything reviewers and real users hit: permission priming, legal screens, account deletion (Apple requires it when accounts exist), IAP-compliant paywall if monetized, deep links, offline behavior, localization scaffold, icons/splash, and review collateral.",
+      "capabilities": ["skeleton-shell", "ota-updates", "error-reporting", "analytics", "onboarding", "feedback", "permission-priming", "legal", "deep-links", "i18n"],
+      "screenCategories": ["home", "settings", "profile", "onboarding", "support", "permissions", "auth"],
+      "checklist": [
+        { "id": "permission-priming", "text": "Permission priming screens before every OS permission prompt", "detect": "capability:permission-priming" },
+        { "id": "legal", "text": "Privacy policy + terms reachable in-app", "detect": "capability:legal" },
+        { "id": "account-deletion", "text": "In-app account deletion (required by Apple when accounts exist)", "detect": "capability:account-deletion", "onlyWith": "auth" },
+        { "id": "iap-compliance", "text": "Paywall shows price, term, restore purchases; uses IAP not web checkout", "detect": "capability:payments-iap", "onlyWith": "payments-iap" },
+        { "id": "deep-links", "text": "URL scheme + universal/app links configured", "detect": "capability:deep-links" },
+        { "id": "offline", "text": "Offline/poor-network behavior defined (banner, cached data, retries)", "detect": "capability:local-first" },
+        { "id": "i18n", "text": "Strings externalized; at least en locale complete", "detect": "capability:i18n" },
+        { "id": "icons-splash", "text": "App icon, adaptive icon, splash configured in app.json", "detect": "manual" },
+        { "id": "a11y", "text": "Accessibility pass: labels on touchables, dynamic type doesn't break layouts", "detect": "manual" },
+        { "id": "store-collateral", "text": "Screenshots, description, privacy nutrition labels, review notes", "detect": "manual" }
+      ]
+    }
+  },
+
+  "capabilities": {
+    "skeleton-shell": {
+      "title": "Skeleton shell — login, loading, network boundaries, all error screens",
+      "description": "The connective tissue every real app needs: welcome/login gate (or bypass), splash/loading states, ErrorBoundary, 404 catch-all, empty states, offline banner, and slots for maintenance / force-update screens.",
+      "packages": ["@react-native-community/netinfo"],
+      "detect": { "anyScreens": ["404", "empty", "welcome"], "components": ["ErrorBoundary", "Placeholder", "SkeletonLoader", "PageLoader"] },
+      "pulls": [
+        { "category": "auth", "match": "welcome" },
+        { "category": "auth", "match": "login" },
+        { "match": "empty" }
+      ],
+      "setup": ["Wrap root layout in an ErrorBoundary", "Add offline banner via NetInfo listener", "Keep [...404].tsx catch-all"]
+    },
+    "ota-updates": {
+      "title": "OTA updates (EAS Update)",
+      "description": "Ship JS/asset fixes without a store review. Channels per environment, runtimeVersion policy so native/JS stay compatible, and an in-app force-update path for breaking changes.",
+      "packages": ["expo-updates"],
+      "detect": { "packages": ["expo-updates"], "files": ["eas.json"] },
+      "pulls": [],
+      "setup": ["npx expo install expo-updates", "eas update:configure", "Set runtimeVersion { policy: 'appVersion' } in app.json", "Map channels: preview → staging, production → production"]
+    },
+    "auth": {
+      "title": "Full auth",
+      "description": "Login, signup, forgot/reset password, session persistence, edit profile, sign out — and account deletion for store review.",
+      "packages": [],
+      "detect": { "anyScreens": ["login", "signup"] },
+      "pulls": [
+        { "category": "auth", "match": "login" },
+        { "category": "auth", "match": "signup" },
+        { "category": "auth", "match": "forgot-password" },
+        { "category": "profile", "match": "edit-profile" }
+      ],
+      "setup": ["Pick backend (supabase/convex) or keep mock AuthContext"]
+    },
+    "no-auth": {
+      "title": "No auth",
+      "description": "Guest-only app: no accounts, no login wall. Skips auth screens entirely; personalization is device-local. Pairs naturally with local-first.",
+      "packages": [],
+      "detect": { "absentScreens": ["login", "signup"] },
+      "avoid": [{ "category": "auth" }],
+      "pulls": [],
+      "setup": ["Route entry straight to the main layout", "Store preferences in AsyncStorage keyed to device"]
+    },
+    "demo-mode": {
+      "title": "Demo mode",
+      "description": "Try-before-signup: a 'Try Demo' path that runs the whole app on local storage with seeded data (pattern already in the boilerplate templates via EXPO_PUBLIC_DEMO_MODE).",
+      "packages": ["@react-native-async-storage/async-storage"],
+      "detect": { "sources": ["signInAsDemo", "EXPO_PUBLIC_DEMO_MODE"] },
+      "pulls": [{ "category": "auth", "match": "welcome" }],
+      "setup": ["Add signInAsDemo() to AuthContext", "Gate the Try Demo button on demoModeAvailable"]
+    },
+    "local-first": {
+      "title": "Local-first",
+      "description": "Device is the source of truth: AsyncStorage/SQLite/MMKV persistence, instant reads/writes, optional background sync when a backend appears later. The app works fully offline.",
+      "packages": ["@react-native-async-storage/async-storage"],
+      "detect": { "packages": ["@react-native-async-storage/async-storage", "expo-sqlite", "react-native-mmkv"] },
+      "pulls": [],
+      "setup": ["Persist domain data locally (AsyncStorage for KV, expo-sqlite for relational)", "Design IDs client-side (uuid) so sync can be added later", "Queue mutations for eventual sync"]
+    },
+    "onboarding": {
+      "title": "Onboarding",
+      "description": "First-run value pitch + progressive setup wizard (MultiStep pattern exists in all boilerplate templates).",
+      "packages": [],
+      "detect": { "anyScreens": ["onboarding"] },
+      "pulls": [{ "category": "onboarding" }],
+      "setup": ["Persist onboarding-complete flag; route around it on later launches"]
+    },
+    "permission-priming": {
+      "title": "Permission priming",
+      "description": "Explain-then-ask screens shown before each OS permission dialog (location, notifications, camera) — most templates ship location-permission and notification-permission screens.",
+      "packages": [],
+      "detect": { "anyScreens": ["permission"] },
+      "pulls": [{ "category": "permissions" }],
+      "setup": ["Never trigger the OS prompt from cold start; always prime first"]
+    },
+    "push-notifications": {
+      "title": "Push notifications",
+      "description": "Expo push tokens, notification settings screen, opt-in tied to permission priming.",
+      "packages": ["expo-notifications"],
+      "detect": { "packages": ["expo-notifications"] },
+      "pulls": [{ "category": "settings", "match": "notification-settings" }, { "category": "notifications" }],
+      "setup": ["Register token post-priming", "Deep-link taps to the relevant screen"]
+    },
+    "payments-iap": {
+      "title": "Payments (IAP via RevenueCat)",
+      "description": "Subscription/paywall through StoreKit/Play Billing with RevenueCat; restore purchases; price + term shown on the paywall (review requirement).",
+      "packages": ["react-native-purchases"],
+      "detect": { "packages": ["react-native-purchases"], "anyScreens": ["subscription", "paywall", "premium"] },
+      "pulls": [{ "category": "monetization" }],
+      "setup": ["Configure RevenueCat offerings", "Add Restore Purchases button", "Gate pro features via isProUser"]
+    },
+    "error-reporting": {
+      "title": "Crash & error reporting",
+      "description": "Sentry (or similar) wired into the ErrorBoundary and global handlers so beta crashes are visible.",
+      "packages": ["@sentry/react-native"],
+      "detect": { "packages": ["@sentry/react-native", "sentry-expo"] },
+      "pulls": [],
+      "setup": ["sentry-expo init; wrap root; upload sourcemaps in EAS build"]
+    },
+    "analytics": {
+      "title": "Product analytics",
+      "description": "Screen views + core-loop events (PostHog/Amplitude/etc.). Keep the event list tiny and intentional at first.",
+      "packages": ["posthog-react-native"],
+      "detect": { "packages": ["posthog-react-native", "@amplitude/analytics-react-native", "expo-firebase-analytics"] },
+      "pulls": [],
+      "setup": ["Track: first_open, onboarding_complete, core_action, subscribe"]
+    },
+    "deep-links": {
+      "title": "Deep links",
+      "description": "URL scheme + universal/app links so shares, notifications, and marketing land on the right screen (expo-router gives you paths for free).",
+      "packages": [],
+      "detect": { "appJson": ["scheme"] },
+      "pulls": [],
+      "setup": ["Set scheme in app.json", "Add associated domains / assetlinks for https links"]
+    },
+    "i18n": {
+      "title": "Internationalization scaffold",
+      "description": "Strings externalized into locales/ (en/es already present in the boilerplate templates) with a language settings screen.",
+      "packages": [],
+      "detect": { "files": ["app/locales/en.json", "locales/en.json"], "anyScreens": ["languages"] },
+      "pulls": [{ "category": "settings", "match": "languages" }],
+      "setup": ["Route all user-facing strings through useTranslation()"]
+    },
+    "legal": {
+      "title": "Legal & support",
+      "description": "Privacy policy, terms, and help/FAQ reachable in-app — reviewers look for these.",
+      "packages": [],
+      "detect": { "anyScreens": ["help", "privacy", "terms", "safety"] },
+      "pulls": [{ "category": "support" }],
+      "setup": ["Link privacy/terms in settings and on the paywall"]
+    },
+    "account-deletion": {
+      "title": "Account deletion",
+      "description": "In-app account deletion flow — Apple rejects account-based apps without it (Guideline 5.1.1(v)).",
+      "packages": [],
+      "detect": { "sources": ["deleteAccount", "delete-account"], "anyScreens": ["delete-account", "security"] },
+      "pulls": [{ "category": "settings", "match": "security" }],
+      "setup": ["Add Delete Account to settings → confirm → wipe backend + local state"]
+    },
+    "feedback": {
+      "title": "Feedback channel",
+      "description": "Help screen with contact/feedback so testers and users can reach you (all templates ship a help screen).",
+      "packages": [],
+      "detect": { "anyScreens": ["help"] },
+      "pulls": [{ "category": "support", "match": "help" }],
+      "setup": ["Wire mailto/form; consider shake-to-report in beta"]
+    },
+    "maps": {
+      "title": "Maps & location",
+      "description": "react-native-maps with live tracking patterns (drivo's DriveMap, propia/evento map screens).",
+      "packages": ["react-native-maps"],
+      "detect": { "packages": ["react-native-maps"] },
+      "pulls": [{ "category": "maps" }, { "category": "permissions", "match": "location-permission" }],
+      "setup": ["Platform API keys at build time; prime location permission first"]
+    },
+    "widgets": {
+      "title": "Home-screen widgets",
+      "description": "iOS widget target sharing a snapshot with the app (pattern in fitstake: targets/ + useWidgetSnapshot).",
+      "packages": [],
+      "detect": { "files": ["targets", "widgets"] },
+      "pulls": [],
+      "setup": ["Mirror fitstake's targets/ setup; write snapshot JSON the widget reads"]
+    }
+  },
+
+  "archetypes": {
+    "marketplace": { "title": "Marketplace / booking", "categories": ["commerce", "discovery", "detail", "collections", "reviews", "messaging"], "templates": ["propia", "evento"], "description": "Listings, detail, filters, checkout, reviews, buyer/seller chat" },
+    "directory": { "title": "Directory / listings", "categories": ["discovery", "detail", "collections", "maps", "reviews"], "templates": ["propia", "evento", "voyage"], "description": "Browsable catalog of places/things: search, filters, detail pages, favorites, map view — commerce optional" },
+    "social": { "title": "Social / community", "categories": ["home", "creation", "profile", "messaging", "notifications", "discovery"], "templates": ["feedy"], "description": "Feed, posting, profiles, DMs, follows, notifications" },
+    "game": { "title": "Mobile game (casual)", "categories": ["home", "planning", "analytics", "profile", "monetization"], "templates": ["casino-app", "fitstake"], "description": "Game loop screens, session history, streaks/leaderboards, wallet/currency, IAP; fitstake adds wager/competition mechanics" },
+    "tracker": { "title": "Tracker / habit / health", "categories": ["home", "creation", "analytics", "planning", "profile"], "templates": ["caloria-v2", "health-app", "fitstake"], "description": "Log entries, progress charts, streaks, goals; HealthKit patterns in fitstake" },
+    "ai-assistant": { "title": "AI assistant / chat", "categories": ["messaging", "home", "settings", "monetization"], "templates": ["luna", "voyage"], "description": "Chat thread, voice input, provider settings, suggestion chips, paywall; voyage adds tool-calling via API routes" },
+    "events": { "title": "Events", "categories": ["discovery", "detail", "commerce", "planning", "analytics"], "templates": ["evento"], "description": "Discovery, tickets, organizer dashboard, check-in" },
+    "on-demand": { "title": "On-demand / ride / delivery", "categories": ["maps", "home", "commerce", "messaging", "profile"], "templates": ["drivo"], "description": "Live map, request flow, tracking, driver/courier chat, wallet" },
+    "travel": { "title": "Travel / itinerary", "categories": ["planning", "discovery", "detail", "collections", "maps"], "templates": ["voyage", "travel-app", "propia"], "description": "Trips, bookings, itineraries, saved places, price tracking" },
+    "media-feed": { "title": "Media / content feed", "categories": ["home", "detail", "collections", "profile", "monetization"], "templates": ["feedy", "evento"], "description": "Content stream, detail view, saves, subscription gate" },
+    "utility": { "title": "Utility / single-purpose tool", "categories": ["home", "settings"], "templates": ["aurora", "uniwind"], "description": "One job done well (weather, converter, scanner); often no-auth + local-first" },
+    "saas-companion": { "title": "SaaS companion / dashboard", "categories": ["analytics", "home", "notifications", "settings", "messaging"], "templates": ["evento", "propia"], "description": "KPIs, alerts, quick actions against an existing product's API" }
+  }
+}

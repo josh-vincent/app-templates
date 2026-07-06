@@ -58,7 +58,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": []
@@ -81,7 +80,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": []
@@ -103,7 +101,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -128,7 +125,6 @@
         "contexts/ThemeContext.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": []
@@ -152,7 +148,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": []

@@ -3846,7 +3846,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-native-segmented-control/segmented-control",
         "@react-navigation/native",
         "expo-router",
@@ -3871,7 +3870,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-navigation/native",
         "expo-router",
         "lucide-react-native",
@@ -3898,7 +3896,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-navigation/native",
         "expo-router",
         "lucide-react-native",
@@ -3923,7 +3920,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-navigation/native",
         "expo-router",
         "lucide-react-native",
@@ -3952,7 +3948,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-linear-gradient",
         "expo-router",
         "lucide-react-native",
@@ -3995,7 +3990,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router",
         "lucide-react-native",
         "react-native-safe-area-context"
@@ -4891,7 +4885,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -4915,7 +4908,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -4938,7 +4930,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -4964,7 +4955,6 @@
         "contexts/ThemeContext.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -4989,7 +4979,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -6728,7 +6717,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@expo/vector-icons",
         "@jv/tokens",
@@ -6753,7 +6741,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "@react-native-async-storage/async-storage",
@@ -6780,8 +6767,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -6809,7 +6794,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -6833,8 +6817,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -6858,7 +6840,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -6884,7 +6865,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "convex",
@@ -6913,7 +6893,6 @@
         "convex/iapSkus.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "react-native-purchases",
@@ -6938,7 +6917,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@jv/tokens",
         "@jv/ui",
@@ -6967,8 +6945,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -7017,7 +6993,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-router"
       ],
@@ -7042,7 +7017,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -7069,7 +7043,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/ui",
         "expo-router",
         "react-native-safe-area-context"
@@ -7092,7 +7065,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -7119,7 +7091,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -7144,7 +7115,6 @@
         "app/hooks/useHealthSteps.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -7167,7 +7137,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-notifications",
@@ -7193,7 +7162,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-location",
         "expo-router",
@@ -7220,7 +7188,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -7245,7 +7212,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -7273,8 +7239,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-image-picker",
@@ -8161,7 +8125,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@expo/vector-icons",
         "@jv/tokens",
@@ -8186,7 +8149,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "@react-native-async-storage/async-storage",
@@ -8213,8 +8175,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8242,7 +8202,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8266,8 +8225,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8291,7 +8248,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8317,7 +8273,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "convex",
@@ -8346,7 +8301,6 @@
         "convex/iapSkus.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "react-native-purchases",
@@ -8371,7 +8325,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@jv/tokens",
         "@jv/ui",
@@ -8400,8 +8353,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -8450,7 +8401,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-router"
       ],
@@ -8475,7 +8425,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -8502,7 +8451,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/ui",
         "expo-router",
         "react-native-safe-area-context"
@@ -8525,7 +8473,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8552,7 +8499,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8577,7 +8523,6 @@
         "app/hooks/useHealthSteps.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8600,7 +8545,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-notifications",
@@ -8626,7 +8570,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-location",
         "expo-router",
@@ -8653,7 +8596,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -8678,7 +8620,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -8706,8 +8647,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-image-picker",
@@ -8733,7 +8672,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -8757,7 +8695,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -8782,7 +8719,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -8805,7 +8741,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -10585,7 +10520,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@expo/vector-icons",
         "expo-router",
@@ -10610,7 +10544,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -10635,7 +10568,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "react-native-safe-area-context"
       ],
       "assets": [],
@@ -10659,7 +10591,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -10679,7 +10610,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -10706,7 +10636,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -10733,7 +10662,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -10761,7 +10689,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -11856,7 +11783,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-router"
       ],
@@ -11892,7 +11818,6 @@
         "utils/travelerProfileStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@ai-sdk/react",
         "ai",
         "expo",
@@ -11925,7 +11850,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context",
         "react-native-svg"
@@ -11959,7 +11883,6 @@
         "utils/travelerProfileStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -11990,7 +11913,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@react-native-async-storage/async-storage",
         "expo-router",
         "react-native-safe-area-context"
@@ -12021,7 +11943,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -12047,7 +11968,6 @@
         "utils/bundleStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -12110,7 +12030,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12144,7 +12063,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@react-native-async-storage/async-storage",
         "@tanstack/react-query",
         "expo-image",
@@ -12182,7 +12100,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-linear-gradient",
         "expo-router",
@@ -12215,7 +12132,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@react-navigation/native",
         "expo-image-picker"
       ],
@@ -12245,7 +12161,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12277,7 +12192,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12331,9 +12245,7 @@
         "ThemedText"
       ],
       "modules": [],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": [],
       "template": "voyage"
     },
@@ -12362,7 +12274,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -12411,7 +12322,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12441,7 +12351,6 @@
         "widgets/TripStatusWidget.tsx"
       ],
       "packages": [
-        "@/lib",
         "expo-constants",
         "expo-local-authentication",
         "expo-maps",
@@ -12492,7 +12401,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12525,7 +12433,6 @@
         "utils/notificationsStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12554,7 +12461,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context"
       ],
@@ -12581,9 +12487,7 @@
       "modules": [
         "contexts/PremiumContext.tsx"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": [],
       "template": "voyage"
     },
@@ -12607,7 +12511,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-router",
         "react-native-safe-area-context"
@@ -12667,7 +12570,6 @@
         "contexts/ThemeColors.tsx"
       ],
       "packages": [
-        "@/lib",
         "@react-navigation/native"
       ],
       "assets": [],
@@ -12706,7 +12608,6 @@
         "utils/useShadow.ts"
       ],
       "packages": [
-        "@/lib",
         "@expo/vector-icons",
         "expo-linear-gradient",
         "expo-router"
@@ -12742,9 +12643,7 @@
         "contexts/ThemeColors.tsx",
         "utils/travelerProfileStorage.ts"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": [],
       "template": "voyage"
     },
@@ -12775,9 +12674,7 @@
         "utils/currencyStorage.ts",
         "utils/travelerProfileStorage.ts"
       ],
-      "packages": [
-        "@/lib"
-      ],
+      "packages": [],
       "assets": [],
       "template": "voyage"
     },
@@ -12800,7 +12697,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "expo-router"
       ],
       "assets": [],
@@ -12833,7 +12729,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-linear-gradient",
         "expo-router",
@@ -12871,7 +12766,6 @@
         "utils/staysStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "@tanstack/react-query",
         "expo-image",
         "expo-router",
@@ -12901,7 +12795,6 @@
         "utils/trackedStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-router",
         "react-native-safe-area-context",
         "react-native-svg"
@@ -12937,7 +12830,6 @@
         "utils/tripStorage.ts"
       ],
       "packages": [
-        "@/lib",
         "expo-image",
         "expo-router",
         "react-native-safe-area-context"
@@ -12964,7 +12856,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@expo/vector-icons",
         "expo-router",
         "react-native-safe-area-context"

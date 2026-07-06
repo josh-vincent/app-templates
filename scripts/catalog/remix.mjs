@@ -33,6 +33,7 @@ import path from 'node:path';
 import { readJson, writeJson, exists, fail, parseArgs, resolveTemplateRoot, CATALOG_DIR, REPO_ROOT } from './lib.mjs';
 import { pullScreen, resolveScreenArg, collectDependencyClosure } from './pull.mjs';
 import { STYLE_KEYWORDS } from './style.mjs';
+import { loadFates, parseIdeaForFates, effectiveCapabilities, resolveCapabilityPulls } from './fates.mjs';
 
 const STOPWORDS = new Set(['a', 'an', 'the', 'and', 'or', 'with', 'for', 'app', 'of', 'to', 'in', 'that', 'my', 'like', 'then', 'style']);
 // Domain synonyms so plain-English ideas hit catalog tags/categories.
@@ -69,8 +70,22 @@ function expandIdea(idea) {
   return [...expanded];
 }
 
-function suggest(idea, { max = 12, style = {} } = {}) {
+function suggest(idea, { max = 12, style = {}, fate = null, archetypes = [], capabilities = [] } = {}) {
   const index = loadIndex();
+  const fatesData = loadFates();
+
+  // Fate / archetype / capability requests from the idea text + explicit flags
+  const parsed = parseIdeaForFates(idea);
+  fate = fate || parsed.fate;
+  archetypes = [...new Set([...archetypes, ...parsed.archetypes])];
+  capabilities = [...new Set([...capabilities, ...parsed.capabilities])];
+  if (fate && !fatesData.fates[fate]) fail(`unknown fate "${fate}" (have: ${Object.keys(fatesData.fates).join(', ')})`);
+  for (const a of archetypes) if (!fatesData.archetypes[a]) fail(`unknown archetype "${a}" (have: ${Object.keys(fatesData.archetypes).join(', ')})`);
+  for (const c of capabilities) if (!fatesData.capabilities[c]) fail(`unknown capability "${c}" (have: ${Object.keys(fatesData.capabilities).join(', ')})`);
+  const effCaps = effectiveCapabilities(fatesData, fate, capabilities);
+  const archetypeCategories = new Set(archetypes.flatMap((a) => fatesData.archetypes[a].categories));
+  const archetypeTemplates = new Set(archetypes.flatMap((a) => fatesData.archetypes[a].templates));
+  const noAuth = effCaps.includes('no-auth');
 
   // Style words in the idea text ("glass", "apple", "flat", "pill"…) become
   // identifier requests, merged with explicit --style/--layout/… flags.
@@ -100,16 +115,19 @@ function suggest(idea, { max = 12, style = {} } = {}) {
         if (carriers[t.name]) score += 2 + Math.min(carriers[t.name], 5) / 5;
       }
       if (styleTokens.layout && t.layouts.some((l) => `layout:${l.type}` === styleTokens.layout)) score += 3;
+      if (archetypeTemplates.has(t.name)) score += 4;
       return { name: t.name, score, template: t };
     })
     .sort((a, b) => b.score - a.score);
   const base = templateScores[0];
 
-  // Score screens; always keep an auth + onboarding baseline from the base template
+  // Score screens: idea keywords + archetype categories; drop auth screens for no-auth
   const scored = index.screens
+    .filter((s) => !(noAuth && s.category === 'auth'))
     .map((s) => {
       const hay = [s.id, s.category, s.path, ...(s.tags || [])].join(' ').toLowerCase();
       let score = scoreOf(hay);
+      if (archetypeCategories.has(s.category)) score += 1;
       if (s.template === base.name && score > 0) score += 0.5; // prefer staying coherent with the base
       return { ...s, _score: score };
     })
@@ -141,12 +159,41 @@ function suggest(idea, { max = 12, style = {} } = {}) {
     base: { template: base.name, layout: preferredLayout?.path || null },
     design: { from: base.name },
     style: Object.keys(styleTokens).length ? styleTokens : undefined,
+    fate: fate || undefined,
+    archetypes: archetypes.length ? archetypes : undefined,
+    capabilities: effCaps.length ? effCaps : undefined,
     screens: picks.map((s) => ({ template: s.template, screen: s.path, category: s.category })),
     variants: [
       { name: 'lean', remove: picks.slice(Math.ceil(max / 2)).map((s) => ({ template: s.template, screen: s.path })), add: [], notes: 'Smaller MVP cut' },
     ],
     alternatives: templateScores.slice(1, 4).filter((t) => t.score > 0).map((t) => t.name),
   };
+
+  // Capability pulls: append the screens each effective capability needs
+  const have = new Set(plan.screens.map((s) => s.template + '|' + s.screen));
+  for (const capName of effCaps) {
+    for (const pick of resolveCapabilityPulls(fatesData.capabilities[capName], index, base.name)) {
+      if (noAuth && /login|signup|forgot/.test(pick.screen)) continue;
+      const key = pick.template + '|' + pick.screen;
+      if (have.has(key)) continue;
+      have.add(key);
+      plan.screens.push({ ...pick, via: `capability:${capName}` });
+    }
+  }
+
+  // Fate-required screen categories: fill any still missing from the base template
+  if (fate) {
+    const coveredCats = new Set(plan.screens.map((s) => s.category));
+    for (const cat of fatesData.fates[fate].screenCategories || []) {
+      if (coveredCats.has(cat) || (noAuth && cat === 'auth')) continue;
+      const candidates = index.screens.filter((s) => s.category === cat && !(noAuth && /login|signup|forgot/.test(s.path)));
+      const pick = candidates.find((s) => s.template === base.name) || candidates[0];
+      if (pick && !have.has(pick.template + '|' + pick.path)) {
+        plan.screens.push({ template: pick.template, screen: pick.path, category: pick.category, via: `fate:${fate}` });
+        coveredCats.add(cat);
+      }
+    }
+  }
   return { plan, templateScores: templateScores.slice(0, 5) };
 }
 
@@ -276,7 +323,70 @@ function applyPlan(planFile, args) {
     report.push(`${dryRun ? 'would pull' : 'pulled'} ${entry.template}:${screenRel}${entry.as ? ` as ${entry.as}` : ''} (${copied} files, ${skipped} already present)`);
   }
 
-  // 3. REMIX.md provenance report in the target
+  // 3. Capability packages join the gap list BEFORE scaffolding so they get
+  // merged into the seeded package.json with real versions.
+  const fatesData = loadFates();
+  const effCaps = effectiveCapabilities(fatesData, plan.fate, plan.capabilities || []);
+  for (const capName of effCaps) {
+    (fatesData.capabilities[capName]?.packages || []).forEach((p) => allMissing.add(p));
+  }
+
+  // Project scaffold: when the target has no package.json, seed it from the
+  // base template (correct dependency versions) plus config files, then merge
+  // in gap packages with versions looked up across the source templates.
+  if (baseRoot && !exists(path.join(targetRoot, 'package.json'))) {
+    const CONFIG_FILES = ['tsconfig.json', 'babel.config.js', 'babel.config.cjs', 'metro.config.js', 'metro.config.cjs', 'app.json', 'postcss.config.js', 'postcss.config.mjs', 'prettier.config.js', 'nativewind-env.d.ts', 'app-env.d.ts', '.gitignore'];
+    for (const cf of CONFIG_FILES) {
+      const src = path.join(baseRoot, cf);
+      const dest = path.join(targetRoot, cf);
+      if (exists(src) && !exists(dest)) {
+        if (!dryRun) fs.copyFileSync(src, dest);
+        provenance.push({ what: 'config', from: plan.base.template, path: cf });
+      }
+    }
+    if (!dryRun) {
+      const basePkg = readJson(path.join(baseRoot, 'package.json'));
+      basePkg.name = plan.name || path.basename(targetRoot);
+      // Resolve gap packages to real versions from whichever source template has them
+      const registry = readJson(path.join(CATALOG_DIR, 'registry.json'));
+      const sourcePkgs = Object.values(registry.templates)
+        .map((e) => path.resolve(REPO_ROOT, e.localPath, 'package.json'))
+        .filter(exists)
+        .map(readJson);
+      for (const p of [...allMissing]) {
+        if (basePkg.dependencies?.[p]) {
+          allMissing.delete(p);
+          continue;
+        }
+        const version = sourcePkgs.map((sp) => sp.dependencies?.[p] || sp.devDependencies?.[p]).find(Boolean);
+        (basePkg.dependencies ||= {})[p] = version || '*';
+        allMissing.delete(p);
+      }
+      fs.writeFileSync(path.join(targetRoot, 'package.json'), JSON.stringify(basePkg, null, 2) + '\n');
+    }
+    provenance.push({ what: 'config', from: plan.base.template, path: 'package.json (renamed, gap packages merged)' });
+    report.push(`${dryRun ? 'would scaffold' : 'scaffolded'} project files from ${plan.base.template}`);
+  }
+
+  // 4. Fate: capability setup + checklist for the REMIX.md report
+  const capLines = [];
+  for (const capName of effCaps) {
+    const cap = fatesData.capabilities[capName];
+    if (!cap) continue;
+    capLines.push(`### ${cap.title}`, '', ...(cap.setup || []).map((s) => `- [ ] ${s}`), '');
+  }
+  const checklistLines = plan.fate
+    ? [
+        `## Fate: ${fatesData.fates[plan.fate].title}`,
+        '',
+        ...(fatesData.fates[plan.fate].checklist || []).map((c) => `- [ ] ${c.text}`),
+        '',
+        `Audit anytime: \`node scripts/catalog/check.mjs <this-app> --fate ${plan.fate}${effCaps.length ? ` --capabilities ${effCaps.join(',')}` : ''}\``,
+        '',
+      ]
+    : [];
+
+  // 4. REMIX.md provenance report in the target
   const md = [
     `# Remix: ${plan.name || path.basename(String(planFile))}`,
     '',
@@ -291,6 +401,8 @@ function applyPlan(planFile, args) {
     '',
     allMissing.size ? `## Packages to install\n\n\`\`\`\nnpm install ${[...allMissing].sort().join(' ')}\n\`\`\`` : '',
     '',
+    ...checklistLines,
+    ...(capLines.length ? ['## Capability setup', '', ...capLines] : []),
     '## Next steps',
     '',
     '- Wire pulled screens into the layout (`app/(tabs)/_layout.tsx` tab triggers / stack routes).',
@@ -332,7 +444,13 @@ if (cmd === 'suggest') {
       style[key] = args[facet].includes(':') ? args[facet] : `${ns}:${args[facet]}`;
     }
   }
-  const { plan, templateScores } = suggest(idea, { max: args.max ? parseInt(args.max, 10) : 12, style });
+  const { plan, templateScores } = suggest(idea, {
+    max: args.max ? parseInt(args.max, 10) : 12,
+    style,
+    fate: typeof args.fate === 'string' ? args.fate : null,
+    archetypes: typeof args.archetype === 'string' ? args.archetype.split(',').map((s) => s.trim()) : [],
+    capabilities: typeof args.capabilities === 'string' ? args.capabilities.split(',').map((s) => s.trim()) : [],
+  });
   console.error('template match scores: ' + templateScores.map((t) => `${t.name}=${t.score}`).join('  '));
   if (args.out) {
     writeJson(path.resolve(args.out), plan);

@@ -83,7 +83,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@expo/vector-icons",
         "@jv/tokens",
@@ -107,7 +106,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "@react-native-async-storage/async-storage",
@@ -133,8 +131,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -161,7 +157,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -184,8 +179,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -208,7 +201,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -233,7 +225,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "convex",
@@ -261,7 +252,6 @@
         "convex/iapSkus.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "react-native-purchases",
@@ -285,7 +275,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@convex-dev/auth",
         "@jv/tokens",
         "@jv/ui",
@@ -313,8 +302,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -361,7 +348,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-router"
       ],
@@ -385,7 +371,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -411,7 +396,6 @@
       ],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/ui",
         "expo-router",
         "react-native-safe-area-context"
@@ -433,7 +417,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -459,7 +442,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -483,7 +465,6 @@
         "app/hooks/useHealthSteps.ts"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -505,7 +486,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-notifications",
@@ -530,7 +510,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "expo-location",
         "expo-router",
@@ -556,7 +535,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-router",
@@ -580,7 +558,6 @@
       "components": [],
       "modules": [],
       "packages": [
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-linear-gradient",
@@ -607,8 +584,6 @@
         "convex/_generated/api.js"
       ],
       "packages": [
-        "@/convex",
-        "@/lib",
         "@jv/tokens",
         "@jv/ui",
         "expo-image-picker",

@@ -94,6 +94,11 @@ export function isAssetPath(p) {
   return ASSET_EXTS.some((e) => p.endsWith(e));
 }
 
+/** True for project-local specifiers that must never be treated as npm packages. */
+export function isLocalSpec(spec) {
+  return spec.startsWith('@/') || spec.startsWith('.') || spec.startsWith('~/');
+}
+
 export function packageNameOf(spec) {
   if (spec.startsWith('@')) return spec.split('/').slice(0, 2).join('/');
   return spec.split('/')[0];

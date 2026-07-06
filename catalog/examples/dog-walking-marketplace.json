@@ -5,6 +5,9 @@
   "base": { "template": "propia", "layout": "app/(tabs)/_layout.tsx" },
   "design": { "from": "propia" },
   "style": { "screens": "style:soft-rounded", "buttons": "buttons:pill", "settings": "settings:toggles" },
+  "fate": "mvp",
+  "archetypes": ["marketplace"],
+  "capabilities": ["skeleton-shell", "auth", "onboarding"],
   "screens": [
     { "template": "propia", "screen": "app/(tabs)/listings.tsx", "category": "commerce" },
     { "template": "propia", "screen": "app/screens/product-detail.tsx", "category": "detail" },

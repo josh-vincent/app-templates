@@ -43,9 +43,18 @@ pnpm catalog:search --ids                         # list all identifiers (see ca
 # 3. Compare variations before building
 pnpm catalog:remix diff plan.json --variants base,lean
 
-# 4. Materialize the winner (screens + components + theme + assets + REMIX.md report)
+# 4. Materialize the winner (screens + components + theme + assets + scaffold + REMIX.md report)
 pnpm catalog:remix apply plan.json --to ../my-app
+
+# 5. Audit against its fate (spike | mvp | beta | store-ready) — CI-gate friendly
+pnpm catalog:check ../my-app --plan plan.json
 ```
+
+Plans understand **fates** (mvp / beta / app-store-ready checklists),
+**capabilities** (ota-updates, skeleton-shell with all error screens,
+local-first, no-auth, payments, push, …) and **archetypes** (game, directory,
+marketplace, social, tracker, …) straight from the idea text — see
+[`catalog/FATES.md`](./catalog/FATES.md).
 
 Full guide: [`catalog/README.md`](./catalog/README.md) ·
 Browsable index: [`catalog/CATALOG.md`](./catalog/CATALOG.md) ·
