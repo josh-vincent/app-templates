@@ -1,0 +1,848 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "feedy",
+  "title": "Feedy — Social Media Feed",
+  "description": "Thank you for buying the Feedy template!",
+  "source": {
+    "repo": "ExpoStartup/feedy",
+    "localPath": "../feedy"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "app/contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(drawer)/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(drawer)/(tabs)"
+    },
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "drawer",
+      "group": "(drawer)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "drawer:tabs:index",
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "CardScroller",
+        "DrawerButton",
+        "Header",
+        "SocialPost",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:notifications",
+      "path": "app/(drawer)/(tabs)/notifications.tsx",
+      "route": "/notifications",
+      "kind": "tab",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": [
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:profile",
+      "path": "app/(drawer)/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "Header",
+        "Masonry",
+        "Placeholder",
+        "SocialPost",
+        "ThemeTabs",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-sharing"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:search",
+      "path": "app/(drawer)/(tabs)/search.tsx",
+      "route": "/search",
+      "kind": "tab",
+      "category": "discovery",
+      "tags": [
+        "search"
+      ],
+      "components": [
+        "AnimatedView",
+        "Icon",
+        "Masonry",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:add-post",
+      "path": "app/screens/add-post.tsx",
+      "route": "/screens/add-post",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "add",
+        "post"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "CardScroller",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:analytics",
+      "path": "app/screens/analytics.tsx",
+      "route": "/screens/analytics",
+      "kind": "screen",
+      "category": "analytics",
+      "tags": [
+        "analytics"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "AnimatedBarChart",
+        "BalanceChart",
+        "Button",
+        "DrawerButton",
+        "Header",
+        "Icon",
+        "ListLink",
+        "Section",
+        "SmallChartCard",
+        "SmallCircleCard",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat:id",
+      "path": "app/screens/chat/[id].tsx",
+      "route": "/screens/chat/[id]",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Header",
+        "Icon",
+        "PageLoader",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat:list",
+      "path": "app/screens/chat/list.tsx",
+      "route": "/screens/chat/list",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat",
+        "list"
+      ],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:edit-profile",
+      "path": "app/screens/edit-profile.tsx",
+      "route": "/screens/edit-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "edit",
+        "profile"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "Switch",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:forgot-password",
+      "path": "app/screens/forgot-password.tsx",
+      "route": "/screens/forgot-password",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "forgot",
+        "password"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/wallpaper.webp"
+      ]
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Divider",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:languages",
+      "path": "app/screens/languages.tsx",
+      "route": "/screens/languages",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "languages"
+      ],
+      "components": [
+        "AnimatedView",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "country-flag-icons",
+        "react-native-svg"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:link",
+      "path": "app/screens/link.tsx",
+      "route": "/screens/link",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "link"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Section",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": [
+        "assets/img/qr.png"
+      ]
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/wallpaper.webp"
+      ]
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-settings",
+      "path": "app/screens/notification-settings.tsx",
+      "route": "/screens/notification-settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "notification",
+        "settings"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:onboarding-start",
+      "path": "app/screens/onboarding-start.tsx",
+      "route": "/screens/onboarding-start",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "start"
+      ],
+      "components": [
+        "Icon",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/onboarding.jpg"
+      ]
+    },
+    {
+      "id": "screens:onboarding",
+      "path": "app/screens/onboarding.tsx",
+      "route": "/screens/onboarding",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Chip",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Selectable",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker",
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg",
+        "assets/img/user-4.jpg"
+      ]
+    },
+    {
+      "id": "screens:post-detail",
+      "path": "app/screens/post-detail.tsx",
+      "route": "/screens/post-detail",
+      "kind": "screen",
+      "category": "detail",
+      "tags": [
+        "post",
+        "detail"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Header",
+        "Icon",
+        "SocialPost",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "react-native-actions-sheet",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:search",
+      "path": "app/screens/search.tsx",
+      "route": "/screens/search",
+      "kind": "screen",
+      "category": "discovery",
+      "tags": [
+        "search"
+      ],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg",
+        "assets/img/user-4.jpg"
+      ]
+    },
+    {
+      "id": "screens:security",
+      "path": "app/screens/security.tsx",
+      "route": "/screens/security",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "security"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Expandable",
+        "Header",
+        "Input",
+        "ListLink",
+        "Section",
+        "Switch",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:settings",
+      "path": "app/screens/settings.tsx",
+      "route": "/screens/settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "components": [
+        "Header",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemeToggle"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/wallpaper.webp"
+      ]
+    },
+    {
+      "id": "screens:subscription",
+      "path": "app/screens/subscription.tsx",
+      "route": "/screens/subscription",
+      "kind": "screen",
+      "category": "monetization",
+      "tags": [
+        "subscription"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "Switch",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:user-profile",
+      "path": "app/screens/user-profile.tsx",
+      "route": "/screens/user-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "user",
+        "profile"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "Masonry",
+        "Placeholder",
+        "SocialPost",
+        "ThemeScroller",
+        "ThemeTabs",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-sharing",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg"
+      ]
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionButton",
+      "ActionSheetThemed",
+      "ActionTab",
+      "AnimatedBarChart",
+      "AnimatedView",
+      "Avatar",
+      "BalanceChart",
+      "BarChartCard",
+      "Button",
+      "Calendar",
+      "Card",
+      "CardPreview",
+      "CardScroller",
+      "Chip",
+      "ChipExamples",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "CustomDrawerContent",
+      "DrawerButton",
+      "Expandable",
+      "Favorite",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "Masonry",
+      "MultiStep",
+      "MultipleImagePicker",
+      "PageLoader",
+      "Placeholder",
+      "ProgressBar",
+      "Review",
+      "SafeWrapper",
+      "ScreenContent",
+      "ServiceVariantCreator",
+      "ShowRating",
+      "SkeletonLoader",
+      "SliderCard",
+      "SmallChartCard",
+      "SmallCircleCard",
+      "SmallProgressBarCard",
+      "SocialPost",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "TransactionItem"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 26,
+    "layouts": 3,
+    "components": 73
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Social feed, posts, chat DMs, profiles and creator analytics"
+}

@@ -1,0 +1,915 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "evento",
+  "title": "Evento — Events Discovery & Ticketing",
+  "description": "A frontend-only React Native events template with 40+ components, mock data, and no backend required.",
+  "source": {
+    "repo": "ExpoStartup/evento",
+    "localPath": "../evento"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-maps",
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:analytics",
+      "path": "app/(tabs)/analytics.tsx",
+      "route": "/analytics",
+      "kind": "tab",
+      "category": "analytics",
+      "tags": [
+        "analytics"
+      ],
+      "components": [
+        "AnimatedView",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "tabs:create",
+      "path": "app/(tabs)/create.tsx",
+      "route": "/create",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "create"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Header",
+        "Icon",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "tabs:dashboard",
+      "path": "app/(tabs)/dashboard.tsx",
+      "route": "/dashboard",
+      "kind": "tab",
+      "category": "analytics",
+      "tags": [
+        "dashboard"
+      ],
+      "components": [
+        "AnimatedView",
+        "Card",
+        "Header",
+        "Icon",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/AuthContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "tabs:index",
+      "path": "app/(tabs)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "AnimatedView",
+        "Card",
+        "CardScroller",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-blur",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/banner-home.jpg"
+      ]
+    },
+    {
+      "id": "tabs:map",
+      "path": "app/(tabs)/map.tsx",
+      "route": "/map",
+      "kind": "tab",
+      "category": "maps",
+      "tags": [
+        "map"
+      ],
+      "components": [
+        "Header",
+        "Icon",
+        "ImageCarousel",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "react-native-actions-sheet",
+        "react-native-maps"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "CreatorSwitch",
+        "Header",
+        "Icon",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/AuthContext.tsx",
+        "contexts/CreatorModeContext.tsx"
+      ],
+      "packages": [],
+      "assets": [
+        "assets/img/thomino.jpg"
+      ]
+    },
+    {
+      "id": "tabs:search",
+      "path": "app/(tabs)/search.tsx",
+      "route": "/search",
+      "kind": "tab",
+      "category": "discovery",
+      "tags": [
+        "search"
+      ],
+      "components": [
+        "AnimatedView",
+        "CardScroller",
+        "Chip",
+        "Input",
+        "MediaList",
+        "Section",
+        "ThemeScroller"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:tickets",
+      "path": "app/(tabs)/tickets.tsx",
+      "route": "/tickets",
+      "kind": "tab",
+      "category": "commerce",
+      "tags": [
+        "tickets"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:bookmarks",
+      "path": "app/screens/bookmarks.tsx",
+      "route": "/screens/bookmarks",
+      "kind": "screen",
+      "category": "collections",
+      "tags": [
+        "bookmarks"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "MediaList",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:create-event",
+      "path": "app/screens/create-event.tsx",
+      "route": "/screens/create-event",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "create",
+        "event"
+      ],
+      "components": [
+        "AnimatedView",
+        "DatePicker",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Select",
+        "Selectable",
+        "Switch",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:earnings",
+      "path": "app/screens/earnings.tsx",
+      "route": "/screens/earnings",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "earnings"
+      ],
+      "components": [
+        "Button",
+        "Chip",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:edit-profile",
+      "path": "app/screens/edit-profile.tsx",
+      "route": "/screens/edit-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "edit",
+        "profile"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "ThemeScroller"
+      ],
+      "modules": [
+        "contexts/AuthContext.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:event-detail",
+      "path": "app/screens/event-detail.tsx",
+      "route": "/screens/event-detail",
+      "kind": "screen",
+      "category": "detail",
+      "tags": [
+        "event",
+        "detail"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Card",
+        "CardScroller",
+        "Icon",
+        "Section",
+        "ShowRating",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-blur",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg",
+        "assets/img/user-4.jpg"
+      ]
+    },
+    {
+      "id": "screens:event-templates",
+      "path": "app/screens/event-templates.tsx",
+      "route": "/screens/event-templates",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "event",
+        "templates"
+      ],
+      "components": [
+        "Button",
+        "CardScroller",
+        "Chip",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:filters",
+      "path": "app/screens/filters.tsx",
+      "route": "/screens/filters",
+      "kind": "screen",
+      "category": "discovery",
+      "tags": [
+        "filters"
+      ],
+      "components": [
+        "Button",
+        "Chip",
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "@react-native-community/slider",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:get-ticket",
+      "path": "app/screens/get-ticket.tsx",
+      "route": "/screens/get-ticket",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "get",
+        "ticket"
+      ],
+      "components": [
+        "AnimatedView",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Selectable",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:interests",
+      "path": "app/screens/interests.tsx",
+      "route": "/screens/interests",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "interests"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:languages",
+      "path": "app/screens/languages.tsx",
+      "route": "/screens/languages",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "languages"
+      ],
+      "components": [
+        "AnimatedView",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "country-flag-icons",
+        "react-native-svg"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:my-events",
+      "path": "app/screens/my-events.tsx",
+      "route": "/screens/my-events",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "my",
+        "events"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Chip",
+        "Header",
+        "Icon",
+        "ProgressBar",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-settings",
+      "path": "app/screens/notification-settings.tsx",
+      "route": "/screens/notification-settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "notification",
+        "settings"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:notifications",
+      "path": "app/screens/notifications.tsx",
+      "route": "/screens/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:onboarding",
+      "path": "app/screens/onboarding.tsx",
+      "route": "/screens/onboarding",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding"
+      ],
+      "components": [
+        "AnimatedView",
+        "Chip",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Switch",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:settings",
+      "path": "app/screens/settings.tsx",
+      "route": "/screens/settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "components": [
+        "Header",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemeToggle"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:subscription",
+      "path": "app/screens/subscription.tsx",
+      "route": "/screens/subscription",
+      "kind": "screen",
+      "category": "monetization",
+      "tags": [
+        "subscription"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Chip",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:user-profile",
+      "path": "app/screens/user-profile.tsx",
+      "route": "/screens/user-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "user",
+        "profile"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "Card",
+        "Chip",
+        "Header",
+        "Icon",
+        "Review",
+        "Section",
+        "ThemeTabs",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/thomino.jpg",
+        "assets/img/user-1.jpg",
+        "assets/img/user-2.jpg",
+        "assets/img/user-3.jpg",
+        "assets/img/user-4.jpg"
+      ]
+    },
+    {
+      "id": "screens:view-ticket",
+      "path": "app/screens/view-ticket.tsx",
+      "route": "/screens/view-ticket",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "view",
+        "ticket"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "data/mockEvents.ts"
+      ],
+      "packages": [
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/qr.png"
+      ]
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/banner-1.jpg",
+        "assets/img/banner-2.jpg",
+        "assets/img/banner-home.jpg"
+      ]
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedView",
+      "Avatar",
+      "BalanceChart",
+      "BarChartCard",
+      "Button",
+      "Card",
+      "CardPreview",
+      "CardScroller",
+      "Chip",
+      "CreatorSwitch",
+      "Expandable",
+      "Favorite",
+      "FeaturedCourse",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MediaList",
+      "MultiStep",
+      "Placeholder",
+      "ProgressBar",
+      "Review",
+      "ShowRating",
+      "SkeletonLoader",
+      "SmallChartCard",
+      "SmallCircleCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText"
+    ],
+    "forms": [
+      "DatePicker",
+      "Input",
+      "Select",
+      "Selectable",
+      "Switch"
+    ],
+    "layout": [
+      "Divider",
+      "List",
+      "ListItem",
+      "Section"
+    ]
+  },
+  "counts": {
+    "screens": 31,
+    "layouts": 2,
+    "components": 43
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Event discovery, ticketing, organizer dashboard and analytics; frontend-only with mock data"
+}

@@ -1,0 +1,822 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "caloria-v2",
+  "title": "Caloria — Fitness & Nutrition Tracker",
+  "description": "Thank you for buying the Caloria Fitness template!",
+  "source": {
+    "repo": "ExpoStartup/caloria-v2",
+    "localPath": "../caloria-v2"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "app/contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(drawer)/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(drawer)/(tabs)"
+    },
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "drawer",
+      "group": "(drawer)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "drawer:tabs:index",
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon",
+        "Section",
+        "SmallChartCard",
+        "SmallCircleCard",
+        "SmallProgressBarCard",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-svg"
+      ],
+      "assets": [
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:meals",
+      "path": "app/(drawer)/(tabs)/meals.tsx",
+      "route": "/meals",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "meals"
+      ],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon",
+        "ProgressBar",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:progress",
+      "path": "app/(drawer)/(tabs)/progress.tsx",
+      "route": "/progress",
+      "kind": "tab",
+      "category": "analytics",
+      "tags": [
+        "progress"
+      ],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-chart-kit",
+        "react-native-reanimated"
+      ],
+      "assets": [
+        "assets/img/progress-2.png",
+        "assets/img/progress.png",
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "drawer:tabs:workouts",
+      "path": "app/(drawer)/(tabs)/workouts.tsx",
+      "route": "/workouts",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "workouts"
+      ],
+      "components": [
+        "Avatar",
+        "CardScroller",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemeScroller",
+        "ThemedText",
+        "WorkoutBarChart"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:add-meal",
+      "path": "app/screens/add-meal.tsx",
+      "route": "/screens/add-meal",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "add",
+        "meal"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:add-water",
+      "path": "app/screens/add-water.tsx",
+      "route": "/screens/add-water",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "add",
+        "water"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:add-weight",
+      "path": "app/screens/add-weight.tsx",
+      "route": "/screens/add-weight",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "add",
+        "weight"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:add-workout",
+      "path": "app/screens/add-workout.tsx",
+      "route": "/screens/add-workout",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "add",
+        "workout"
+      ],
+      "components": [
+        "Button",
+        "CardScroller",
+        "Chip",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:devices",
+      "path": "app/screens/devices.tsx",
+      "route": "/screens/devices",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "devices"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/smartwatch.png"
+      ]
+    },
+    {
+      "id": "screens:edit-profile",
+      "path": "app/screens/edit-profile.tsx",
+      "route": "/screens/edit-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "edit",
+        "profile"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:forgot-password",
+      "path": "app/screens/forgot-password.tsx",
+      "route": "/screens/forgot-password",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "forgot",
+        "password"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "lottie-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Divider",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/onboarding-1.jpg"
+      ]
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notifications",
+      "path": "app/screens/notifications.tsx",
+      "route": "/screens/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "List",
+        "ListItem",
+        "SkeletonLoader",
+        "TabScreenWrapper",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:onboarding-start",
+      "path": "app/screens/onboarding-start.tsx",
+      "route": "/screens/onboarding-start",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "start"
+      ],
+      "components": [
+        "Button",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-status-bar",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/welcome.jpg"
+      ]
+    },
+    {
+      "id": "screens:onboarding",
+      "path": "app/screens/onboarding.tsx",
+      "route": "/screens/onboarding",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding"
+      ],
+      "components": [
+        "Button",
+        "Calendar",
+        "Chip",
+        "DatePicker",
+        "Icon",
+        "MultiStep",
+        "Section",
+        "Select",
+        "Selectable",
+        "ThemeScroller",
+        "ThemedText",
+        "TimePicker"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-ruler-picker",
+        "react-native-wheel-picker-expo"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile",
+      "path": "app/screens/profile.tsx",
+      "route": "/screens/profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "Header",
+        "ListLink",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/user-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Icon",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-blur",
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "lottie-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/wallpaper-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:subscription",
+      "path": "app/screens/subscription.tsx",
+      "route": "/screens/subscription",
+      "kind": "screen",
+      "category": "monetization",
+      "tags": [
+        "subscription"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:weight-entry",
+      "path": "app/screens/weight-entry.tsx",
+      "route": "/screens/weight-entry",
+      "kind": "screen",
+      "category": "creation",
+      "tags": [
+        "weight",
+        "entry"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeFooter",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "components": [
+        "Icon",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/onboarding-1.jpg",
+        "assets/img/onboarding-2.jpg",
+        "assets/img/wallpaper-3.jpg"
+      ]
+    },
+    {
+      "id": "screens:workout-detail",
+      "path": "app/screens/workout-detail.tsx",
+      "route": "/screens/workout-detail",
+      "kind": "screen",
+      "category": "detail",
+      "tags": [
+        "workout",
+        "detail"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/muscles.png"
+      ]
+    },
+    {
+      "id": "screens:workout-tracker",
+      "path": "app/screens/workout-tracker.tsx",
+      "route": "/screens/workout-tracker",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "workout",
+        "tracker"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "ActionTab",
+      "AnimatedView",
+      "Avatar",
+      "BarChartCard",
+      "Button",
+      "Calendar",
+      "Card",
+      "CardScroller",
+      "Chip",
+      "ChipExamples",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "CustomDrawerContent",
+      "DrawerButton",
+      "Expandable",
+      "Favorite",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MultiStep",
+      "MultipleImagePicker",
+      "PageLoader",
+      "Placeholder",
+      "ProgressBar",
+      "Review",
+      "SafeWrapper",
+      "ScreenContent",
+      "ServiceVariantCreator",
+      "ShowRating",
+      "SkeletonLoader",
+      "SliderCard",
+      "SmallChartCard",
+      "SmallCircleCard",
+      "SmallProgressBarCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "WorkoutBarChart",
+      "WorkoutStreak"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 25,
+    "layouts": 3,
+    "components": 68
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Calorie/meal logging, workouts, weight progress; drawer+tabs shell with onboarding and subscription flows"
+}

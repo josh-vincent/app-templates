@@ -1,0 +1,1132 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "voyage",
+  "title": "Voyage — Flight Booking + AI Assistant",
+  "description": "Flight-booking travel app with an AI assistant.",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./voyage"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "expo-api-routes",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "ai",
+      "lottie-react-native",
+      "expo-notifications",
+      "@tanstack/react-query"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "stack",
+      "group": "(tabs)/(home)"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:home:index",
+      "path": "app/(tabs)/(home)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "AnimatedView",
+        "GeoGlyph",
+        "Icon",
+        "SearchBar",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/FlightSearchContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "utils/trackedStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@tanstack/react-query",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:chat",
+      "path": "app/(tabs)/chat.tsx",
+      "route": "/chat",
+      "kind": "tab",
+      "category": "messaging",
+      "tags": [
+        "chat"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/discoverStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/trackedStorage.ts",
+        "utils/travelerProfileStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@ai-sdk/react",
+        "ai",
+        "expo",
+        "expo-router",
+        "react-native-markdown-display",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:favorites",
+      "path": "app/(tabs)/favorites.tsx",
+      "route": "/favorites",
+      "kind": "tab",
+      "category": "collections",
+      "tags": [
+        "favorites"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/trackedStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context",
+        "react-native-svg"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/PremiumContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "utils/trackedStorage.ts",
+        "utils/travelerProfileStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:trips",
+      "path": "app/(tabs)/trips.tsx",
+      "route": "/trips",
+      "kind": "tab",
+      "category": "planning",
+      "tags": [
+        "trips"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/trackedStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@react-native-async-storage/async-storage",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:bundles:id",
+      "path": "app/screens/bundles/[id].tsx",
+      "route": "/screens/bundles/[id]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "bundles"
+      ],
+      "components": [
+        "BundleDealsSheet",
+        "DateRangeCalendar",
+        "GeoGlyph",
+        "Icon"
+      ],
+      "modules": [
+        "utils/bundleStorage.ts",
+        "utils/discoverStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/trackedStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-image",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:bundles:index",
+      "path": "app/screens/bundles/index.tsx",
+      "route": "/screens/bundles",
+      "kind": "screen",
+      "category": "home",
+      "tags": [
+        "bundles"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon"
+      ],
+      "modules": [
+        "utils/bundleStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-image",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat:id",
+      "path": "app/screens/chat/[id].tsx",
+      "route": "/screens/chat/[id]",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Header",
+        "Icon",
+        "PageLoader",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat:list",
+      "path": "app/screens/chat/list.tsx",
+      "route": "/screens/chat/list",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat",
+        "list"
+      ],
+      "components": [
+        "Avatar",
+        "Header",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:checkout",
+      "path": "app/screens/checkout.tsx",
+      "route": "/screens/checkout",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "checkout"
+      ],
+      "components": [
+        "Chip",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/notificationsStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/trackedStorage.ts",
+        "utils/travelerProfileStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@react-native-async-storage/async-storage",
+        "@tanstack/react-query",
+        "expo-image",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:discover:city",
+      "path": "app/screens/discover/[city].tsx",
+      "route": "/screens/discover/[city]",
+      "kind": "screen",
+      "category": "discovery",
+      "tags": [
+        "discover",
+        "city"
+      ],
+      "components": [
+        "ActivityDetailSheet",
+        "AnimatedView",
+        "GeoGlyph",
+        "Icon",
+        "TripPickerSheet"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/discoverStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-image",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:edit-profile",
+      "path": "app/screens/edit-profile.tsx",
+      "route": "/screens/edit-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "edit",
+        "profile"
+      ],
+      "components": [
+        "Chip",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@react-navigation/native",
+        "expo-image-picker"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:empty-screen",
+      "path": "app/screens/empty-screen.tsx",
+      "route": "/screens/empty-screen",
+      "kind": "screen",
+      "category": "showcase",
+      "tags": [
+        "empty",
+        "screen"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Header",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:filters",
+      "path": "app/screens/filters.tsx",
+      "route": "/screens/filters",
+      "kind": "screen",
+      "category": "discovery",
+      "tags": [
+        "filters"
+      ],
+      "components": [
+        "Button",
+        "Chip",
+        "Header",
+        "Section",
+        "Slider",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText",
+        "TimePicker"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:forgot-password",
+      "path": "app/screens/forgot-password.tsx",
+      "route": "/screens/forgot-password",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "forgot",
+        "password"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Divider",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:itinerary:tripId",
+      "path": "app/screens/itinerary/[tripId].tsx",
+      "route": "/screens/itinerary/[tripId]",
+      "kind": "screen",
+      "category": "planning",
+      "tags": [
+        "itinerary",
+        "tripid"
+      ],
+      "components": [
+        "AnimatedView",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/discoverStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "components": [
+        "Header",
+        "Input"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:native-features.ios",
+      "path": "app/screens/native-features.ios.tsx",
+      "route": "/screens/native-features.ios",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "native",
+        "features",
+        "ios"
+      ],
+      "components": [
+        "Header",
+        "Icon"
+      ],
+      "modules": [
+        "widgets/TripStatusWidget.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-constants",
+        "expo-local-authentication",
+        "expo-maps",
+        "expo-notifications"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:native-features",
+      "path": "app/screens/native-features.tsx",
+      "route": "/screens/native-features",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "native",
+        "features"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notifications",
+      "path": "app/screens/notifications.tsx",
+      "route": "/screens/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "List",
+        "ListItem",
+        "SkeletonLoader",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/notificationsStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:order-detail",
+      "path": "app/screens/order-detail.tsx",
+      "route": "/screens/order-detail",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "order",
+        "detail"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/trackedStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:premium",
+      "path": "app/screens/premium.tsx",
+      "route": "/screens/premium",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "premium"
+      ],
+      "components": [
+        "Header",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/PremiumContext.tsx"
+      ],
+      "packages": [
+        "@/lib"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:product-detail",
+      "path": "app/screens/product-detail.tsx",
+      "route": "/screens/product-detail",
+      "kind": "screen",
+      "category": "detail",
+      "tags": [
+        "product",
+        "detail"
+      ],
+      "components": [
+        "GeoGlyph",
+        "Icon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@tanstack/react-query",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile:currency",
+      "path": "app/screens/profile/currency.tsx",
+      "route": "/screens/profile/currency",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile",
+        "currency"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Header",
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/currencyStorage.ts"
+      ],
+      "packages": [
+        "@react-navigation/native"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile:notifications",
+      "path": "app/screens/profile/notifications.tsx",
+      "route": "/screens/profile/notifications",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile",
+        "notifications"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "@react-navigation/native"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile:payments",
+      "path": "app/screens/profile/payments.tsx",
+      "route": "/screens/profile/payments",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile",
+        "payments"
+      ],
+      "components": [
+        "Button",
+        "CardScroller",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemedText",
+        "Toggle"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/paymentMethodsStorage.ts",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile:traveler-details",
+      "path": "app/screens/profile/traveler-details.tsx",
+      "route": "/screens/profile/traveler-details",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile",
+        "traveler",
+        "details"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "Input",
+        "ThemedText",
+        "Toast"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/travelerProfileStorage.ts"
+      ],
+      "packages": [
+        "@/lib"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:settings",
+      "path": "app/screens/settings.tsx",
+      "route": "/screens/settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "components": [
+        "AnimatedView",
+        "Header",
+        "Icon",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/currencyStorage.ts",
+        "utils/travelerProfileStorage.ts"
+      ],
+      "packages": [
+        "@/lib"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "components": [
+        "Header",
+        "Input"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:stays:id",
+      "path": "app/screens/stays/[id].tsx",
+      "route": "/screens/stays/[id]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "stays"
+      ],
+      "components": [
+        "BundlePickerSheet",
+        "GeoGlyph",
+        "Icon",
+        "ImageCarousel",
+        "TripPickerSheet"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/staysStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@tanstack/react-query",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:stays:index",
+      "path": "app/screens/stays/index.tsx",
+      "route": "/screens/stays",
+      "kind": "screen",
+      "category": "home",
+      "tags": [
+        "stays"
+      ],
+      "components": [
+        "AnimatedView",
+        "Counter",
+        "DateRangeCalendar",
+        "GeoGlyph",
+        "Icon",
+        "StayCompareSheet",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/staysStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@tanstack/react-query",
+        "expo-image",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:trends:id",
+      "path": "app/screens/trends/[id].tsx",
+      "route": "/screens/trends/[id]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "trends"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/trackedStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context",
+        "react-native-svg"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:trip-detail",
+      "path": "app/screens/trip-detail.tsx",
+      "route": "/screens/trip-detail",
+      "kind": "screen",
+      "category": "detail",
+      "tags": [
+        "trip",
+        "detail"
+      ],
+      "components": [
+        "ActivityDetailSheet",
+        "GeoGlyph",
+        "Icon",
+        "ThemedText",
+        "TripMap"
+      ],
+      "modules": [
+        "utils/discoverStorage.ts",
+        "utils/staysStorage.ts",
+        "utils/trackedStorage.ts",
+        "utils/tripStorage.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-image",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "components": [
+        "Icon",
+        "ThemeToggle"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@expo/vector-icons",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [
+    {
+      "path": "app/api/chat+api.ts",
+      "route": "/api/chat"
+    },
+    {
+      "path": "app/api/flights/offer+api.ts",
+      "route": "/api/flights/offer"
+    },
+    {
+      "path": "app/api/flights/order+api.ts",
+      "route": "/api/flights/order"
+    },
+    {
+      "path": "app/api/flights/search+api.ts",
+      "route": "/api/flights/search"
+    },
+    {
+      "path": "app/api/stays/quote+api.ts",
+      "route": "/api/stays/quote"
+    },
+    {
+      "path": "app/api/stays/search+api.ts",
+      "route": "/api/stays/search"
+    }
+  ],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "ActiveTripCompanion",
+      "ActivityDetailSheet",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "BundleDealsSheet",
+      "BundlePickerSheet",
+      "Button",
+      "Card",
+      "CardScroller",
+      "Chip",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "DateRangeCalendar",
+      "DevPrefillBar",
+      "Expandable",
+      "Favorite",
+      "FloatingButton",
+      "GeoGlyph",
+      "Header",
+      "HomeTabs",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MultiStep",
+      "MultipleImagePicker",
+      "PageLoader",
+      "Placeholder",
+      "Review",
+      "SafeWrapper",
+      "ScreenContent",
+      "SearchBar",
+      "ShowRating",
+      "SkeletonLoader",
+      "SliderCard",
+      "StayCompareSheet",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "TripMap",
+      "TripPickerSheet",
+      "ReactNativeGrabGate"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 37,
+    "layouts": 3,
+    "components": 69
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Real flight search/booking via Duffel, AI trip assistant via Expo API routes, price tracking and itineraries"
+}

@@ -1,0 +1,676 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "fitstake",
+  "title": "FitStake — Step Wagering",
+  "description": "product",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./fitstake"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "convex",
+    "typescript": true,
+    "usesSharedLibrary": true,
+    "notable": [
+      "react-native-purchases",
+      "react-native-health",
+      "expo-notifications",
+      "@tanstack/react-query"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(auth)/_layout.tsx",
+      "type": "stack",
+      "group": "(auth)"
+    },
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "stack",
+      "group": "(tabs)/(home)"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/(tabs)/challenges/_layout.tsx",
+      "type": "stack",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    },
+    {
+      "path": "app/friends/_layout.tsx",
+      "type": "stack",
+      "group": null
+    },
+    {
+      "path": "app/onboarding/_layout.tsx",
+      "type": "stack",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "auth:sign-in",
+      "path": "app/(auth)/sign-in.tsx",
+      "route": "/sign-in",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "auth",
+        "sign",
+        "in"
+      ],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@convex-dev/auth",
+        "@expo/vector-icons",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:home:index",
+      "path": "app/(tabs)/(home)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [
+        "app/hooks/useHealthSteps.ts",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "@react-native-async-storage/async-storage",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:challenges:id",
+      "path": "app/(tabs)/challenges/[id].tsx",
+      "route": "/challenges/[id]",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "challenges"
+      ],
+      "components": [
+        "H2HSideBySide"
+      ],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/convex",
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:challenges:create",
+      "path": "app/(tabs)/challenges/create.tsx",
+      "route": "/challenges/create",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "challenges",
+        "create"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:challenges:index",
+      "path": "app/(tabs)/challenges/index.tsx",
+      "route": "/challenges",
+      "kind": "tab",
+      "category": "home",
+      "tags": [
+        "challenges"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/convex",
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:jackpot",
+      "path": "app/(tabs)/jackpot.tsx",
+      "route": "/jackpot",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "jackpot"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [],
+      "modules": [
+        "app/hooks/useFitStakeProGate.ts",
+        "app/hooks/useHealthSteps.ts",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "convex",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:wallet",
+      "path": "app/(tabs)/wallet.tsx",
+      "route": "/wallet",
+      "kind": "tab",
+      "category": "commerce",
+      "tags": [
+        "wallet"
+      ],
+      "components": [
+        "RevenueCatProvider"
+      ],
+      "modules": [
+        "contexts/DevPersonaContext.tsx",
+        "convex/_generated/api.js",
+        "convex/iapSkus.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "react-native-purchases",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "dev",
+      "path": "app/dev.tsx",
+      "route": "/dev",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "dev"
+      ],
+      "components": [],
+      "modules": [
+        "contexts/DevPersonaContext.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@convex-dev/auth",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "friends:id",
+      "path": "app/friends/[id].tsx",
+      "route": "/friends/[id]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "friends"
+      ],
+      "components": [
+        "H2HSideBySide"
+      ],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/convex",
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "friends:index",
+      "path": "app/friends/index.tsx",
+      "route": "/friends",
+      "kind": "screen",
+      "category": "home",
+      "tags": [
+        "friends"
+      ],
+      "components": [
+        "FeedSegment",
+        "FriendsTopSwitcher",
+        "LeaderboardSegment",
+        "LiveSegment",
+        "ManageSegment"
+      ],
+      "modules": [],
+      "packages": [
+        "@jv/ui",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [
+        "contexts/DevPersonaContext.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "join:ref",
+      "path": "app/join/[ref].tsx",
+      "route": "/join/[ref]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "join",
+        "ref"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "moments-preview",
+      "path": "app/moments-preview.tsx",
+      "route": "/moments-preview",
+      "kind": "screen",
+      "category": "reviews",
+      "tags": [
+        "moments",
+        "preview"
+      ],
+      "components": [
+        "FitStakeMomentCard",
+        "PermissionsMomentModal"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "notifications",
+      "path": "app/notifications.tsx",
+      "route": "/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:first-bet",
+      "path": "app/onboarding/first-bet.tsx",
+      "route": "/onboarding/first-bet",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "first",
+        "bet"
+      ],
+      "components": [],
+      "modules": [
+        "app/hooks/useHealthHistory.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:health",
+      "path": "app/onboarding/health.tsx",
+      "route": "/onboarding/health",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "health"
+      ],
+      "components": [],
+      "modules": [
+        "app/hooks/useHealthSteps.ts"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:notifications",
+      "path": "app/onboarding/notifications.tsx",
+      "route": "/onboarding/notifications",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "notifications"
+      ],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-notifications",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:region",
+      "path": "app/onboarding/region.tsx",
+      "route": "/onboarding/region",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "region"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "expo-location",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:username",
+      "path": "app/onboarding/username.tsx",
+      "route": "/onboarding/username",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "onboarding",
+        "username"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "onboarding:welcome",
+      "path": "app/onboarding/welcome.tsx",
+      "route": "/onboarding/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "onboarding",
+        "welcome"
+      ],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-linear-gradient",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "proof:participantId",
+      "path": "app/proof/[participantId].tsx",
+      "route": "/proof/[participantId]",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "proof",
+        "participantid"
+      ],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "@/convex",
+        "@/lib",
+        "@jv/tokens",
+        "@jv/ui",
+        "expo-image-picker",
+        "expo-location",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "Button",
+      "Card",
+      "CardScroller",
+      "Chip",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "ErrorBoundary",
+      "FitStakeMomentCard",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ListLink",
+      "MultiStep",
+      "PaceRing",
+      "PageLoader",
+      "Placeholder",
+      "RevenueCatProvider",
+      "SafeWrapper",
+      "ScreenContent",
+      "Skeleton",
+      "SkeletonLoader",
+      "SliderCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "ReactNativeGrabGate",
+      "FriendStakeRow",
+      "FriendsActivityCard",
+      "FriendsLeaderboard",
+      "FriendsTopSwitcher",
+      "H2HSideBySide",
+      "WhatsLeftBreakdown",
+      "FeedSegment",
+      "LeaderboardSegment",
+      "LiveSegment",
+      "ManageSegment",
+      "CelebrationsHost",
+      "PermissionsMomentModal",
+      "PokeBurst",
+      "RunningOutModal",
+      "StreakModal",
+      "WonModal"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 22,
+    "layouts": 7,
+    "components": 72
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Stake virtual money on step goals; Convex backend, HealthKit verification, jackpot pools — uses @jv/* packages"
+}

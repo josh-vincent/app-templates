@@ -1,0 +1,516 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "luna",
+  "title": "Luna — AI Chat Assistant",
+  "description": "A beautiful, production-ready AI chat template built with Expo and React Native.",
+  "source": {
+    "repo": "ExpoStartup/luna",
+    "localPath": "../luna"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-maps",
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "app/contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "drawer",
+      "group": "(drawer)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "drawer:index",
+      "path": "app/(drawer)/index.tsx",
+      "route": "/",
+      "kind": "screen",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "BotSwitch",
+        "ChatInput",
+        "Conversation",
+        "DrawerButton",
+        "Header",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "services/ai.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:lottie",
+      "path": "app/(drawer)/lottie.tsx",
+      "route": "/lottie",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "lottie"
+      ],
+      "components": [
+        "BotSwitch",
+        "ChatInput",
+        "Conversation",
+        "DrawerButton",
+        "Header",
+        "Sphere"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "services/ai.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:mic-animation",
+      "path": "app/(drawer)/mic-animation.tsx",
+      "route": "/mic-animation",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "mic",
+        "animation"
+      ],
+      "components": [
+        "AiCircle",
+        "BotSwitch",
+        "ChatInput",
+        "Conversation",
+        "DrawerButton",
+        "Header"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "services/ai.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:suggestions",
+      "path": "app/(drawer)/suggestions.tsx",
+      "route": "/suggestions",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "suggestions"
+      ],
+      "components": [
+        "BotSwitch",
+        "CardScroller",
+        "ChatInput",
+        "Conversation",
+        "DrawerButton",
+        "Header",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "services/ai.ts"
+      ],
+      "packages": [
+        "expo-linear-gradient",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:ai-voice",
+      "path": "app/screens/ai-voice.tsx",
+      "route": "/screens/ai-voice",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "ai",
+        "voice"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText",
+        "VoiceSelectCard"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "lottie-react-native"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:edit-profile",
+      "path": "app/screens/edit-profile.tsx",
+      "route": "/screens/edit-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "edit",
+        "profile"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:forgot-password",
+      "path": "app/screens/forgot-password.tsx",
+      "route": "/screens/forgot-password",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "forgot",
+        "password"
+      ],
+      "components": [
+        "Button",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Expandable",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "components": [
+        "Button",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:profile",
+      "path": "app/screens/profile.tsx",
+      "route": "/screens/profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Header",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [],
+      "assets": [
+        "assets/img/thomino.jpg"
+      ]
+    },
+    {
+      "id": "screens:provider",
+      "path": "app/screens/provider.tsx",
+      "route": "/screens/provider",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "provider"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "ShowRating",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": [
+        "assets/img/logo-3.png"
+      ]
+    },
+    {
+      "id": "screens:search-form",
+      "path": "app/screens/search-form.tsx",
+      "route": "/screens/search-form",
+      "kind": "screen",
+      "category": "discovery",
+      "tags": [
+        "search",
+        "form"
+      ],
+      "components": [
+        "CardScroller",
+        "Chip",
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/logo-1.png",
+        "assets/img/logo-2.png",
+        "assets/img/logo-3.png",
+        "assets/img/logo-4.png",
+        "assets/img/logo-5.png"
+      ]
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "components": [
+        "Button",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:subscription",
+      "path": "app/screens/subscription.tsx",
+      "route": "/screens/subscription",
+      "kind": "screen",
+      "category": "monetization",
+      "tags": [
+        "subscription"
+      ],
+      "components": [
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "components": [
+        "Icon",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "app/contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-router",
+        "expo-status-bar",
+        "lottie-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/lottie/sphere.json",
+        "assets/lottie/waves.json"
+      ]
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AiCircle",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "BotSwitch",
+      "BusinessSwitch",
+      "Button",
+      "Card",
+      "CardScroller",
+      "ChatInput",
+      "Chip",
+      "ChipExamples",
+      "ConfirmationModal",
+      "Container",
+      "Conversation",
+      "CustomCard",
+      "CustomDrawerContent",
+      "DrawerButton",
+      "Expandable",
+      "Favorite",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MockConversation",
+      "MultiStep",
+      "MultipleImagePicker",
+      "NewChatInput",
+      "PageLoader",
+      "Placeholder",
+      "ProductVariantCreator",
+      "Review",
+      "SafeWrapper",
+      "ScreenContent",
+      "ShimmerText",
+      "ShowRating",
+      "SkeletonLoader",
+      "SliderCard",
+      "Sphere",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "VoiceSelectCard"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 15,
+    "layouts": 2,
+    "components": 70
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "AI chat with OpenAI/Gemini/Claude providers, voice input, suggestions and subscription paywall"
+}

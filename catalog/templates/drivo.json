@@ -1,0 +1,694 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "drivo",
+  "title": "Drivo — Ride Hailing",
+  "description": "A React Native ride hailing app built with Expo, NativeWind, and TypeScript. Includes live Google Maps tracking with real road routing, animated search, driver simulation, ride tracking, and 40+ UI components.",
+  "source": {
+    "repo": "ExpoStartup/drivo",
+    "localPath": "../drivo"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-maps",
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:account",
+      "path": "app/(tabs)/account.tsx",
+      "route": "/account",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "account"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "tabs:activity",
+      "path": "app/(tabs)/activity.tsx",
+      "route": "/activity",
+      "kind": "tab",
+      "category": "planning",
+      "tags": [
+        "activity"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/premium.png",
+        "assets/img/standard.png",
+        "assets/img/thomino.jpg",
+        "assets/img/user-4.jpg",
+        "assets/img/user-5.jpg",
+        "assets/img/user-6.jpg",
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "tabs:home",
+      "path": "app/(tabs)/home.tsx",
+      "route": "/home",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "Avatar",
+        "DriveMap",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/RideSheetContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-blur",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-keyboard-controller",
+        "react-native-maps",
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/car-black.png",
+        "assets/img/car-white.png",
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Header",
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:search",
+      "path": "app/(tabs)/search.tsx",
+      "route": "/search",
+      "kind": "tab",
+      "category": "discovery",
+      "tags": [
+        "search"
+      ],
+      "components": [
+        "AnimatedView",
+        "Card",
+        "CardScroller",
+        "Chip",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:business-profile",
+      "path": "app/screens/business-profile.tsx",
+      "route": "/screens/business-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "business",
+        "profile"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Input",
+        "Select",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-keyboard-controller"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat",
+      "path": "app/screens/chat.tsx",
+      "route": "/screens/chat",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-keyboard-controller",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "screens:driver-onboarding",
+      "path": "app/screens/driver-onboarding.tsx",
+      "route": "/screens/driver-onboarding",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "driver",
+        "onboarding"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Select",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:earn",
+      "path": "app/screens/earn.tsx",
+      "route": "/screens/earn",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "earn"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Header",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Expandable",
+        "Header",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "components": [
+        "Button",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-settings",
+      "path": "app/screens/notification-settings.tsx",
+      "route": "/screens/notification-settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "notification",
+        "settings"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:notifications",
+      "path": "app/screens/notifications.tsx",
+      "route": "/screens/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:order-tracking",
+      "path": "app/screens/order-tracking.tsx",
+      "route": "/screens/order-tracking",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "order",
+        "tracking"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "DriveMap",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-maps",
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/car-black.png",
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "screens:review",
+      "path": "app/screens/review.tsx",
+      "route": "/screens/review",
+      "kind": "screen",
+      "category": "reviews",
+      "tags": [
+        "review"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Chip",
+        "Header",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/user-6.jpg"
+      ]
+    },
+    {
+      "id": "screens:safety",
+      "path": "app/screens/safety.tsx",
+      "route": "/screens/safety",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "safety"
+      ],
+      "components": [
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:settings",
+      "path": "app/screens/settings.tsx",
+      "route": "/screens/settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "ListLink",
+        "Selectable",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "contexts/ThemeContext.tsx"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "components": [
+        "Icon",
+        "MultiStep",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker",
+        "expo-router",
+        "expo-status-bar",
+        "nativewind"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:wallet",
+      "path": "app/screens/wallet.tsx",
+      "route": "/screens/wallet",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "wallet"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "lottie-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/lottie/welcome-1.json",
+        "assets/lottie/welcome-2.json"
+      ]
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedView",
+      "Avatar",
+      "BalanceChart",
+      "BarChartCard",
+      "Button",
+      "Card",
+      "CardPreview",
+      "CardScroller",
+      "Chip",
+      "CustomDrawerContent",
+      "DrawerButton",
+      "DriveMap",
+      "Expandable",
+      "Favorite",
+      "FeaturedCourse",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MultiStep",
+      "Placeholder",
+      "ProgressBar",
+      "Review",
+      "RideSheet",
+      "ShowRating",
+      "SkeletonLoader",
+      "SmallChartCard",
+      "SmallCircleCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText"
+    ],
+    "forms": [
+      "DatePicker",
+      "Input",
+      "Select",
+      "Selectable",
+      "Switch"
+    ],
+    "layout": [
+      "Divider",
+      "List",
+      "ListItem",
+      "Section"
+    ]
+  },
+  "counts": {
+    "screens": 23,
+    "layouts": 2,
+    "components": 45
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Uber-style ride hailing with live Google Maps routing, driver simulation, wallet and safety flows"
+}

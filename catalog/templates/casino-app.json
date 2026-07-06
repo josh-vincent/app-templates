@@ -1,0 +1,189 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "casino-app",
+  "title": "LuckyChips — Casino Games",
+  "description": "> **This is the product doc for the LuckyChips example app that ships with > the template** — not your project's product doc. When the template's > rename script runs, every occurrence of `LuckyChips` in this file is > substituted with your code name, which makes the doc nonsense if your > project i",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./casino-app"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:blackjack",
+      "path": "app/(tabs)/blackjack.tsx",
+      "route": "/blackjack",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "blackjack"
+      ],
+      "components": [
+        "BalanceHeader"
+      ],
+      "modules": [
+        "contexts/BalanceContext.tsx",
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:history",
+      "path": "app/(tabs)/history.tsx",
+      "route": "/history",
+      "kind": "tab",
+      "category": "planning",
+      "tags": [
+        "history"
+      ],
+      "components": [
+        "BalanceHeader"
+      ],
+      "modules": [
+        "contexts/BalanceContext.tsx",
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:home",
+      "path": "app/(tabs)/home.tsx",
+      "route": "/home",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "BalanceHeader",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/BalanceContext.tsx",
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "BalanceHeader"
+      ],
+      "modules": [
+        "contexts/BalanceContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "contexts/ThemeContext.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:slots",
+      "path": "app/(tabs)/slots.tsx",
+      "route": "/slots",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "slots"
+      ],
+      "components": [
+        "BalanceHeader",
+        "Icon"
+      ],
+      "modules": [
+        "contexts/BalanceContext.tsx",
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@/lib",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "BalanceHeader",
+      "ErrorBoundary",
+      "Icon",
+      "TabButton"
+    ],
+    "forms": [],
+    "layout": []
+  },
+  "counts": {
+    "screens": 6,
+    "layouts": 2,
+    "components": 4
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Casino mini-games (blackjack, slots) with betting history"
+}

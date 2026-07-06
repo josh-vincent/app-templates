@@ -1,0 +1,289 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "aurora",
+  "title": "Aurora — Weather",
+  "description": "> **This is the product doc for the Aurora example app that ships with > the template** — not your project's product doc. When the template's > rename script runs, every occurrence of `Aurora` in this file is > substituted with your code name, which makes the doc nonsense if your > project isn't a f",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./aurora"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "convex",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-purchases",
+      "react-native-health",
+      "expo-notifications",
+      "@tanstack/react-query"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(drawer)/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(drawer)/(tabs)"
+    },
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "drawer",
+      "group": "(drawer)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "drawer:tabs:hourly",
+      "path": "app/(drawer)/(tabs)/hourly.tsx",
+      "route": "/hourly",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "hourly"
+      ],
+      "components": [
+        "GlassPrimitives",
+        "SkyBackground",
+        "WeatherIcon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@react-native-segmented-control/segmented-control",
+        "@react-navigation/native",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:tabs:index",
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "components": [
+        "GlassPrimitives",
+        "SkyBackground",
+        "WeatherIcon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@react-navigation/native",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:tabs:map",
+      "path": "app/(drawer)/(tabs)/map.tsx",
+      "route": "/map",
+      "kind": "tab",
+      "category": "maps",
+      "tags": [
+        "map"
+      ],
+      "components": [
+        "GlassOverlays",
+        "GlassPrimitives",
+        "SkyBackground",
+        "WeatherIcon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@react-navigation/native",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "drawer:tabs:profile",
+      "path": "app/(drawer)/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "components": [
+        "GlassPrimitives",
+        "SkyBackground"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "@react-navigation/native",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "add-location",
+      "path": "app/add-location.tsx",
+      "route": "/add-location",
+      "kind": "screen",
+      "category": "maps",
+      "tags": [
+        "add",
+        "location"
+      ],
+      "components": [
+        "GlassOverlays",
+        "GlassPrimitives",
+        "WeatherIcon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-linear-gradient",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "location:id",
+      "path": "app/location/[id].tsx",
+      "route": "/location/[id]",
+      "kind": "screen",
+      "category": "maps",
+      "tags": [
+        "location"
+      ],
+      "components": [
+        "GlassOverlays",
+        "GlassPrimitives",
+        "SkyBackground",
+        "WeatherIcon"
+      ],
+      "modules": [],
+      "packages": [
+        "@/lib",
+        "expo-router",
+        "lucide-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "overlays",
+      "path": "app/overlays.tsx",
+      "route": "/overlays",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "overlays"
+      ],
+      "components": [
+        "GlassOverlays",
+        "GlassPrimitives"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-linear-gradient",
+        "lucide-react-native"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "Button",
+      "CardScroller",
+      "Chip",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "ErrorBoundary",
+      "FloatingButton",
+      "GlassOverlays",
+      "GlassPrimitives",
+      "Header",
+      "Icon",
+      "ListLink",
+      "MultiStep",
+      "PageLoader",
+      "Placeholder",
+      "SafeWrapper",
+      "ScreenContent",
+      "Skeleton",
+      "SkeletonLoader",
+      "SkyBackground",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "WeatherIcon"
+    ],
+    "forms": [],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "counts": {
+    "screens": 8,
+    "layouts": 3,
+    "components": 43
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "curation": {},
+  "idea": "Weather app with hourly forecast, map overlays and saved locations"
+}
