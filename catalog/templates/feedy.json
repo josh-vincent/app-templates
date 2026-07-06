@@ -54,6 +54,10 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Avatar",
@@ -83,6 +87,11 @@
       "tags": [
         "notifications"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Avatar",
@@ -108,6 +117,11 @@
       "category": "profile",
       "tags": [
         "profile"
+      ],
+      "traits": [
+        "pill",
+        "outlined",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -139,6 +153,11 @@
       "tags": [
         "search"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Icon",
@@ -162,6 +181,12 @@
       "tags": [
         "add",
         "post"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -197,6 +222,12 @@
       "tags": [
         "analytics"
       ],
+      "traits": [
+        "soft-rounded",
+        "elevated",
+        "outlined",
+        "charts"
+      ],
       "components": [
         "ActionSheetThemed",
         "AnimatedBarChart",
@@ -231,6 +262,12 @@
       "tags": [
         "chat"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "native-adaptive",
+        "flat"
+      ],
       "components": [
         "ActionSheetThemed",
         "Avatar",
@@ -259,6 +296,11 @@
         "chat",
         "list"
       ],
+      "traits": [
+        "pill",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Avatar",
         "Header",
@@ -285,6 +327,12 @@
         "edit",
         "profile"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Button",
         "Header",
@@ -308,6 +356,12 @@
       "tags": [
         "forgot",
         "password"
+      ],
+      "traits": [
+        "gradient",
+        "soft-rounded",
+        "native-adaptive",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -336,6 +390,11 @@
       "tags": [
         "help"
       ],
+      "traits": [
+        "pill",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Button",
@@ -358,6 +417,9 @@
       "category": "settings",
       "tags": [
         "languages"
+      ],
+      "traits": [
+        "outlined"
       ],
       "components": [
         "AnimatedView",
@@ -383,6 +445,10 @@
       "tags": [
         "link"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined"
+      ],
       "components": [
         "Button",
         "Header",
@@ -407,6 +473,10 @@
         "location",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -427,6 +497,13 @@
       "category": "auth",
       "tags": [
         "login"
+      ],
+      "traits": [
+        "gradient",
+        "pill",
+        "soft-rounded",
+        "native-adaptive",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -459,6 +536,10 @@
         "notification",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -480,6 +561,7 @@
         "notification",
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "Section",
@@ -499,6 +581,11 @@
       "tags": [
         "onboarding",
         "start"
+      ],
+      "traits": [
+        "gradient",
+        "pill",
+        "flat"
       ],
       "components": [
         "Icon",
@@ -524,6 +611,12 @@
       "category": "onboarding",
       "tags": [
         "onboarding"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "Avatar",
@@ -558,6 +651,13 @@
         "post",
         "detail"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "native-adaptive",
+        "flat"
+      ],
       "components": [
         "ActionSheetThemed",
         "Avatar",
@@ -591,6 +691,11 @@
       "tags": [
         "search"
       ],
+      "traits": [
+        "pill",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Avatar",
         "Header",
@@ -623,6 +728,9 @@
       "tags": [
         "security"
       ],
+      "traits": [
+        "outlined"
+      ],
       "components": [
         "ActionSheetThemed",
         "Button",
@@ -650,6 +758,7 @@
       "tags": [
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "ListLink",
@@ -669,6 +778,13 @@
       "category": "auth",
       "tags": [
         "signup"
+      ],
+      "traits": [
+        "gradient",
+        "pill",
+        "soft-rounded",
+        "native-adaptive",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -700,6 +816,12 @@
       "tags": [
         "subscription"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "ActionSheetThemed",
         "Button",
@@ -728,6 +850,12 @@
       "tags": [
         "user",
         "profile"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -837,12 +965,561 @@
       "Stack"
     ]
   },
+  "componentTraits": {
+    "ActionButton": [
+      "pill"
+    ],
+    "ActionTab": [
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "AnimatedBarChart": [
+      "pill",
+      "native-adaptive",
+      "animated",
+      "charts"
+    ],
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "BalanceChart": [
+      "charts"
+    ],
+    "BarChartCard": [
+      "animated",
+      "charts"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined",
+      "flat"
+    ],
+    "Calendar": [
+      "soft-rounded"
+    ],
+    "Card": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "sharp",
+      "elevated"
+    ],
+    "CardPreview": [
+      "gradient",
+      "soft-rounded"
+    ],
+    "CardScroller": [
+      "flat"
+    ],
+    "Chip": [
+      "pill",
+      "flat"
+    ],
+    "ChipExamples": [
+      "pill"
+    ],
+    "ConfirmationModal": [
+      "native-adaptive",
+      "flat"
+    ],
+    "CustomCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "native-adaptive"
+    ],
+    "CustomDrawerContent": [
+      "pill",
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "DrawerButton": [
+      "pill"
+    ],
+    "Expandable": [
+      "pill",
+      "outlined",
+      "native-adaptive",
+      "animated"
+    ],
+    "Favorite": [
+      "outlined"
+    ],
+    "FloatingButton": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "native-adaptive",
+      "animated"
+    ],
+    "Icon": [
+      "pill",
+      "flat"
+    ],
+    "ImageCarousel": [
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "ListLink": [
+      "pill",
+      "outlined"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "MultipleImagePicker": [
+      "flat"
+    ],
+    "PageLoader": [
+      "flat"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ProgressBar": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "SafeWrapper": [
+      "flat"
+    ],
+    "ServiceVariantCreator": [
+      "pill",
+      "flat"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated",
+      "flat"
+    ],
+    "SliderCard": [
+      "soft-rounded",
+      "flat"
+    ],
+    "SmallChartCard": [
+      "outlined",
+      "charts",
+      "flat"
+    ],
+    "SmallCircleCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "outlined",
+      "animated"
+    ],
+    "SmallProgressBarCard": [
+      "pill",
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "SocialPost": [
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "TabButton": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "TabScreenWrapper": [
+      "flat"
+    ],
+    "ThemeFlatList": [
+      "flat"
+    ],
+    "ThemeFooter": [
+      "flat"
+    ],
+    "ThemeScroller": [
+      "flat"
+    ],
+    "ThemeTabs": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Toast": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Toggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "TransactionItem": [
+      "pill",
+      "flat"
+    ],
+    "Checkbox": [
+      "outlined"
+    ],
+    "Counter": [
+      "pill",
+      "flat"
+    ],
+    "DatePicker": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "FormTabs": [
+      "flat"
+    ],
+    "Input": [
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "Select": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Selectable": [
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "Slider": [
+      "elevated",
+      "animated"
+    ],
+    "Switch": [
+      "pill",
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "TextInput": [
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "TimePicker": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "ListItem": [
+      "outlined",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "buttons": [
+      {
+        "component": "ActionButton",
+        "path": "components/ActionButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill"
+        ]
+      },
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "cards": [
+      {
+        "component": "Card",
+        "path": "components/Card.tsx",
+        "variants": [
+          "classic",
+          "overlay",
+          "compact",
+          "minimal"
+        ],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "soft-rounded",
+          "sharp",
+          "elevated"
+        ]
+      },
+      {
+        "component": "CustomCard",
+        "path": "components/CustomCard.tsx",
+        "variants": [],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "native-adaptive"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "flat"
+        ]
+      }
+    ],
+    "drawers": [
+      {
+        "component": "CustomDrawerContent",
+        "path": "components/CustomDrawerContent.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "outlined",
+          "flat"
+        ]
+      },
+      {
+        "component": "DrawerButton",
+        "path": "components/DrawerButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "native-adaptive",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      }
+    ],
+    "inputs": [
+      {
+        "component": "Input",
+        "path": "components/forms/Input.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Select",
+        "path": "components/forms/Select.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Selectable",
+        "path": "components/forms/Selectable.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "soft-rounded",
+          "outlined",
+          "flat"
+        ]
+      },
+      {
+        "component": "Switch",
+        "path": "components/forms/Switch.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      }
+    ],
+    "settings": [
+      "grouped",
+      "list-chevron",
+      "sheet-pickers",
+      "toggles"
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "pill",
+      "animated",
+      "outlined",
+      "soft-rounded",
+      "native-adaptive",
+      "charts"
+    ],
+    "tally": {
+      "pill": 30,
+      "theme-aware": 0,
+      "soft-rounded": 12,
+      "flat": 40,
+      "native-adaptive": 9,
+      "animated": 23,
+      "charts": 8,
+      "outlined": 21,
+      "sharp": 2,
+      "gradient": 6,
+      "elevated": 6,
+      "glass": 3
+    }
+  },
   "counts": {
     "screens": 26,
     "layouts": 3,
     "components": 73
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Social feed, posts, chat DMs, profiles and creator analytics"
+  "idea": "Social feed, posts, chat DMs, profiles and creator analytics",
+  "curation": {}
 }

@@ -64,6 +64,7 @@
         "sign",
         "in"
       ],
+      "traits": [],
       "components": [
         "Icon"
       ],
@@ -84,6 +85,7 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [
         "Icon"
       ],
@@ -107,6 +109,7 @@
       "tags": [
         "profile"
       ],
+      "traits": [],
       "components": [
         "Icon"
       ],
@@ -129,6 +132,7 @@
       "tags": [
         "saved"
       ],
+      "traits": [],
       "components": [
         "Icon"
       ],
@@ -150,6 +154,7 @@
       "kind": "entry",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [],
       "modules": [
         "convex/_generated/api.js"
@@ -169,6 +174,9 @@
       "tags": [
         "place",
         "new"
+      ],
+      "traits": [
+        "native-adaptive"
       ],
       "components": [
         "Icon"
@@ -193,6 +201,9 @@
       "tags": [
         "trip"
       ],
+      "traits": [
+        "native-adaptive"
+      ],
       "components": [
         "Icon"
       ],
@@ -216,6 +227,9 @@
       "tags": [
         "trip",
         "new"
+      ],
+      "traits": [
+        "native-adaptive"
       ],
       "components": [
         "Icon"
@@ -278,12 +292,243 @@
       "Stack"
     ]
   },
+  "componentTraits": {
+    "AnimatedFab": [
+      "animated",
+      "flat"
+    ],
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined"
+    ],
+    "Chip": [
+      "pill"
+    ],
+    "ConfirmationModal": [
+      "native-adaptive"
+    ],
+    "CustomCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "native-adaptive"
+    ],
+    "FloatingButton": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "animated"
+    ],
+    "Icon": [
+      "pill"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined"
+    ],
+    "Skeleton": [
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated"
+    ],
+    "TabButton": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "ThemeScroller": [
+      "animated"
+    ],
+    "ThemeTabs": [
+      "animated"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Toast": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Toggle": [
+      "pill",
+      "animated",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "CustomCard",
+        "path": "components/CustomCard.tsx",
+        "variants": [],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "native-adaptive"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "animated"
+        ],
+        "labeled": false
+      }
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "animated",
+      "pill",
+      "elevated",
+      "glass",
+      "outlined",
+      "native-adaptive"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 13,
+      "flat": 4,
+      "pill": 13,
+      "sharp": 1,
+      "outlined": 2,
+      "native-adaptive": 2,
+      "soft-rounded": 2,
+      "elevated": 3,
+      "glass": 3,
+      "gradient": 2
+    }
+  },
   "counts": {
     "screens": 8,
     "layouts": 4,
     "components": 38
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Travel planner with trips and saved places on the Convex template base"
+  "idea": "Travel planner with trips and saved places on the Convex template base",
+  "curation": {}
 }

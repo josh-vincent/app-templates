@@ -54,6 +54,10 @@
       "tags": [
         "blank"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Avatar",
@@ -77,6 +81,11 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [
+        "soft-rounded",
+        "elevated",
+        "animated"
+      ],
       "components": [
         "AnimatedView",
         "CardScroller",
@@ -106,6 +115,12 @@
       "tags": [
         "profile"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Avatar",
@@ -131,6 +146,7 @@
       "kind": "entry",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [],
       "modules": [],
       "packages": [
@@ -146,6 +162,10 @@
       "category": "showcase",
       "tags": [
         "components"
+      ],
+      "traits": [
+        "elevated",
+        "charts"
       ],
       "components": [
         "Header",
@@ -169,6 +189,10 @@
         "components",
         "action",
         "sheet"
+      ],
+      "traits": [
+        "pill",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -197,6 +221,10 @@
         "components",
         "avatar"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Avatar",
         "Header",
@@ -217,6 +245,10 @@
       "tags": [
         "components",
         "button"
+      ],
+      "traits": [
+        "outlined",
+        "flat"
       ],
       "components": [
         "Button",
@@ -240,6 +272,10 @@
         "card",
         "scroller"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Card",
         "CardScroller",
@@ -262,6 +298,9 @@
         "components",
         "card"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Card",
         "Header",
@@ -282,6 +321,9 @@
         "components",
         "chart",
         "cards"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Header",
@@ -305,6 +347,9 @@
         "components",
         "chip"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Chip",
         "Header",
@@ -325,6 +370,9 @@
         "components",
         "datepicker"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "DatePicker",
         "Header",
@@ -343,6 +391,10 @@
       "tags": [
         "components",
         "expandable"
+      ],
+      "traits": [
+        "outlined",
+        "flat"
       ],
       "components": [
         "Button",
@@ -368,6 +420,10 @@
         "components",
         "icon"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Header",
         "Icon",
@@ -392,6 +448,9 @@
         "image",
         "carousel"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Header",
         "ImageCarousel",
@@ -412,6 +471,9 @@
         "components",
         "input"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Header",
         "Input",
@@ -430,6 +492,10 @@
       "tags": [
         "components",
         "multistep"
+      ],
+      "traits": [
+        "pill",
+        "flat"
       ],
       "components": [
         "Icon",
@@ -455,6 +521,10 @@
         "progress",
         "bar"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Header",
         "ProgressBar",
@@ -475,6 +545,11 @@
       "tags": [
         "components",
         "review"
+      ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "Header",
@@ -497,6 +572,9 @@
         "components",
         "select"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Header",
         "Select",
@@ -515,6 +593,9 @@
       "tags": [
         "components",
         "selectable"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Header",
@@ -536,6 +617,11 @@
         "components",
         "switch"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Header",
         "Section",
@@ -555,6 +641,9 @@
       "tags": [
         "components",
         "theme"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Avatar",
@@ -580,6 +669,12 @@
       "tags": [
         "edit",
         "profile"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "elevated",
+        "native-adaptive"
       ],
       "components": [
         "Button",
@@ -608,6 +703,9 @@
         "forgot",
         "password"
       ],
+      "traits": [
+        "flat"
+      ],
       "components": [
         "Button",
         "Input",
@@ -628,6 +726,11 @@
       "category": "support",
       "tags": [
         "help"
+      ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -652,6 +755,9 @@
       "category": "settings",
       "tags": [
         "languages"
+      ],
+      "traits": [
+        "outlined"
       ],
       "components": [
         "AnimatedView",
@@ -678,6 +784,10 @@
         "location",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -698,6 +808,9 @@
       "category": "auth",
       "tags": [
         "login"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Button",
@@ -722,6 +835,10 @@
         "notification",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -743,6 +860,7 @@
         "notification",
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "Section",
@@ -761,6 +879,12 @@
       "category": "notifications",
       "tags": [
         "notifications"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "Avatar",
@@ -786,6 +910,10 @@
         "onboarding",
         "start"
       ],
+      "traits": [
+        "pill",
+        "flat"
+      ],
       "components": [],
       "modules": [],
       "packages": [
@@ -804,6 +932,11 @@
       "category": "onboarding",
       "tags": [
         "onboarding"
+      ],
+      "traits": [
+        "pill",
+        "outlined",
+        "flat"
       ],
       "components": [
         "Chip",
@@ -835,6 +968,12 @@
       "tags": [
         "paywall"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "ActionSheetThemed",
         "Button",
@@ -860,6 +999,7 @@
       "tags": [
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "ListLink",
@@ -879,6 +1019,9 @@
       "category": "auth",
       "tags": [
         "signup"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Button",
@@ -901,6 +1044,11 @@
       "category": "auth",
       "tags": [
         "welcome"
+      ],
+      "traits": [
+        "pill",
+        "animated",
+        "flat"
       ],
       "components": [
         "Icon",
@@ -973,12 +1121,430 @@
       "Section"
     ]
   },
+  "componentTraits": {
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "BalanceChart": [
+      "charts"
+    ],
+    "BarChartCard": [
+      "animated",
+      "charts"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined",
+      "flat"
+    ],
+    "Card": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "sharp",
+      "elevated"
+    ],
+    "CardPreview": [
+      "gradient",
+      "soft-rounded"
+    ],
+    "Chip": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "CustomDrawerContent": [
+      "pill",
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "DrawerButton": [
+      "pill"
+    ],
+    "Expandable": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Favorite": [
+      "pill",
+      "outlined"
+    ],
+    "FeaturedCourse": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "native-adaptive",
+      "animated"
+    ],
+    "Icon": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ImageCarousel": [
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "ListLink": [
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ProgressBar": [
+      "pill",
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated",
+      "flat"
+    ],
+    "SmallChartCard": [
+      "elevated",
+      "outlined",
+      "charts"
+    ],
+    "SmallCircleCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "outlined",
+      "animated"
+    ],
+    "TabButton": [
+      "pill",
+      "animated"
+    ],
+    "TabScreenWrapper": [
+      "flat"
+    ],
+    "ThemeFooter": [
+      "flat"
+    ],
+    "ThemeScroller": [
+      "flat"
+    ],
+    "ThemeTabs": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "DatePicker": [
+      "soft-rounded",
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Input": [
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "Select": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Selectable": [
+      "soft-rounded",
+      "flat"
+    ],
+    "Switch": [
+      "pill",
+      "soft-rounded",
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "ListItem": [
+      "outlined",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "Card",
+        "path": "components/Card.tsx",
+        "variants": [
+          "classic",
+          "overlay",
+          "compact",
+          "minimal"
+        ],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "soft-rounded",
+          "sharp",
+          "elevated"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "drawers": [
+      {
+        "component": "CustomDrawerContent",
+        "path": "components/CustomDrawerContent.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "outlined",
+          "flat"
+        ]
+      },
+      {
+        "component": "DrawerButton",
+        "path": "components/DrawerButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "native-adaptive",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated"
+        ],
+        "labeled": true
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      }
+    ],
+    "inputs": [
+      {
+        "component": "Input",
+        "path": "components/forms/Input.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Select",
+        "path": "components/forms/Select.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Selectable",
+        "path": "components/forms/Selectable.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "soft-rounded",
+          "flat"
+        ]
+      },
+      {
+        "component": "Switch",
+        "path": "components/forms/Switch.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      }
+    ],
+    "settings": [
+      "grouped",
+      "list-chevron",
+      "toggles"
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "pill",
+      "outlined",
+      "animated",
+      "soft-rounded",
+      "gradient",
+      "charts"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 15,
+      "pill": 18,
+      "outlined": 17,
+      "flat": 23,
+      "charts": 6,
+      "sharp": 2,
+      "gradient": 8,
+      "soft-rounded": 11,
+      "elevated": 3,
+      "native-adaptive": 5,
+      "glass": 3
+    }
+  },
   "counts": {
     "screens": 39,
     "layouts": 3,
     "components": 43
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Tailwind v4 (Uniwind) starter with 40+ component demo screens; the cleanest base for a brand-new app"
+  "idea": "Tailwind v4 (Uniwind) starter with 40+ component demo screens; the cleanest base for a brand-new app",
+  "curation": {}
 }

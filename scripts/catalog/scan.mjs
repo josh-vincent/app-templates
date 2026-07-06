@@ -18,6 +18,7 @@ import {
   categorize, tagsFor, readJson, writeJson, exists, fail, parseArgs,
   loadRegistry, TEMPLATES_DIR, REPO_ROOT,
 } from './lib.mjs';
+import { analyzeStyle, screenTraits } from './style.mjs';
 
 const GENERATOR = 'app-templates/scripts/catalog/scan.mjs';
 
@@ -135,6 +136,7 @@ export function scanTemplate(root, { name, repo } = {}) {
       kind: groups.some((g) => g.includes('tabs')) ? 'tab' : rel === 'index.tsx' ? 'entry' : 'screen',
       category: categorize(base, groups.concat(dirs)),
       tags: tagsFor(appRel),
+      traits: screenTraits(root, appRel),
       components: [...components].sort(),
       modules: [...modules].sort(),
       packages: [...packages].sort(),
@@ -159,6 +161,8 @@ export function scanTemplate(root, { name, repo } = {}) {
     darkMode: true,
   };
 
+  const { componentTraits, patterns, styleProfile } = analyzeStyle(root, screens);
+
   return {
     $schema: '../schema/template.schema.json',
     name,
@@ -171,6 +175,9 @@ export function scanTemplate(root, { name, repo } = {}) {
     screens,
     apiRoutes,
     components: componentsByGroup,
+    componentTraits,
+    patterns,
+    styleProfile,
     counts: { screens: screens.length, layouts: layouts.length, components: componentFiles.length },
     generatedBy: GENERATOR,
   };

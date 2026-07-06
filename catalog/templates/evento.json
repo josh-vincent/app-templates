@@ -52,6 +52,11 @@
       "tags": [
         "analytics"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Header",
@@ -74,6 +79,13 @@
       "category": "feature",
       "tags": [
         "create"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "charts",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -100,6 +112,12 @@
       "tags": [
         "dashboard"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "charts",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Card",
@@ -125,6 +143,12 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [
+        "glass",
+        "gradient",
+        "pill",
+        "animated"
+      ],
       "components": [
         "AnimatedView",
         "Card",
@@ -156,6 +180,13 @@
       "tags": [
         "map"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "native-adaptive",
+        "maps",
+        "flat"
+      ],
       "components": [
         "Header",
         "Icon",
@@ -180,6 +211,10 @@
       "category": "profile",
       "tags": [
         "profile"
+      ],
+      "traits": [
+        "soft-rounded",
+        "flat"
       ],
       "components": [
         "AnimatedView",
@@ -211,6 +246,10 @@
       "tags": [
         "search"
       ],
+      "traits": [
+        "pill",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "CardScroller",
@@ -237,6 +276,12 @@
       "tags": [
         "tickets"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Button",
@@ -258,6 +303,7 @@
       "kind": "entry",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [],
       "modules": [],
       "packages": [
@@ -273,6 +319,11 @@
       "category": "collections",
       "tags": [
         "bookmarks"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -303,6 +354,11 @@
         "create",
         "event"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "DatePicker",
@@ -332,6 +388,13 @@
       "tags": [
         "earnings"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "charts",
+        "flat"
+      ],
       "components": [
         "Button",
         "Chip",
@@ -357,6 +420,12 @@
       "tags": [
         "edit",
         "profile"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "elevated",
+        "native-adaptive"
       ],
       "components": [
         "Button",
@@ -384,6 +453,13 @@
       "tags": [
         "event",
         "detail"
+      ],
+      "traits": [
+        "glass",
+        "gradient",
+        "pill",
+        "soft-rounded",
+        "outlined"
       ],
       "components": [
         "Avatar",
@@ -422,6 +498,12 @@
         "event",
         "templates"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Button",
         "CardScroller",
@@ -446,6 +528,10 @@
       "category": "discovery",
       "tags": [
         "filters"
+      ],
+      "traits": [
+        "outlined",
+        "flat"
       ],
       "components": [
         "Button",
@@ -477,6 +563,12 @@
         "get",
         "ticket"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Icon",
@@ -503,6 +595,11 @@
       "tags": [
         "help"
       ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "AnimatedView",
         "Button",
@@ -525,6 +622,9 @@
       "category": "feature",
       "tags": [
         "interests"
+      ],
+      "traits": [
+        "flat"
       ],
       "components": [
         "Chip",
@@ -551,6 +651,9 @@
       "tags": [
         "languages"
       ],
+      "traits": [
+        "outlined"
+      ],
       "components": [
         "AnimatedView",
         "Header",
@@ -576,6 +679,10 @@
         "location",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -597,6 +704,12 @@
       "tags": [
         "my",
         "events"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -628,6 +741,10 @@
         "notification",
         "permission"
       ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
       "components": [
         "Button",
         "Icon",
@@ -649,6 +766,7 @@
         "notification",
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "Section",
@@ -667,6 +785,12 @@
       "category": "notifications",
       "tags": [
         "notifications"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "Header",
@@ -690,6 +814,7 @@
       "tags": [
         "onboarding"
       ],
+      "traits": [],
       "components": [
         "AnimatedView",
         "Chip",
@@ -716,6 +841,7 @@
       "tags": [
         "settings"
       ],
+      "traits": [],
       "components": [
         "Header",
         "ListLink",
@@ -735,6 +861,12 @@
       "category": "monetization",
       "tags": [
         "subscription"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -764,6 +896,11 @@
       "tags": [
         "user",
         "profile"
+      ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
       ],
       "components": [
         "ActionSheetThemed",
@@ -803,6 +940,12 @@
         "view",
         "ticket"
       ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
       "components": [
         "Button",
         "Header",
@@ -827,6 +970,13 @@
       "category": "auth",
       "tags": [
         "welcome"
+      ],
+      "traits": [
+        "gradient",
+        "pill",
+        "elevated",
+        "native-adaptive",
+        "animated"
       ],
       "components": [
         "Button",
@@ -904,12 +1054,398 @@
       "Section"
     ]
   },
+  "componentTraits": {
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "BalanceChart": [
+      "charts"
+    ],
+    "BarChartCard": [
+      "animated",
+      "charts"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined",
+      "flat"
+    ],
+    "Card": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "sharp",
+      "elevated"
+    ],
+    "CardPreview": [
+      "gradient",
+      "soft-rounded"
+    ],
+    "Chip": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "CreatorSwitch": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Expandable": [
+      "pill",
+      "outlined",
+      "native-adaptive",
+      "animated"
+    ],
+    "Favorite": [
+      "pill",
+      "outlined"
+    ],
+    "FeaturedCourse": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "native-adaptive",
+      "animated"
+    ],
+    "Icon": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ImageCarousel": [
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "ListLink": [
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ProgressBar": [
+      "pill",
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated",
+      "flat"
+    ],
+    "SmallChartCard": [
+      "elevated",
+      "outlined",
+      "charts"
+    ],
+    "SmallCircleCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "outlined",
+      "animated"
+    ],
+    "TabButton": [
+      "pill",
+      "animated"
+    ],
+    "TabScreenWrapper": [
+      "flat"
+    ],
+    "ThemeFooter": [
+      "flat"
+    ],
+    "ThemeScroller": [
+      "flat"
+    ],
+    "ThemeTabs": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "DatePicker": [
+      "soft-rounded",
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Input": [
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "Select": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Selectable": [
+      "soft-rounded",
+      "flat"
+    ],
+    "Switch": [
+      "pill",
+      "soft-rounded",
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "ListItem": [
+      "outlined",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "Card",
+        "path": "components/Card.tsx",
+        "variants": [
+          "classic",
+          "overlay",
+          "compact",
+          "minimal"
+        ],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "3xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "soft-rounded",
+          "sharp",
+          "elevated"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "native-adaptive",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated"
+        ],
+        "labeled": true
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      }
+    ],
+    "inputs": [
+      {
+        "component": "Input",
+        "path": "components/forms/Input.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Select",
+        "path": "components/forms/Select.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Selectable",
+        "path": "components/forms/Selectable.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "soft-rounded",
+          "flat"
+        ]
+      },
+      {
+        "component": "Switch",
+        "path": "components/forms/Switch.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      }
+    ],
+    "settings": [
+      "grouped",
+      "list-chevron",
+      "toggles"
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "pill",
+      "animated",
+      "outlined",
+      "soft-rounded",
+      "gradient",
+      "charts"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 16,
+      "pill": 18,
+      "outlined": 16,
+      "flat": 21,
+      "charts": 6,
+      "sharp": 2,
+      "gradient": 8,
+      "soft-rounded": 10,
+      "elevated": 4,
+      "native-adaptive": 5,
+      "glass": 3
+    }
+  },
   "counts": {
     "screens": 31,
     "layouts": 2,
     "components": 43
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Event discovery, ticketing, organizer dashboard and analytics; frontend-only with mock data"
+  "idea": "Event discovery, ticketing, organizer dashboard and analytics; frontend-only with mock data",
+  "curation": {}
 }

@@ -19,6 +19,49 @@ Every screen entry records its route, kind (`tab`/`screen`/`entry`), category
 the npm packages it needs, and the image assets it references — so a screen can
 be lifted out of its template with everything required to run.
 
+## Style & pattern identifiers
+
+Below screens sits a finer grain: the scanner detects visual/interaction
+**traits** from source (BlurView/expo-glass-effect → glass, LinearGradient →
+gradient, `rounded-full` → pill, shadowPresets → elevated, `Platform.select` →
+native-adaptive, …), extracts **pattern inventories** with their variant
+options (buttons, sheets, drawers, tab bars, headers, cards, inputs, settings
+styles), and rolls each template up into a `styleProfile` (family: apple-glass,
+glass, elevated, flat).
+
+All of it is addressable through namespaced **identifiers** — see the generated
+reference [`STYLES.md`](./STYLES.md):
+
+```
+style:glass        style:liquid-glass   style:flat        style:gradient
+buttons:pill       buttons:outline      buttons:ghost     sheet:gesture
+drawer:custom      tabs:labeled         header:blurred    card:overlay
+input:underlined   settings:toggles     settings:list-chevron
+layout:drawer+tabs layout:tabs          screen-style:glass
+```
+
+Use them anywhere:
+
+```bash
+pnpm catalog:search --ids buttons                 # list identifiers per namespace
+pnpm catalog:search settings style:glass          # identifier tokens in free text
+pnpm catalog:remix suggest "meditation and travel app with glass style and pill buttons" \
+  --layout tabs --settings toggles --out plan.json
+```
+
+The goal sentence works literally: *"creating a meditation and travel app —
+use `style:glass` screens and `layout:tabs` with `settings:toggles`"*. Style
+words in the idea text (glass, apple, flat, pill, gradient, animated…) are
+recognized automatically; explicit flags (`--style --layout --settings
+--buttons --sheet --header --tabs --card --input`) pin the rest.
+
+In a plan, the `style` block drives **pattern overrides**: `apply` pulls the
+components that implement each identifier (from the best-carrying template,
+preferring the base) *before* any screens, so first-write-wins makes every
+pulled screen adopt them — e.g. `buttons:pill` claims `components/Button.tsx`
+from its provider, and `settings:toggles` guarantees a toggle-style settings
+screen lands. Every override is listed in the target's `REMIX.md` provenance.
+
 ## Files
 
 ```
@@ -26,11 +69,12 @@ catalog/
   registry.json          # which templates exist and where they're checked out
   schema/template.schema.json
   templates/<name>.json  # one manifest per template (generated + curated)
-  index.json             # generated: flattened cross-template index
-  CATALOG.md             # generated: human-browsable catalog
+  index.json             # generated: flattened cross-template index + identifiers
+  CATALOG.md             # generated: human-browsable screen catalog
+  STYLES.md              # generated: style & pattern identifier reference
   examples/              # example remix plans
 scripts/catalog/
-  scan.mjs   build-index.mjs   search.mjs   pull.mjs   remix.mjs
+  scan.mjs   style.mjs   build-index.mjs   search.mjs   pull.mjs   remix.mjs
 ```
 
 All scripts are dependency-free Node ESM — they run against any checkout

@@ -57,6 +57,7 @@
       "tags": [
         "hourly"
       ],
+      "traits": [],
       "components": [
         "GlassPrimitives",
         "SkyBackground",
@@ -80,6 +81,7 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [
         "GlassPrimitives",
         "SkyBackground",
@@ -104,6 +106,7 @@
       "tags": [
         "map"
       ],
+      "traits": [],
       "components": [
         "GlassOverlays",
         "GlassPrimitives",
@@ -129,6 +132,7 @@
       "tags": [
         "profile"
       ],
+      "traits": [],
       "components": [
         "GlassPrimitives",
         "SkyBackground"
@@ -153,6 +157,9 @@
         "add",
         "location"
       ],
+      "traits": [
+        "gradient"
+      ],
       "components": [
         "GlassOverlays",
         "GlassPrimitives",
@@ -175,6 +182,7 @@
       "kind": "entry",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [],
       "modules": [],
       "packages": [
@@ -191,6 +199,7 @@
       "tags": [
         "location"
       ],
+      "traits": [],
       "components": [
         "GlassOverlays",
         "GlassPrimitives",
@@ -214,6 +223,9 @@
       "category": "feature",
       "tags": [
         "overlays"
+      ],
+      "traits": [
+        "gradient"
       ],
       "components": [
         "GlassOverlays",
@@ -278,12 +290,266 @@
       "Stack"
     ]
   },
+  "componentTraits": {
+    "AnimatedFab": [
+      "animated",
+      "flat"
+    ],
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined"
+    ],
+    "CardScroller": [
+      "flat"
+    ],
+    "Chip": [
+      "pill"
+    ],
+    "ConfirmationModal": [
+      "native-adaptive"
+    ],
+    "CustomCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "native-adaptive"
+    ],
+    "FloatingButton": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "GlassOverlays": [
+      "glass",
+      "liquid-glass",
+      "gradient",
+      "elevated",
+      "native-adaptive",
+      "animated"
+    ],
+    "GlassPrimitives": [
+      "glass",
+      "liquid-glass",
+      "native-adaptive"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "animated"
+    ],
+    "Icon": [
+      "pill"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined"
+    ],
+    "Skeleton": [
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated"
+    ],
+    "SkyBackground": [
+      "gradient"
+    ],
+    "TabButton": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "ThemeScroller": [
+      "animated"
+    ],
+    "ThemeTabs": [
+      "animated"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Toast": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Toggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "WeatherIcon": [
+      "elevated"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "CustomCard",
+        "path": "components/CustomCard.tsx",
+        "variants": [],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "native-adaptive"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "animated"
+        ],
+        "labeled": false
+      }
+    ]
+  },
+  "styleProfile": {
+    "family": "apple-glass",
+    "dominant": [
+      "animated",
+      "pill",
+      "glass",
+      "liquid-glass",
+      "gradient",
+      "elevated"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 14,
+      "flat": 5,
+      "pill": 13,
+      "sharp": 1,
+      "outlined": 2,
+      "native-adaptive": 4,
+      "soft-rounded": 2,
+      "elevated": 5,
+      "glass": 9,
+      "liquid-glass": 8,
+      "gradient": 6
+    }
+  },
   "counts": {
     "screens": 8,
     "layouts": 3,
     "components": 43
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Weather app with hourly forecast, map overlays and saved locations"
+  "idea": "Weather app with hourly forecast, map overlays and saved locations",
+  "curation": {}
 }

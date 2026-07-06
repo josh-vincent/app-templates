@@ -31,12 +31,14 @@ as sibling checkouts: `../caloria-v2`, `../drivo`, `../evento`, `../feedy`,
 ## Mobile app factory
 
 ```bash
-# 1. Describe an idea → get a remix plan
-pnpm catalog:remix suggest "dog walking marketplace with booking and chat" --out plan.json
+# 1. Describe an idea (+ style direction) → get a remix plan
+pnpm catalog:remix suggest "meditation and travel app with glass style and pill buttons" \
+  --layout tabs --settings toggles --out plan.json
 
-# 2. Browse / refine
+# 2. Browse / refine — down to style & pattern identifiers
 pnpm catalog:search --category commerce
-less catalog/CATALOG.md
+pnpm catalog:search settings style:glass          # style:glass, buttons:pill, layout:drawer+tabs, …
+pnpm catalog:search --ids                         # list all identifiers (see catalog/STYLES.md)
 
 # 3. Compare variations before building
 pnpm catalog:remix diff plan.json --variants base,lean
@@ -46,7 +48,8 @@ pnpm catalog:remix apply plan.json --to ../my-app
 ```
 
 Full guide: [`catalog/README.md`](./catalog/README.md) ·
-Browsable index: [`catalog/CATALOG.md`](./catalog/CATALOG.md)
+Browsable index: [`catalog/CATALOG.md`](./catalog/CATALOG.md) ·
+Style identifiers: [`catalog/STYLES.md`](./catalog/STYLES.md)
 
 ## Workspace commands
 

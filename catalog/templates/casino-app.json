@@ -49,6 +49,7 @@
       "tags": [
         "blackjack"
       ],
+      "traits": [],
       "components": [
         "BalanceHeader"
       ],
@@ -71,6 +72,7 @@
       "tags": [
         "history"
       ],
+      "traits": [],
       "components": [
         "BalanceHeader"
       ],
@@ -91,6 +93,7 @@
       "kind": "tab",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [
         "BalanceHeader",
         "Icon"
@@ -115,6 +118,7 @@
       "tags": [
         "profile"
       ],
+      "traits": [],
       "components": [
         "BalanceHeader"
       ],
@@ -138,6 +142,7 @@
       "tags": [
         "slots"
       ],
+      "traits": [],
       "components": [
         "BalanceHeader",
         "Icon"
@@ -159,6 +164,7 @@
       "kind": "entry",
       "category": "home",
       "tags": [],
+      "traits": [],
       "components": [],
       "modules": [],
       "packages": [
@@ -178,12 +184,40 @@
     "forms": [],
     "layout": []
   },
+  "componentTraits": {
+    "Icon": [
+      "pill"
+    ]
+  },
+  "patterns": {
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "labeled": false
+      }
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "pill"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "pill": 1
+    }
+  },
   "counts": {
     "screens": 6,
     "layouts": 2,
     "components": 4
   },
   "generatedBy": "app-templates/scripts/catalog/scan.mjs",
-  "curation": {},
-  "idea": "Casino mini-games (blackjack, slots) with betting history"
+  "idea": "Casino mini-games (blackjack, slots) with betting history",
+  "curation": {}
 }

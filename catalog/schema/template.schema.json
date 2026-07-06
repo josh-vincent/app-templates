@@ -66,6 +66,7 @@
           "category": { "type": "string" },
           "description": { "type": "string" },
           "tags": { "type": "array", "items": { "type": "string" } },
+          "traits": { "type": "array", "items": { "type": "string" }, "description": "Style traits detected in the screen's own source (glass, gradient, pill, …)" },
           "components": { "type": "array", "items": { "type": "string" }, "description": "ELEMENT layer: components this screen imports" },
           "modules": { "type": "array", "items": { "type": "string" }, "description": "Supporting local modules (contexts, hooks, utils, lib, data)" },
           "packages": { "type": "array", "items": { "type": "string" }, "description": "npm packages the screen needs" },
@@ -81,6 +82,25 @@
         "elements": { "type": "array", "items": { "type": "string" } },
         "forms": { "type": "array", "items": { "type": "string" } },
         "layout": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "componentTraits": {
+      "type": "object",
+      "description": "Component name → detected style traits (only components with non-empty traits)",
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+    "patterns": {
+      "type": "object",
+      "description": "Fine-grained pattern inventories: buttons, sheets, drawers, tabbars, headers, cards, chips, inputs (each an array of {component, path, variants, rounded, sizes, traits, …}) and settings (array of settings-style traits)",
+      "additionalProperties": true
+    },
+    "styleProfile": {
+      "type": "object",
+      "description": "Template-level style rollup",
+      "properties": {
+        "family": { "type": "string", "description": "apple-glass | glass | elevated | flat" },
+        "dominant": { "type": "array", "items": { "type": "string" } },
+        "tally": { "type": "object", "additionalProperties": { "type": "number" } }
       }
     },
     "curation": {
