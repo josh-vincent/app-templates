@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-utils-color-theme",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "utils/color-theme.ts",
+      "type": "registry:lib",
+      "target": "utils/color-theme.ts"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

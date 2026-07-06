@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/date-picker",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/forms/DatePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/DatePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/icon",
+    "evento/input",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-utils-date",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

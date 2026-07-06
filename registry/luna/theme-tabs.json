@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/theme-tabs",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ThemeTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "scrollEnabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

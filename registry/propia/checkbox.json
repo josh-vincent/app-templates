@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/checkbox",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/forms/Checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Checkbox.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "checked"
+    ]
+  },
+  "traits": [],
+  "group": "forms"
+}

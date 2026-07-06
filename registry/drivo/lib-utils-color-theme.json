@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-utils-color-theme",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "utils/color-theme.ts",
+      "type": "registry:lib",
+      "target": "utils/color-theme.ts"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

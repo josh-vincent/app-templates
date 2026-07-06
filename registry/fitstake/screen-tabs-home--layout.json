@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-tabs-home--layout",
+  "type": "registry:layout",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

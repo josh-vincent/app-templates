@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-overlays",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/overlays.tsx",
+      "type": "registry:screen",
+      "target": "app/overlays.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "aurora/glass-overlays",
+    "aurora/glass-primitives"
+  ],
+  "category": "feature",
+  "route": "/overlays",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

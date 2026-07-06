@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/switch",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/forms/Switch.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Switch.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

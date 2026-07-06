@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/confirmation-modal",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ConfirmationModal.tsx",
+      "type": "registry:ui",
+      "target": "components/ConfirmationModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors",
+    "propia/screen-contexts-theme-context",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

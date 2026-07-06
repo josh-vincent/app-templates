@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/celebrations-host",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/modals/CelebrationsHost.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/CelebrationsHost.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "health-app/poke-burst",
+    "health-app/running-out-modal",
+    "health-app/streak-modal",
+    "health-app/won-modal"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

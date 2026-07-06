@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/favorite",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Favorite.tsx",
+      "type": "registry:ui",
+      "target": "components/Favorite.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/button",
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "initialState",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "outlined"
+  ],
+  "group": "elements"
+}

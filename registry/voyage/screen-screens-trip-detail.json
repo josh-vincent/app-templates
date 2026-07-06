@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-trip-detail",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/trip-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/trip-detail.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/activity-detail-sheet",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/themed-text",
+    "voyage/trip-map"
+  ],
+  "category": "detail",
+  "route": "/screens/trip-detail",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    },
+    {
+      "path": "assets/lottie/welcome-1.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/welcome-1.json"
+    },
+    {
+      "path": "assets/lottie/welcome-2.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/welcome-2.json"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router",
+    "expo-status-bar",
+    "lottie-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/icon"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "lottie",
+    "flat"
+  ]
+}

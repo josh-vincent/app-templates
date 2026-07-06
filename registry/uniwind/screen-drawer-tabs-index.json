@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-drawer-tabs-index",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/index.tsx"
+    },
+    {
+      "path": "assets/img/uniwind-paper.png",
+      "type": "registry:asset",
+      "target": "assets/img/uniwind-paper.png"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/card-scroller",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/lib-utils-use-shadow",
+    "uniwind/theme-scroller",
+    "uniwind/theme-toggle",
+    "uniwind/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "elevated",
+    "animated"
+  ]
+}

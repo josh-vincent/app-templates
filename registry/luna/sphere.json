@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/sphere",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Sphere.tsx",
+      "type": "registry:ui",
+      "target": "components/Sphere.tsx"
+    },
+    {
+      "path": "assets/lottie/speaking.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/speaking.json"
+    },
+    {
+      "path": "assets/lottie/sphere.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/sphere.json"
+    }
+  ],
+  "dependencies": [
+    "lottie-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/lib-utils-use-shadow"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "lottie"
+  ],
+  "group": "elements"
+}

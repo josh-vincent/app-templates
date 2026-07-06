@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/custom-card",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/CustomCard.tsx",
+      "type": "registry:ui",
+      "target": "components/CustomCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "border",
+      "background",
+      "elevation",
+      "horizontal"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

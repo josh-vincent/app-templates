@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/theme-flat-list",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ThemeFlatList.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeFlatList.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

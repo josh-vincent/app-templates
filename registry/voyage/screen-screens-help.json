@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-help",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/help.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/help.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/button",
+    "voyage/divider",
+    "voyage/expandable",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/section",
+    "voyage/themed-text"
+  ],
+  "category": "support",
+  "route": "/screens/help",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

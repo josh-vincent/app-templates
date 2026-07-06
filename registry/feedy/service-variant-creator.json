@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/service-variant-creator",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/ServiceVariantCreator.tsx",
+      "type": "registry:ui",
+      "target": "components/ServiceVariantCreator.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/button",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasStock"
+    ]
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "elements"
+}

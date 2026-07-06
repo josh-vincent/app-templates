@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/theme-footer",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ThemeFooter.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeFooter.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

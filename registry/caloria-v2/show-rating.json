@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/show-rating",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/ShowRating.tsx",
+      "type": "registry:ui",
+      "target": "components/ShowRating.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

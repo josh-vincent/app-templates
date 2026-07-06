@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-stays-id",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/stays/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/stays/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/bundle-picker-sheet",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/image-carousel",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/trip-picker-sheet"
+  ],
+  "category": "feature",
+  "route": "/screens/stays/[id]",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded"
+  ]
+}

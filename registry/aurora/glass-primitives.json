@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/glass-primitives",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/GlassPrimitives.tsx",
+      "type": "registry:ui",
+      "target": "components/GlassPrimitives.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-glass-effect",
+    "expo-liquid-glass-view"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [
+      "regular",
+      "clear"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "interactive",
+      "highlight",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "glass",
+    "liquid-glass",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

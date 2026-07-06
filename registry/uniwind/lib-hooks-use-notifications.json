@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-hooks-use-notifications",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "hooks/useNotifications.ts",
+      "type": "registry:lib",
+      "target": "hooks/useNotifications.ts"
+    }
+  ],
+  "dependencies": [
+    "expo-constants",
+    "expo-device",
+    "expo-notifications"
+  ],
+  "registryDependencies": []
+}

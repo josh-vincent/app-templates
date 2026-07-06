@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/lib-contexts-theme-context"
+  ]
+}

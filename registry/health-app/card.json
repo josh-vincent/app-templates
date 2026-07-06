@@ -1,0 +1,56 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/card",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/Card.tsx",
+      "type": "registry:ui",
+      "target": "components/Card.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "health-app/button",
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/lib-utils-use-shadow",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "classic",
+      "overlay",
+      "compact",
+      "minimal"
+    ],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "hasShadow",
+      "showOverlay",
+      "hasFavorite"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "sharp",
+    "elevated"
+  ],
+  "group": "elements"
+}

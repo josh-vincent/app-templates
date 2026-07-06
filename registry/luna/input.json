@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/input",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/forms/Input.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Input.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword",
+      "isMultiline",
+      "inRow"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

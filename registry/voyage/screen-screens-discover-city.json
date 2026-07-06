@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-discover-city",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/discover/[city].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/discover/[city].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/activity-detail-sheet",
+    "voyage/animated-view",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/trip-picker-sheet"
+  ],
+  "category": "discovery",
+  "route": "/screens/discover/[city]",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded"
+  ]
+}

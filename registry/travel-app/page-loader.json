@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/page-loader",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/PageLoader.tsx",
+      "type": "registry:ui",
+      "target": "components/PageLoader.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "travel-app/lib-contexts-theme-colors",
+    "travel-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

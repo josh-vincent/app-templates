@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-drawer-tabs-index",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/index.tsx"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "caloria-v2/avatar",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/section",
+    "caloria-v2/small-chart-card",
+    "caloria-v2/small-circle-card",
+    "caloria-v2/small-progress-bar-card",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "animated",
+    "flat"
+  ]
+}

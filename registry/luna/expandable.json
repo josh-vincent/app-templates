@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/expandable",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/Expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "defaultExpanded",
+      "expanded"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

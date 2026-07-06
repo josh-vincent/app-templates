@@ -1,0 +1,58 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-post-detail",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/post-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/post-detail.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/avatar",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/social-post",
+    "feedy/theme-footer",
+    "feedy/theme-scroller",
+    "feedy/themed-text"
+  ],
+  "category": "detail",
+  "route": "/screens/post-detail",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "native-adaptive",
+    "flat"
+  ]
+}

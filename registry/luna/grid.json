@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/grid",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/layout/Grid.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Grid.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

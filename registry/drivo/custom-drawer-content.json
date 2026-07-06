@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/custom-drawer-content",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/CustomDrawerContent.tsx",
+      "type": "registry:ui",
+      "target": "components/CustomDrawerContent.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/action-sheet-themed",
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/lib-contexts-auth-context",
+    "drivo/theme-scroller",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

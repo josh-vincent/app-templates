@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-...404",
+  "type": "registry:screen",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "casino-app/icon",
+    "casino-app/lib-contexts-theme-colors"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/chip",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "aurora/icon",
+    "aurora/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

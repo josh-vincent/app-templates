@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-analytics",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/analytics.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/analytics.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/animated-bar-chart",
+    "feedy/balance-chart",
+    "feedy/button",
+    "feedy/drawer-button",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/lib-utils-use-shadow",
+    "feedy/list-link",
+    "feedy/section",
+    "feedy/small-chart-card",
+    "feedy/small-circle-card",
+    "feedy/theme-footer",
+    "feedy/theme-scroller",
+    "feedy/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/screens/analytics",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "charts"
+  ]
+}

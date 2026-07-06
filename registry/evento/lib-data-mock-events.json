@@ -1,0 +1,77 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-data-mock-events",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "data/mockEvents.ts",
+      "type": "registry:lib",
+      "target": "data/mockEvents.ts"
+    },
+    {
+      "path": "assets/img/banner-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-1.jpg"
+    },
+    {
+      "path": "assets/img/banner-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-2.jpg"
+    },
+    {
+      "path": "assets/img/banner-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-3.jpg"
+    },
+    {
+      "path": "assets/img/banner-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-4.jpg"
+    },
+    {
+      "path": "assets/img/banner-5.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-5.jpg"
+    },
+    {
+      "path": "assets/img/banner-6.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-6.jpg"
+    },
+    {
+      "path": "assets/img/banner-7.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-7.jpg"
+    },
+    {
+      "path": "assets/img/banner-8.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-8.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/icon"
+  ]
+}

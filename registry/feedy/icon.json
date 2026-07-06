@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/icon",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Icon.tsx",
+      "type": "registry:ui",
+      "target": "components/Icon.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "elements"
+}

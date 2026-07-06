@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-onboarding--layout",
+  "type": "registry:layout",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/onboarding/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/onboarding/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

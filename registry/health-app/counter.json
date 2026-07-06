@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/counter",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/forms/Counter.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Counter.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "forms"
+}

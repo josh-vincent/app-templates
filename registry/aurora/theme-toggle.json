@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/theme-toggle",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/ThemeToggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeToggle.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "aurora/icon",
+    "aurora/lib-contexts-theme-colors",
+    "aurora/lib-contexts-theme-context"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

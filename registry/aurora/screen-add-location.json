@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-add-location",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/add-location.tsx",
+      "type": "registry:screen",
+      "target": "app/add-location.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-overlays",
+    "aurora/glass-primitives",
+    "aurora/weather-icon"
+  ],
+  "category": "maps",
+  "route": "/add-location",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

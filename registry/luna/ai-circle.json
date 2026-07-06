@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/ai-circle",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/AiCircle.tsx",
+      "type": "registry:ui",
+      "target": "components/AiCircle.tsx"
+    },
+    {
+      "path": "assets/lottie/speaking.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/speaking.json"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "lottie-react-native"
+  ],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/icon",
+    "luna/lib-utils-use-shadow"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "elevated",
+    "lottie"
+  ],
+  "group": "elements"
+}

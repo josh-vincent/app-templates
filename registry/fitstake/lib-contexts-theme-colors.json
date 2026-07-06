@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "fitstake/lib-contexts-theme-context"
+  ]
+}

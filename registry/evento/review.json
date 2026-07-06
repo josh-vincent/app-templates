@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/review",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/Review.tsx",
+      "type": "registry:ui",
+      "target": "components/Review.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/avatar",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

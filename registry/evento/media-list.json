@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/media-list",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/MediaList.tsx",
+      "type": "registry:ui",
+      "target": "components/MediaList.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/show-rating",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

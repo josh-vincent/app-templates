@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/card-scroller",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/CardScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/CardScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "enableSnapping"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

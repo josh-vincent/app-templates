@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-location-permission",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/location-permission.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/location-permission.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-location",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/icon",
+    "caloria-v2/themed-text"
+  ],
+  "category": "permissions",
+  "route": "/screens/location-permission",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

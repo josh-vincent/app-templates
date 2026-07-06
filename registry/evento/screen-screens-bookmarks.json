@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-bookmarks",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/bookmarks.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/bookmarks.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "evento/action-sheet-themed",
+    "evento/button",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/media-list",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "collections",
+  "route": "/screens/bookmarks",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "flat"
+  ]
+}

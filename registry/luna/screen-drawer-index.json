@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-drawer-index",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/(drawer)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/bot-switch",
+    "luna/chat-input",
+    "luna/conversation",
+    "luna/drawer-button",
+    "luna/header",
+    "luna/icon",
+    "luna/lib-services-ai",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

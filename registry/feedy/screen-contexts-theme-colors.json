@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-context"
+  ]
+}

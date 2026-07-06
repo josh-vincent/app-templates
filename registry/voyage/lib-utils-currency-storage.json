@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-utils-currency-storage",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "utils/currencyStorage.ts",
+      "type": "registry:lib",
+      "target": "utils/currencyStorage.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": []
+}

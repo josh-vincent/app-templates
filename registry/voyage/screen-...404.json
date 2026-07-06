@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-...404",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors"
+  ]
+}

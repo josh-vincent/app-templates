@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/dev-prefill-bar",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/DevPrefillBar.tsx",
+      "type": "registry:ui",
+      "target": "components/DevPrefillBar.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/lib-utils-payment-methods-storage",
+    "voyage/lib-utils-traveler-profile-storage"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "elevated"
+  ],
+  "group": "elements"
+}

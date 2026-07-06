@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-signup",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/signup.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/signup.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "expo-router",
+    "expo-status-bar",
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/multi-step",
+    "drivo/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/signup",
+  "kind": "screen",
+  "traits": []
+}

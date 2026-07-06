@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-auth--layout",
+  "type": "registry:layout",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/(auth)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(auth)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-select",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/select.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/select.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/select",
+    "uniwind/theme-scroller"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/select",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

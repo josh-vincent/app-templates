@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-card-scroller",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/card-scroller.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/card-scroller.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/card",
+    "uniwind/card-scroller",
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/card-scroller",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

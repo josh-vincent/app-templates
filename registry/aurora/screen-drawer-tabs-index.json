@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-drawer-tabs-index",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-primitives",
+    "aurora/sky-background",
+    "aurora/weather-icon"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": []
+}

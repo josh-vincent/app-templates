@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-empty-screen",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/empty-screen.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/empty-screen.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors"
+  ],
+  "category": "showcase",
+  "route": "/screens/empty-screen",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

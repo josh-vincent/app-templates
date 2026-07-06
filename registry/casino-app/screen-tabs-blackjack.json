@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-tabs-blackjack",
+  "type": "registry:screen",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/(tabs)/blackjack.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/blackjack.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "casino-app/balance-header",
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "category": "feature",
+  "route": "/blackjack",
+  "kind": "tab",
+  "traits": []
+}

@@ -109,6 +109,60 @@ CI gate per fate. `no-auth` waives auth requirements and strips login/signup
 from every suggestion; capability packages are merged into the scaffolded
 package.json with real versions from the source templates.
 
+## Registry (shadcn-style) & the `add` command
+
+Everything the catalog knows is also compiled into an installable **registry**
+(`registry/`): one JSON item per unit — `registry:ui` (components, with
+extracted `variant`/`size`/`rounded` unions and boolean **state** props),
+`registry:screen`, `registry:layout`, `registry:lib` (contexts/hooks/utils/
+data), and `registry:theme` — each with npm `dependencies` and
+`registryDependencies` (the other items it imports). Item ids are namespaced:
+`drivo/button`, `evento/screen-screens-event-detail`, `propia/theme`.
+
+```bash
+pnpm catalog:registry                                  # rebuild registry/ from the catalog
+pnpm catalog:add --list drivo --type registry:ui       # what's installable
+pnpm catalog:add drivo/button propia/theme --to ../my-app [--dry-run]
+```
+
+`add` resolves `registryDependencies` transitively and copies every needed
+file from the source checkouts — like `npx shadcn add button`, but for any
+component, screen, layout, lib module, or theme in any template.
+
+## Visual component library
+
+```bash
+pnpm catalog:gallery      # → catalog/gallery/index.html (self-contained)
+```
+
+A browsable gallery of **every UI component in every template**, rendered as
+variant × size × state matrices (primary/secondary/outline/ghost ·
+small/medium/large · default/disabled/loading/selected…) using each template's
+**real theme palette** parsed from its theme files, in both light and dark
+mode. Filter by template, group (elements/forms/layout), or free text; every
+card shows the component's traits, its extracted prop unions, and a
+click-to-copy install command. Previews are CSS approximations driven by real
+extracted data — live RN rendering of the shared `@jv/*` components stays in
+`apps/showcase` (`pnpm showcase`).
+
+## Onboarding new projects
+
+```bash
+# scaffold from a base template (or --plan remix.json), register, rescan
+pnpm catalog:onboard new pawgo --template propia --idea "dog walking marketplace" --fate mvp
+
+# register a project that already exists (sibling checkouts work too)
+pnpm catalog:onboard existing ../my-app --repo me/my-app
+```
+
+`onboard` creates the project (full template copy or remix plan), renames
+package/app config, writes a `PRODUCT.md` stub carrying the idea + fate, adds
+the project to `catalog/registry.json`, and rebuilds the scan → index →
+registry → gallery chain — so everything you build in the new project is
+immediately searchable, remixable, installable, and visible in the gallery.
+As the project grows, `pnpm catalog:scan && pnpm catalog:index &&
+pnpm catalog:registry && pnpm catalog:gallery` keeps its sections current.
+
 ## Files
 
 ```
@@ -122,9 +176,13 @@ catalog/
   fates.json             # fates / capabilities / archetypes definitions (editable)
   FATES.md               # generated: fates reference
   examples/              # example remix plans
+  gallery/index.html     # generated: visual component library
+registry/                # generated: shadcn-style installable items
+  registry.json          # index of all items
+  <template>/<item>.json # per-item: files, dependencies, registryDependencies, props
 scripts/catalog/
-  scan.mjs   style.mjs   fates.mjs   build-index.mjs
-  search.mjs   pull.mjs   remix.mjs   check.mjs
+  scan.mjs   style.mjs   fates.mjs   build-index.mjs   registry-build.mjs
+  search.mjs   pull.mjs   remix.mjs   check.mjs   add.mjs   onboard.mjs   gallery.mjs
 ```
 
 All scripts are dependency-free Node ESM — they run against any checkout

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-switch",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/switch.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/switch.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/switch",
+    "uniwind/theme-scroller"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/switch",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

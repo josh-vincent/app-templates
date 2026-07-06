@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-health-steps.ts",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/useHealthSteps.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/useHealthSteps.ts"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query"
+  ],
+  "registryDependencies": []
+}

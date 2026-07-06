@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/service-variant-creator",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ServiceVariantCreator.tsx",
+      "type": "registry:ui",
+      "target": "components/ServiceVariantCreator.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/button",
+    "propia/icon",
+    "propia/input",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasStock"
+    ]
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "elements"
+}

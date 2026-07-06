@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/card-scroller",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/CardScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/CardScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "enableSnapping"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

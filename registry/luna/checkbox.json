@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/checkbox",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/forms/Checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Checkbox.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "checked"
+    ]
+  },
+  "traits": [
+    "outlined"
+  ],
+  "group": "forms"
+}

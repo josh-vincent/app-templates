@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/theme-toggle-old",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ThemeToggleOld.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeToggleOld.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-context"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

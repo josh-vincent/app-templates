@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-friends-id",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/friends/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/friends/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "fitstake/h2-hside-by-side"
+  ],
+  "category": "feature",
+  "route": "/friends/[id]",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-user-profile",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/user-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/user-profile.tsx"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-sharing",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/animated-view",
+    "feedy/avatar",
+    "feedy/button",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/masonry",
+    "feedy/placeholder",
+    "feedy/social-post",
+    "feedy/theme-scroller",
+    "feedy/theme-tabs",
+    "feedy/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/user-profile",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

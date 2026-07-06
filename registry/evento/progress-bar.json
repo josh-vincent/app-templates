@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/progress-bar",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/ProgressBar.tsx",
+      "type": "registry:ui",
+      "target": "components/ProgressBar.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "rounded"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/new-chat-input",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/NewChatInput.tsx",
+      "type": "registry:ui",
+      "target": "components/NewChatInput.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

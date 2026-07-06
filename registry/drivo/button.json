@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/button",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/Button.tsx",
+      "type": "registry:ui",
+      "target": "components/Button.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [
+      "primary",
+      "secondary",
+      "outline",
+      "ghost"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "rounded": [],
+    "states": [
+      "loading",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "sharp",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/list-link",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/ListLink.tsx",
+      "type": "registry:ui",
+      "target": "components/ListLink.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showChevron",
+      "disabled",
+      "hasBorder"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

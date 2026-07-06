@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/list-link",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/ListLink.tsx",
+      "type": "registry:ui",
+      "target": "components/ListLink.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "aurora/icon",
+    "aurora/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showChevron",
+      "disabled",
+      "hasBorder"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

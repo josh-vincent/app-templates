@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/expandable",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/Expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/Expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "voyage"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "defaultExpanded",
+      "expanded"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

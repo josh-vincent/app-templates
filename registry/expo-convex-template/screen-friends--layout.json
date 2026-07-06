@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-friends--layout",
+  "type": "registry:layout",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/friends/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/friends/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

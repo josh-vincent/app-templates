@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/multi-step",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

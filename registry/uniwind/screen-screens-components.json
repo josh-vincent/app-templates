@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/lib-utils-use-shadow",
+    "uniwind/list-link",
+    "uniwind/section",
+    "uniwind/theme-scroller"
+  ],
+  "category": "showcase",
+  "route": "/screens/components",
+  "kind": "screen",
+  "traits": [
+    "elevated",
+    "charts"
+  ]
+}

@@ -60,6 +60,16 @@ Full guide: [`catalog/README.md`](./catalog/README.md) ·
 Browsable index: [`catalog/CATALOG.md`](./catalog/CATALOG.md) ·
 Style identifiers: [`catalog/STYLES.md`](./catalog/STYLES.md)
 
+### Registry, gallery & onboarding
+
+```bash
+pnpm catalog:add drivo/button propia/theme --to ../my-app   # shadcn-style install (deps resolved)
+pnpm catalog:add --list drivo --type registry:ui            # what's installable
+pnpm catalog:gallery                                        # visual component library → catalog/gallery/index.html
+pnpm catalog:onboard new pawgo --template propia --fate mvp # scaffold + register a new project
+pnpm catalog:onboard existing ../my-app                     # register an existing one
+```
+
 ## Workspace commands
 
 ```bash

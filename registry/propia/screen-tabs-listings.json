@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-listings",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/listings.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/listings.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/chip",
+    "propia/header",
+    "propia/screen-contexts-theme-colors",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "feature",
+  "route": "/listings",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded"
+  ]
+}

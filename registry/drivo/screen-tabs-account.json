@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs-account",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/account.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/account.tsx"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/list-link",
+    "drivo/theme-scroller",
+    "drivo/themed-text"
+  ],
+  "category": "profile",
+  "route": "/account",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

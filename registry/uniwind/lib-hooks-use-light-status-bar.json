@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-hooks-use-light-status-bar",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "hooks/useLightStatusBar.ts",
+      "type": "registry:lib",
+      "target": "hooks/useLightStatusBar.ts"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "uniwind/lib-contexts-theme-context"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-tabs-favorites",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/(tabs)/favorites.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/favorites.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/themed-text"
+  ],
+  "category": "collections",
+  "route": "/favorites",
+  "kind": "tab",
+  "traits": [
+    "elevated"
+  ]
+}

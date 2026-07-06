@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-settings",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/settings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-utils-currency-storage",
+    "voyage/lib-utils-traveler-profile-storage",
+    "voyage/list-link",
+    "voyage/section",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/settings",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "flat"
+  ]
+}

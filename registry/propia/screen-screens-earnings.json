@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-earnings",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/earnings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/earnings.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-chart-kit"
+  ],
+  "registryDependencies": [
+    "propia/divider",
+    "propia/header",
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/theme-footer",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/earnings",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "animated",
+    "charts"
+  ]
+}

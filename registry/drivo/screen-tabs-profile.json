@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/animated-view",
+    "drivo/avatar",
+    "drivo/header",
+    "drivo/icon",
+    "drivo/lib-utils-use-shadow",
+    "drivo/list-link",
+    "drivo/theme-scroller",
+    "drivo/theme-toggle",
+    "drivo/themed-text"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

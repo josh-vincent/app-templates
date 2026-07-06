@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/chip",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

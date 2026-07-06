@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/won-modal",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/modals/WonModal.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/WonModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-status-bar",
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "drivo/lib-utils-color-theme"
+  ]
+}

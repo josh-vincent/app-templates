@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-bundles-id",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/bundles/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/bundles/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/bundle-deals-sheet",
+    "voyage/date-range-calendar",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-utils-bundle-storage",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-tracked-storage"
+  ],
+  "category": "feature",
+  "route": "/screens/bundles/[id]",
+  "kind": "screen",
+  "traits": []
+}

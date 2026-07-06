@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-dashboard",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/dashboard.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/dashboard.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/card",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-auth-context",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/list-link",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/dashboard",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "charts",
+    "flat"
+  ]
+}

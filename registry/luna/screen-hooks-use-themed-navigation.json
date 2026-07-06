@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "luna/screen-contexts-theme-colors",
+    "luna/screen-contexts-theme-context"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-contexts-creator-mode-context",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "contexts/CreatorModeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/CreatorModeContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/form-tabs",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/forms/FormTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/FormTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isActive"
+    ]
+  },
+  "traits": [],
+  "group": "forms"
+}

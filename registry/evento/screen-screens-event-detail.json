@@ -1,0 +1,61 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-event-detail",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/event-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/event-detail.tsx"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "evento/avatar",
+    "evento/button",
+    "evento/card",
+    "evento/card-scroller",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/section",
+    "evento/show-rating",
+    "evento/themed-text"
+  ],
+  "category": "detail",
+  "route": "/screens/event-detail",
+  "kind": "screen",
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "outlined"
+  ]
+}

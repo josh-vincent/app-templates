@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-notification-settings",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/notification-settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notification-settings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/header",
+    "feedy/section",
+    "feedy/switch",
+    "feedy/theme-scroller"
+  ],
+  "category": "settings",
+  "route": "/screens/notification-settings",
+  "kind": "screen",
+  "traits": []
+}

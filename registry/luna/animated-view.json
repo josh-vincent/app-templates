@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/animated-view",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/AnimatedView.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedView.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "playOnlyOnce",
+      "triggerOnVisible",
+      "shouldResetAnimation"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

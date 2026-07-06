@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/time-picker",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/forms/TimePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/TimePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/icon",
+    "propia/input",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "is24Hour",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

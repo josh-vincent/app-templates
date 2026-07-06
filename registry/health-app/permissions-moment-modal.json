@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/permissions-moment-modal",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/modals/PermissionsMomentModal.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/PermissionsMomentModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [
+    "health-app/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "elevated"
+  ],
+  "group": "elements"
+}

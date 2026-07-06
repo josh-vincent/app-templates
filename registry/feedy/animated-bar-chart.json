@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/animated-bar-chart",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/AnimatedBarChart.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedBarChart.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isHighlighted",
+      "animate"
+    ]
+  },
+  "traits": [
+    "pill",
+    "native-adaptive",
+    "animated",
+    "charts"
+  ],
+  "group": "elements"
+}

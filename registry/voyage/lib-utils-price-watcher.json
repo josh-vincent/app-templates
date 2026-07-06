@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-utils-price-watcher",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "utils/priceWatcher.tsx",
+      "type": "registry:lib",
+      "target": "utils/priceWatcher.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-notifications"
+  ],
+  "registryDependencies": [
+    "voyage/lib-utils-notifications-storage",
+    "voyage/lib-utils-tracked-storage"
+  ]
+}

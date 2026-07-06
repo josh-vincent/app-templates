@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/expandable",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/Expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/Expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "defaultExpanded",
+      "expanded",
+      "hasBorder"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

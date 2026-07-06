@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-hooks-use-collapsible-header.ts",
+  "type": "registry:lib",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/hooks/useCollapsibleHeader.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/useCollapsibleHeader.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

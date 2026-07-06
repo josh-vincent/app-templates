@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/animated-view",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/AnimatedView.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedView.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "playOnlyOnce",
+      "triggerOnVisible"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

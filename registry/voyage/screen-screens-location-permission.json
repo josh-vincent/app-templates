@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-location-permission",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/location-permission.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/location-permission.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-location",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/button",
+    "voyage/icon",
+    "voyage/themed-text"
+  ],
+  "category": "permissions",
+  "route": "/screens/location-permission",
+  "kind": "screen",
+  "traits": []
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/activity-detail-sheet",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/ActivityDetailSheet.tsx",
+      "type": "registry:ui",
+      "target": "components/ActivityDetailSheet.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/bundle-picker-sheet",
+    "voyage/icon",
+    "voyage/image-carousel",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/trip-map",
+    "voyage/trip-picker-sheet"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

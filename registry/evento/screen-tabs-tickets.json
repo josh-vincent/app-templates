@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-tickets",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/tickets.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/tickets.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/button",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/tickets",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-tabs-challenges-index",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/(tabs)/challenges/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/challenges/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "home",
+  "route": "/challenges",
+  "kind": "tab",
+  "traits": []
+}

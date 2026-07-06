@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/celebrations-host",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/modals/CelebrationsHost.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/CelebrationsHost.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "expo-convex-template/poke-burst",
+    "expo-convex-template/running-out-modal",
+    "expo-convex-template/streak-modal",
+    "expo-convex-template/won-modal"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

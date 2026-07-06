@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-subscription",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/subscription.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/subscription.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/theme-scroller",
+    "luna/themed-text"
+  ],
+  "category": "monetization",
+  "route": "/screens/subscription",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

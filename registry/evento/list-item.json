@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/list-item",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/layout/ListItem.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/ListItem.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/avatar",
+    "evento/icon",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "plain",
+      "bordered",
+      "contained"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "flat"
+  ],
+  "group": "layout"
+}

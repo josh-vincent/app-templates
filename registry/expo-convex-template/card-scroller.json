@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/card-scroller",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/CardScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/CardScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "enableSnapping"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

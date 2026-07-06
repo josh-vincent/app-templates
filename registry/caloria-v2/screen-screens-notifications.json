@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-notifications",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notifications.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/chip",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/list",
+    "caloria-v2/list-item",
+    "caloria-v2/skeleton-loader",
+    "caloria-v2/tab-screen-wrapper",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "notifications",
+  "route": "/screens/notifications",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

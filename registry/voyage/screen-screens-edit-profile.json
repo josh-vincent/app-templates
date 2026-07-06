@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-edit-profile",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/edit-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/edit-profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "voyage/chip",
+    "voyage/expandable",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/input",
+    "voyage/section",
+    "voyage/theme-scroller"
+  ],
+  "category": "profile",
+  "route": "/screens/edit-profile",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

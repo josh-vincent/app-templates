@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-utils-tracked-storage",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "utils/trackedStorage.ts",
+      "type": "registry:lib",
+      "target": "utils/trackedStorage.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": []
+}

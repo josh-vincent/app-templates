@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen--layout",
+  "type": "registry:layout",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo-google-fonts/outfit",
+    "expo-router",
+    "react-native-gesture-handler",
+    "react-native-keyboard-controller"
+  ],
+  "registryDependencies": [
+    "drivo/lib-contexts-auth-context",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-contexts-theme-context"
+  ]
+}

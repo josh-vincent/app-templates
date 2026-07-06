@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-progress-bar",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/progress-bar.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/progress-bar.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/progress-bar",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/screens/components/progress-bar",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

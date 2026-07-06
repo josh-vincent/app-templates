@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-fit-stake-pro-gate.ts",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/useFitStakeProGate.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/useFitStakeProGate.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "expo-convex-template/revenue-cat-provider"
+  ]
+}

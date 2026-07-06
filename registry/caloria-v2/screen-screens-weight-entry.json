@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-weight-entry",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/weight-entry.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/weight-entry.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/theme-footer",
+    "caloria-v2/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/weight-entry",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

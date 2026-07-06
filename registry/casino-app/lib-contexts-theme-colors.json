@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "casino-app/lib-contexts-theme-context"
+  ]
+}

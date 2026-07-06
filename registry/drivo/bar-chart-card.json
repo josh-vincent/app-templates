@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/bar-chart-card",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/BarChartCard.tsx",
+      "type": "registry:ui",
+      "target": "components/BarChartCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showYAxis",
+      "showXAxis"
+    ]
+  },
+  "traits": [
+    "animated",
+    "charts"
+  ],
+  "group": "elements"
+}

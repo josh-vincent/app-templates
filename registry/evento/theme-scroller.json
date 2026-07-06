@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/theme-scroller",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/ThemeScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeScroller.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

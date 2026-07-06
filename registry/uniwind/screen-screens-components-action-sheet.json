@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-action-sheet",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/action-sheet.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/action-sheet.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "uniwind/action-sheet-themed",
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/action-sheet",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/theme-tabs",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/ThemeTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "scrollEnabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

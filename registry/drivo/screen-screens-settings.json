@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-settings",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/settings.tsx"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "drivo/action-sheet-themed",
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/header",
+    "drivo/icon",
+    "drivo/input",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-contexts-theme-context",
+    "drivo/list-link",
+    "drivo/selectable",
+    "drivo/theme-scroller",
+    "drivo/theme-toggle",
+    "drivo/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/settings",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

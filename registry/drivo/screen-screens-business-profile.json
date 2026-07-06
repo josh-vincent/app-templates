@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-business-profile",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/business-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/business-profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-keyboard-controller"
+  ],
+  "registryDependencies": [
+    "drivo/button",
+    "drivo/header",
+    "drivo/input",
+    "drivo/select",
+    "drivo/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/business-profile",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

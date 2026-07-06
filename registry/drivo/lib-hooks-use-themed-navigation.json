@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "hooks/useThemedNavigation.tsx",
+      "type": "registry:lib",
+      "target": "hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-contexts-theme-context"
+  ]
+}

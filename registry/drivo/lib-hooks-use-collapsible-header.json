@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-hooks-use-collapsible-header",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "hooks/useCollapsibleHeader.ts",
+      "type": "registry:lib",
+      "target": "hooks/useCollapsibleHeader.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

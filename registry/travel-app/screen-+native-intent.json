@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen-+native-intent",
+  "type": "registry:screen",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/+native-intent.tsx",
+      "type": "registry:screen",
+      "target": "app/+native-intent.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

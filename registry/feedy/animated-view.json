@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/animated-view",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/AnimatedView.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedView.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "playOnlyOnce",
+      "triggerOnVisible"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

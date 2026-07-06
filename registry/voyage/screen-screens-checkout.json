@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-checkout",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/checkout.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/checkout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage",
+    "@tanstack/react-query",
+    "expo-image",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/chip",
+    "voyage/icon",
+    "voyage/input",
+    "voyage/lib-utils-notifications-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/lib-utils-traveler-profile-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/multi-step",
+    "voyage/section",
+    "voyage/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/checkout",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded"
+  ]
+}

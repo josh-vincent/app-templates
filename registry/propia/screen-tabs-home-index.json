@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-home-index",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/card",
+    "propia/card-scroller",
+    "propia/header",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-tabs-home--layout",
+    "propia/section",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "elevated",
+    "animated"
+  ]
+}

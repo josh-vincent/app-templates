@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "hooks/useThemedNavigation.tsx",
+      "type": "registry:lib",
+      "target": "hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/lib-contexts-theme-context"
+  ]
+}

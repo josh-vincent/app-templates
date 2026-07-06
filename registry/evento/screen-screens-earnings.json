@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-earnings",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/earnings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/earnings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/button",
+    "evento/chip",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/earnings",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "charts",
+    "flat"
+  ]
+}

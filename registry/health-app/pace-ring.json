@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/pace-ring",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/PaceRing.tsx",
+      "type": "registry:ui",
+      "target": "components/PaceRing.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-svg"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

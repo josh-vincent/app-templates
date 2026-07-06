@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/selectable",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/forms/Selectable.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Selectable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "selected"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ],
+  "group": "forms"
+}

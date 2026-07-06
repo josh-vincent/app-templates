@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-settings",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/settings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/header",
+    "feedy/list-link",
+    "feedy/section",
+    "feedy/theme-scroller",
+    "feedy/theme-toggle"
+  ],
+  "category": "settings",
+  "route": "/screens/settings",
+  "kind": "screen",
+  "traits": []
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-drawer-tabs-profile",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/profile.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-sharing"
+  ],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/avatar",
+    "feedy/button",
+    "feedy/header",
+    "feedy/masonry",
+    "feedy/placeholder",
+    "feedy/social-post",
+    "feedy/theme-tabs",
+    "feedy/themed-text"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

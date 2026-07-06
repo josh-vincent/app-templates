@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-theme-tabs",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/theme-tabs.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/theme-tabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/avatar",
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/section",
+    "uniwind/theme-tabs",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/theme-tabs",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

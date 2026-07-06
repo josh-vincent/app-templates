@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-native-features.ios",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/native-features.ios.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/native-features.ios.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-constants",
+    "expo-local-authentication",
+    "expo-maps",
+    "expo-notifications"
+  ],
+  "registryDependencies": [
+    "voyage/header",
+    "voyage/icon"
+  ],
+  "category": "feature",
+  "route": "/screens/native-features.ios",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive"
+  ]
+}

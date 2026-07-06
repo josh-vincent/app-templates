@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-settings",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/settings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/header",
+    "evento/list-link",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/theme-toggle"
+  ],
+  "category": "settings",
+  "route": "/screens/settings",
+  "kind": "screen",
+  "traits": []
+}

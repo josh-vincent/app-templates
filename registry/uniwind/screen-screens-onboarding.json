@@ -1,0 +1,54 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-onboarding",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/onboarding.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding.tsx"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/chip",
+    "uniwind/icon",
+    "uniwind/input",
+    "uniwind/multi-step",
+    "uniwind/selectable",
+    "uniwind/switch",
+    "uniwind/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

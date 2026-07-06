@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/lib-utils-color-theme",
+  "type": "registry:lib",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "utils/color-theme.ts",
+      "type": "registry:lib",
+      "target": "utils/color-theme.ts"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

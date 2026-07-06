@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen-trip-id",
+  "type": "registry:screen",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/trip/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/trip/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "travel-app/icon",
+    "travel-app/lib-contexts-theme-colors"
+  ],
+  "category": "planning",
+  "route": "/trip/[id]",
+  "kind": "screen",
+  "traits": [
+    "native-adaptive"
+  ]
+}

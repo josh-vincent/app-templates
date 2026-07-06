@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/theme-scroller",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/ThemeScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "headerSpace"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-notification-permission",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/notification-permission.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notification-permission.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "feedy/button",
+    "feedy/icon",
+    "feedy/themed-text"
+  ],
+  "category": "permissions",
+  "route": "/screens/notification-permission",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

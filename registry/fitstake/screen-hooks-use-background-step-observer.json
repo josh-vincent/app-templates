@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-background-step-observer",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/useBackgroundStepObserver.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useBackgroundStepObserver.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query"
+  ],
+  "registryDependencies": [
+    "fitstake/screen-hooks-use-health-steps.ts"
+  ]
+}

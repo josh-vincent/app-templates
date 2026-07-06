@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/multi-step",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/header",
+    "luna/icon",
+    "luna/lib-utils-back-handler-manager",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/action-tab",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/ActionTab.tsx",
+      "type": "registry:ui",
+      "target": "components/ActionTab.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "caloria-v2/action-sheet-themed",
+    "caloria-v2/grid",
+    "caloria-v2/icon",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

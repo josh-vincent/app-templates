@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/small-chart-card",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/SmallChartCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallChartCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-chart-kit"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-utils-use-shadow",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "outlined",
+    "charts"
+  ],
+  "group": "elements"
+}

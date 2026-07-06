@@ -1,0 +1,48 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/header",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/time-picker",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/TimePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/TimePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/input"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "is24Hour",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

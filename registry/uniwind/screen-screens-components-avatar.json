@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-avatar",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/avatar.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/avatar.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/avatar",
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/avatar",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

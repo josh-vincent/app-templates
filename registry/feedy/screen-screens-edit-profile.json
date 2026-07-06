@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-edit-profile",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/edit-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/edit-profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "feedy/button",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/switch",
+    "feedy/theme-scroller"
+  ],
+  "category": "profile",
+  "route": "/screens/edit-profile",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

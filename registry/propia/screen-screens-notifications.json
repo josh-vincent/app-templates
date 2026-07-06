@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-notifications",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notifications.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/chip",
+    "propia/header",
+    "propia/icon",
+    "propia/list",
+    "propia/list-item",
+    "propia/skeleton-loader",
+    "propia/tab-screen-wrapper",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "notifications",
+  "route": "/screens/notifications",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-filters",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/filters.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/filters.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/slider",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/chip",
+    "evento/header",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/section",
+    "evento/switch",
+    "evento/theme-footer",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "discovery",
+  "route": "/screens/filters",
+  "kind": "screen",
+  "traits": [
+    "outlined",
+    "flat"
+  ]
+}

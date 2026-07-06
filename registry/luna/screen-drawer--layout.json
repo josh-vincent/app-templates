@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-drawer--layout",
+  "type": "registry:layout",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo-google-fonts/outfit",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/custom-drawer-content",
+    "luna/screen-contexts-theme-colors"
+  ]
+}

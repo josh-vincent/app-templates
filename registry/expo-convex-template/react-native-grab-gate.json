@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/react-native-grab-gate",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/dev/ReactNativeGrabGate.tsx",
+      "type": "registry:ui",
+      "target": "components/dev/ReactNativeGrabGate.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-grab"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

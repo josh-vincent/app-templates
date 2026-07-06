@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/list-item",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/layout/ListItem.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/ListItem.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "plain",
+      "bordered",
+      "contained"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "flat"
+  ],
+  "group": "layout"
+}

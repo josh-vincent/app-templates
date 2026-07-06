@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/small-chart-card",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/SmallChartCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallChartCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-chart-kit"
+  ],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "outlined",
+    "charts",
+    "flat"
+  ],
+  "group": "elements"
+}

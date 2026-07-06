@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/trip-picker-sheet",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/TripPickerSheet.tsx",
+      "type": "registry:ui",
+      "target": "components/TripPickerSheet.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-utils-trip-storage"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "dim"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

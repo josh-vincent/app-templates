@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-ai-voice",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/ai-voice.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/ai-voice.tsx"
+    }
+  ],
+  "dependencies": [
+    "lottie-react-native"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/header",
+    "luna/icon",
+    "luna/lib-utils-use-shadow",
+    "luna/screen-contexts-theme-colors",
+    "luna/section",
+    "luna/themed-text",
+    "luna/voice-select-card"
+  ],
+  "category": "feature",
+  "route": "/screens/ai-voice",
+  "kind": "screen",
+  "traits": [
+    "elevated",
+    "lottie"
+  ]
+}

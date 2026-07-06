@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/revenue-cat-provider",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/RevenueCatProvider.tsx",
+      "type": "registry:ui",
+      "target": "components/RevenueCatProvider.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-purchases",
+    "react-native-purchases-ui"
+  ],
+  "registryDependencies": [
+    "fitstake/lib-contexts-dev-persona-context"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

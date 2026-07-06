@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-drawer-tabs--layout",
+  "type": "registry:layout",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/action-tab",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/tab-button"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-chat",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/chat.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat.tsx"
+    },
+    {
+      "path": "assets/img/user-7.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-7.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-keyboard-controller",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

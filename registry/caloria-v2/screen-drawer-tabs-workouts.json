@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-drawer-tabs-workouts",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/workouts.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/workouts.tsx"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/avatar",
+    "caloria-v2/card-scroller",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/section",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text",
+    "caloria-v2/workout-bar-chart"
+  ],
+  "category": "feature",
+  "route": "/workouts",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "outlined",
+    "charts",
+    "flat"
+  ]
+}

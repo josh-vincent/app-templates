@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/theme",
+  "type": "registry:theme",
+  "template": "caloria-v2",
+  "title": "Caloria — Fitness & Nutrition Tracker theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "utils/color-theme.ts",
+      "type": "registry:theme",
+      "target": "utils/color-theme.ts"
+    },
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "app/contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-friends-index",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/friends/index.tsx",
+      "type": "registry:screen",
+      "target": "app/friends/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "fitstake/feed-segment",
+    "fitstake/friends-top-switcher",
+    "fitstake/leaderboard-segment",
+    "fitstake/live-segment",
+    "fitstake/manage-segment"
+  ],
+  "category": "home",
+  "route": "/friends",
+  "kind": "screen",
+  "traits": []
+}

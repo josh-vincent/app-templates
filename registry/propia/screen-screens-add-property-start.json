@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-add-property-start",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/add-property-start.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/add-property-start.tsx"
+    },
+    {
+      "path": "assets/img/bed.png",
+      "type": "registry:asset",
+      "target": "assets/img/bed.png"
+    },
+    {
+      "path": "assets/img/door.png",
+      "type": "registry:asset",
+      "target": "assets/img/door.png"
+    },
+    {
+      "path": "assets/img/sofa.png",
+      "type": "registry:asset",
+      "target": "assets/img/sofa.png"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/divider",
+    "propia/header",
+    "propia/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/add-property-start",
+  "kind": "screen",
+  "traits": []
+}

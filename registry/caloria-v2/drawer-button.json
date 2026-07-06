@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/drawer-button",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/DrawerButton.tsx",
+      "type": "registry:ui",
+      "target": "components/DrawerButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/avatar",
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": [
+      "isAvatar"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

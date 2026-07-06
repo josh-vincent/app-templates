@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/small-circle-card",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/SmallCircleCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallCircleCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-utils-use-shadow",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "animated"
+  ],
+  "group": "elements"
+}

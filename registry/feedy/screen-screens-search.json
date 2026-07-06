@@ -1,0 +1,59 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-search",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/search.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/search.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/avatar",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/section",
+    "feedy/theme-scroller",
+    "feedy/themed-text"
+  ],
+  "category": "discovery",
+  "route": "/screens/search",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

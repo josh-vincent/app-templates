@@ -1,0 +1,47 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    },
+    {
+      "path": "assets/img/onboarding-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/onboarding-1.jpg"
+    },
+    {
+      "path": "assets/img/onboarding-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/onboarding-2.jpg"
+    },
+    {
+      "path": "assets/img/wallpaper-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/wallpaper-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/theme-toggle",
+    "caloria-v2/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "flat"
+  ]
+}

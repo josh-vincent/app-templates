@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-tabs-history",
+  "type": "registry:screen",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/(tabs)/history.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/history.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "casino-app/balance-header",
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "category": "planning",
+  "route": "/history",
+  "kind": "tab",
+  "traits": []
+}

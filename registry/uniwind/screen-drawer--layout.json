@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-drawer--layout",
+  "type": "registry:layout",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo-google-fonts/outfit",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/custom-drawer-content",
+    "uniwind/lib-contexts-drawer-context",
+    "uniwind/lib-contexts-theme-colors"
+  ]
+}

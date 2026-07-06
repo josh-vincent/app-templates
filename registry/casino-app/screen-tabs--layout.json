@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-tabs--layout",
+  "type": "registry:layout",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "casino-app/lib-contexts-theme-colors",
+    "casino-app/tab-button"
+  ]
+}

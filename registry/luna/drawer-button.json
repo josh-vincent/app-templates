@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/drawer-button",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/DrawerButton.tsx",
+      "type": "registry:ui",
+      "target": "components/DrawerButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/avatar",
+    "luna/icon",
+    "luna/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": [
+      "isAvatar"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

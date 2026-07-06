@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/lib-contexts-balance-context",
+  "type": "registry:lib",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "contexts/BalanceContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/BalanceContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": []
+}

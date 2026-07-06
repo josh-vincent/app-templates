@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-stays-index",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/stays/index.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/stays/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query",
+    "expo-image",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/counter",
+    "voyage/date-range-calendar",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-stays-storage",
+    "voyage/stay-compare-sheet",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "home",
+  "route": "/screens/stays",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive"
+  ]
+}

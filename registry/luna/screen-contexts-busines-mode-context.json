@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-contexts-busines-mode-context",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/contexts/BusinesModeContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/BusinesModeContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

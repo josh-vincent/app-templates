@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/date-range-calendar",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/DateRangeCalendar.tsx",
+      "type": "registry:ui",
+      "target": "components/DateRangeCalendar.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-calendars"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

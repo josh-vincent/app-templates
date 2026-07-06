@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/button",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/Button.tsx",
+      "type": "registry:ui",
+      "target": "components/Button.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "aurora/icon"
+  ],
+  "props": {
+    "variants": [
+      "primary",
+      "secondary",
+      "outline",
+      "ghost"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "rounded": [],
+    "states": [
+      "loading",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "sharp",
+    "outlined"
+  ],
+  "group": "elements"
+}

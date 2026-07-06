@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/custom-drawer-content",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/CustomDrawerContent.tsx",
+      "type": "registry:ui",
+      "target": "components/CustomDrawerContent.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "uniwind/action-sheet-themed",
+    "uniwind/avatar",
+    "uniwind/icon",
+    "uniwind/lib-contexts-auth-context",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

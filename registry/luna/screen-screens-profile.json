@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-profile",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/avatar",
+    "luna/header",
+    "luna/lib-utils-use-shadow",
+    "luna/list-link",
+    "luna/theme-scroller",
+    "luna/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

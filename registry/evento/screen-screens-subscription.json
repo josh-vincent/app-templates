@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-subscription",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/subscription.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/subscription.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "evento/action-sheet-themed",
+    "evento/button",
+    "evento/chip",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/theme-footer",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "monetization",
+  "route": "/screens/subscription",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

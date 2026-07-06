@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-contexts-drawer-context",
+  "type": "registry:lib",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/contexts/DrawerContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/DrawerContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

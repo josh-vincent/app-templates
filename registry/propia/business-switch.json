@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/business-switch",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/BusinessSwitch.tsx",
+      "type": "registry:ui",
+      "target": "components/BusinessSwitch.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-busines-mode-context",
+    "propia/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

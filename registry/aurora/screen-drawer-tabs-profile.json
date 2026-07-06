@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-drawer-tabs-profile",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-primitives",
+    "aurora/sky-background"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": []
+}

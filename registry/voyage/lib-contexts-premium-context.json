@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-contexts-premium-context",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "contexts/PremiumContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/PremiumContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

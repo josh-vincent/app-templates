@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/lib-utils-back-handler-manager",
+  "type": "registry:lib",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "utils/BackHandlerManager.tsx",
+      "type": "registry:lib",
+      "target": "utils/BackHandlerManager.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

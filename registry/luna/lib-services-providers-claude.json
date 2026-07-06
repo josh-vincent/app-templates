@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-services-providers-claude",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "services/providers/claude.ts",
+      "type": "registry:lib",
+      "target": "services/providers/claude.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/lib-services-ai"
+  ]
+}

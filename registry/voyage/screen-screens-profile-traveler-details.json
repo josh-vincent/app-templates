@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-profile-traveler-details",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/profile/traveler-details.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/traveler-details.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/chip",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/input",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-traveler-profile-storage",
+    "voyage/themed-text",
+    "voyage/toast"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/traveler-details",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated"
+  ]
+}

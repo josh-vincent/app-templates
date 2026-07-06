@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-chat-list",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/chat/list.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat/list.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/avatar",
+    "propia/header",
+    "propia/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat/list",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

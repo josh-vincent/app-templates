@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/geo-glyph",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/GeoGlyph.tsx",
+      "type": "registry:ui",
+      "target": "components/GeoGlyph.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-svg"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

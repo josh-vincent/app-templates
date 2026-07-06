@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-step-submitter",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/useStepSubmitter.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useStepSubmitter.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": [
+    "fitstake/screen-hooks-use-health-steps.ts"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/header",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

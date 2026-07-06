@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-collapsible-title.ts",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/useCollapsibleTitle.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/useCollapsibleTitle.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

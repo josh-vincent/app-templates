@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen--layout",
+  "type": "registry:layout",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@convex-dev/auth",
+    "@jv/ui",
+    "@tanstack/react-query",
+    "convex",
+    "expo-router",
+    "expo-secure-store",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/celebrations-host",
+    "expo-convex-template/lib-contexts-dev-persona-context",
+    "expo-convex-template/react-native-grab-gate",
+    "expo-convex-template/revenue-cat-provider",
+    "expo-convex-template/screen-hooks-use-background-step-observer",
+    "expo-convex-template/screen-hooks-use-push-notifications.ts",
+    "expo-convex-template/screen-hooks-use-step-submitter",
+    "expo-convex-template/screen-hooks-use-themed-navigation"
+  ]
+}

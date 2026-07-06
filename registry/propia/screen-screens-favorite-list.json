@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-favorite-list",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/favorite-list.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/favorite-list.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "lucide-react-native",
+    "react-native-actions-sheet",
+    "react-native-maps",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/card-scroller",
+    "propia/chip",
+    "propia/custom-card",
+    "propia/header",
+    "propia/icon",
+    "propia/image-carousel",
+    "propia/price-marker",
+    "propia/screen-contexts-theme-colors",
+    "propia/search-bar",
+    "propia/section",
+    "propia/show-rating",
+    "propia/slider-card",
+    "propia/themed-text"
+  ],
+  "category": "collections",
+  "route": "/screens/favorite-list",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "maps",
+    "flat"
+  ]
+}

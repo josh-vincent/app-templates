@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-booking-detail",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/booking-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/booking-detail.tsx"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/avatar",
+    "propia/button",
+    "propia/divider",
+    "propia/header",
+    "propia/icon",
+    "propia/image-carousel",
+    "propia/list-link",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/show-rating",
+    "propia/theme-footer",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/booking-detail",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined"
+  ]
+}

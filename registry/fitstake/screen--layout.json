@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen--layout",
+  "type": "registry:layout",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@convex-dev/auth",
+    "@jv/ui",
+    "@tanstack/react-query",
+    "convex",
+    "expo-router",
+    "expo-secure-store",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "fitstake/celebrations-host",
+    "fitstake/lib-contexts-dev-persona-context",
+    "fitstake/react-native-grab-gate",
+    "fitstake/revenue-cat-provider",
+    "fitstake/screen-hooks-use-background-step-observer",
+    "fitstake/screen-hooks-use-push-notifications.ts",
+    "fitstake/screen-hooks-use-step-submitter",
+    "fitstake/screen-hooks-use-themed-navigation",
+    "fitstake/screen-hooks-use-widget-snapshot.ts"
+  ]
+}

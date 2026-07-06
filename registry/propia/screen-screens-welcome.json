@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router",
+    "expo-status-bar",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/theme-toggle",
+    "propia/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded"
+  ]
+}

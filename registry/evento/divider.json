@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/divider",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/layout/Divider.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Divider.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

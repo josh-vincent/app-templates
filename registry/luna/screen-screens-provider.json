@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-provider",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/provider.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/provider.tsx"
+    },
+    {
+      "path": "assets/img/logo-3.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-3.png"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/button",
+    "luna/header",
+    "luna/show-rating",
+    "luna/theme-footer",
+    "luna/theme-scroller",
+    "luna/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/provider",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

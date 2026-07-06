@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-home--layout",
+  "type": "registry:layout",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/home-tabs",
+    "propia/icon",
+    "propia/search-bar",
+    "propia/themed-text"
+  ]
+}

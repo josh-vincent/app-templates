@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/glass-overlays",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/GlassOverlays.tsx",
+      "type": "registry:ui",
+      "target": "components/GlassOverlays.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-glass-effect",
+    "expo-linear-gradient",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-primitives"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "glass",
+    "liquid-glass",
+    "gradient",
+    "elevated",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

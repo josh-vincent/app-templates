@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-onboarding-start",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/onboarding-start.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding-start.tsx"
+    },
+    {
+      "path": "assets/img/onboarding.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/onboarding.jpg"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/theme-toggle",
+    "feedy/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding-start",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "flat"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/skeleton",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/Skeleton.tsx",
+      "type": "registry:ui",
+      "target": "components/Skeleton.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "travel-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-location-permission",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/location-permission.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/location-permission.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-location",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "feedy/button",
+    "feedy/icon",
+    "feedy/themed-text"
+  ],
+  "category": "permissions",
+  "route": "/screens/location-permission",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

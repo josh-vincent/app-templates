@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-product-detail",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/product-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/product-detail.tsx"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-status-bar",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/avatar",
+    "propia/button",
+    "propia/card-scroller",
+    "propia/divider",
+    "propia/favorite",
+    "propia/header",
+    "propia/icon",
+    "propia/image-carousel",
+    "propia/section",
+    "propia/show-rating",
+    "propia/switch",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "detail",
+  "route": "/screens/product-detail",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

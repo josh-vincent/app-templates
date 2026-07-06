@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-profile-payments",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/profile/payments.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/payments.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/card-scroller",
+    "propia/header",
+    "propia/icon",
+    "propia/input",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/themed-text",
+    "propia/toggle"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/payments",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

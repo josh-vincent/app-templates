@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "hooks/useThemedNavigation.tsx",
+      "type": "registry:lib",
+      "target": "hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-contexts-theme-context"
+  ]
+}

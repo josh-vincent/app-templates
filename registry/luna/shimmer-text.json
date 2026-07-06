@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/shimmer-text",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ShimmerText.tsx",
+      "type": "registry:ui",
+      "target": "components/ShimmerText.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-masked-view/masked-view",
+    "expo-linear-gradient",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "luna/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "animated"
+  ],
+  "group": "elements"
+}

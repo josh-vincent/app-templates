@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-review",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/review.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/review.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/review",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "reviews",
+  "route": "/screens/components/review",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-contexts-auth-context",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "contexts/AuthContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/AuthContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

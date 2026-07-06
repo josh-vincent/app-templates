@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/chip-examples",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ChipExamples.tsx",
+      "type": "registry:ui",
+      "target": "components/ChipExamples.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/avatar",
+    "propia/chip",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

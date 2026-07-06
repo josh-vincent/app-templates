@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen--layout",
+  "type": "registry:layout",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@convex-dev/auth",
+    "@tanstack/react-query",
+    "convex",
+    "expo-router",
+    "expo-secure-store",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "travel-app/error-boundary",
+    "travel-app/lib-contexts-dev-persona-context",
+    "travel-app/lib-contexts-theme-context",
+    "travel-app/screen-hooks-use-push-notifications.ts",
+    "travel-app/screen-hooks-use-themed-navigation"
+  ]
+}

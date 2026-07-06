@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/multiple-image-picker",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/MultipleImagePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/MultipleImagePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "voyage/card-scroller",
+    "voyage/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasMainImage"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    },
+    {
+      "path": "assets/lottie/sphere.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/sphere.json"
+    },
+    {
+      "path": "assets/lottie/waves.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/waves.json"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router",
+    "expo-status-bar",
+    "lottie-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/theme-toggle",
+    "luna/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "lottie",
+    "flat"
+  ]
+}

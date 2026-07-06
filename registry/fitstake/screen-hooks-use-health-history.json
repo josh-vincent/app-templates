@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-health-history",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/useHealthHistory.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useHealthHistory.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query"
+  ],
+  "registryDependencies": []
+}

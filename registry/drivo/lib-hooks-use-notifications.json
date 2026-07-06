@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-hooks-use-notifications",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "hooks/useNotifications.ts",
+      "type": "registry:lib",
+      "target": "hooks/useNotifications.ts"
+    }
+  ],
+  "dependencies": [
+    "expo-constants",
+    "expo-device",
+    "expo-notifications"
+  ],
+  "registryDependencies": []
+}

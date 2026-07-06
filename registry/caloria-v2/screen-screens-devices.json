@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-devices",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/devices.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/devices.tsx"
+    },
+    {
+      "path": "assets/img/smartwatch.png",
+      "type": "registry:asset",
+      "target": "assets/img/smartwatch.png"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "caloria-v2/action-sheet-themed",
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/input",
+    "caloria-v2/section",
+    "caloria-v2/theme-footer",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/devices",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-tabs-home-index",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-flight-search-context",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/search-bar",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

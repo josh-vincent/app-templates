@@ -1,0 +1,52 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/chat-input",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ChatInput.tsx",
+      "type": "registry:ui",
+      "target": "components/ChatInput.tsx"
+    },
+    {
+      "path": "assets/lottie/waves.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/waves.json"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "expo-linear-gradient",
+    "lottie-react-native",
+    "react-native-gesture-handler",
+    "react-native-keyboard-controller",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/card-scroller",
+    "luna/icon",
+    "luna/lib-hooks-use-recording",
+    "luna/lib-utils-use-shadow",
+    "luna/screen-contexts-theme-colors",
+    "luna/shimmer-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "animated",
+    "lottie"
+  ],
+  "group": "elements"
+}

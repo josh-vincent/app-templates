@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/feed-segment",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/friends/segments/FeedSegment.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/segments/FeedSegment.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "fitstake/friends-activity-card"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

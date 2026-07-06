@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-signup",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/signup.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/signup.tsx"
+    },
+    {
+      "path": "assets/img/wallpaper.webp",
+      "type": "registry:asset",
+      "target": "assets/img/wallpaper.webp"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router",
+    "expo-status-bar",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/button",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/signup",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "native-adaptive",
+    "flat"
+  ]
+}

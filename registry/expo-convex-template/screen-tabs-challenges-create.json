@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-tabs-challenges-create",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/(tabs)/challenges/create.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/challenges/create.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "feature",
+  "route": "/challenges/create",
+  "kind": "tab",
+  "traits": [
+    "native-adaptive",
+    "charts"
+  ]
+}

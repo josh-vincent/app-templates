@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-join-ref",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/join/[ref].tsx",
+      "type": "registry:screen",
+      "target": "app/join/[ref].tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "feature",
+  "route": "/join/[ref]",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

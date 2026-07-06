@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-context"
+  ]
+}

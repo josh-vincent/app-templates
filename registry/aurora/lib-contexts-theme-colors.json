@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "aurora/lib-contexts-theme-context"
+  ]
+}

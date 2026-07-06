@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/date-range-calendar",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/DateRangeCalendar.tsx",
+      "type": "registry:ui",
+      "target": "components/DateRangeCalendar.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-calendars"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

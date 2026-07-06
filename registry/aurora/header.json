@@ -1,0 +1,47 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/header",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/icon",
+    "aurora/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred",
+      "collapsibleTitle"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

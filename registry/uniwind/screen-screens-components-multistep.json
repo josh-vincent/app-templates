@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-multistep",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/multistep.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/multistep.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/input",
+    "uniwind/multi-step",
+    "uniwind/selectable",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/multistep",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

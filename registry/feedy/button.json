@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/button",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Button.tsx",
+      "type": "registry:ui",
+      "target": "components/Button.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [
+      "primary",
+      "secondary",
+      "outline",
+      "ghost"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "rounded": [],
+    "states": [
+      "loading",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "sharp",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

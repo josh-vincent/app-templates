@@ -1,0 +1,76 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs-activity",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/activity.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/activity.tsx"
+    },
+    {
+      "path": "assets/img/black-suv.png",
+      "type": "registry:asset",
+      "target": "assets/img/black-suv.png"
+    },
+    {
+      "path": "assets/img/premium.png",
+      "type": "registry:asset",
+      "target": "assets/img/premium.png"
+    },
+    {
+      "path": "assets/img/standard.png",
+      "type": "registry:asset",
+      "target": "assets/img/standard.png"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    },
+    {
+      "path": "assets/img/user-5.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-5.jpg"
+    },
+    {
+      "path": "assets/img/user-6.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-6.jpg"
+    },
+    {
+      "path": "assets/img/user-7.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-7.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "drivo/action-sheet-themed",
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/header",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/section",
+    "drivo/themed-text"
+  ],
+  "category": "planning",
+  "route": "/activity",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

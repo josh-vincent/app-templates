@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/button",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/Button.tsx",
+      "type": "registry:ui",
+      "target": "components/Button.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/icon"
+  ],
+  "props": {
+    "variants": [
+      "primary",
+      "secondary",
+      "outline",
+      "ghost",
+      "ink"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "rounded": [],
+    "states": [
+      "loading",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "sharp",
+    "outlined"
+  ],
+  "group": "elements"
+}

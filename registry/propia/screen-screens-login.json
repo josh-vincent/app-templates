@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-login",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/login.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/login.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/header",
+    "propia/input",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/login",
+  "kind": "screen",
+  "traits": []
+}

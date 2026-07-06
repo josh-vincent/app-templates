@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-add-workout",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/add-workout.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/add-workout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/card-scroller",
+    "caloria-v2/chip",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/lib-utils-use-shadow",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/theme-footer",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/add-workout",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "elevated"
+  ]
+}

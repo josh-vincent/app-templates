@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/celebrations-host",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/modals/CelebrationsHost.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/CelebrationsHost.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "fitstake/poke-burst",
+    "fitstake/running-out-modal",
+    "fitstake/streak-modal",
+    "fitstake/won-modal"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

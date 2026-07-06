@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-index",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/index.tsx",
+      "type": "registry:screen",
+      "target": "app/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "category": "home",
+  "route": "/",
+  "kind": "entry",
+  "traits": []
+}

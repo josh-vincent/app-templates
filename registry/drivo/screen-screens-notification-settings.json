@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-notification-settings",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/notification-settings.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notification-settings.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/header",
+    "drivo/section",
+    "drivo/switch",
+    "drivo/theme-scroller"
+  ],
+  "category": "settings",
+  "route": "/screens/notification-settings",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

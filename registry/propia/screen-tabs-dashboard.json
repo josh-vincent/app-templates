@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-dashboard",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/dashboard.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/dashboard.tsx"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/card-scroller",
+    "propia/chip",
+    "propia/header",
+    "propia/icon",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-screens-notifications",
+    "propia/section",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/dashboard",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "elevated"
+  ]
+}

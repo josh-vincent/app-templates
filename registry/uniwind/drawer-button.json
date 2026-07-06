@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/drawer-button",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/DrawerButton.tsx",
+      "type": "registry:ui",
+      "target": "components/DrawerButton.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/avatar",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": [
+      "isAvatar"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

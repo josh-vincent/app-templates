@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-filters",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/filters.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/filters.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/button",
+    "voyage/chip",
+    "voyage/header",
+    "voyage/section",
+    "voyage/slider",
+    "voyage/theme-footer",
+    "voyage/theme-scroller",
+    "voyage/themed-text",
+    "voyage/time-picker"
+  ],
+  "category": "discovery",
+  "route": "/screens/filters",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined"
+  ]
+}
