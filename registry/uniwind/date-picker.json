@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/date-picker",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/forms/DatePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/DatePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/datetimepicker",
+    "react-native-modal",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "uniwind/button",
+    "uniwind/icon",
+    "uniwind/input",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/lib-utils-date",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-search-form",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/search-form.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/search-form.tsx"
+    },
+    {
+      "path": "assets/img/logo-1.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-1.png"
+    },
+    {
+      "path": "assets/img/logo-2.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-2.png"
+    },
+    {
+      "path": "assets/img/logo-3.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-3.png"
+    },
+    {
+      "path": "assets/img/logo-4.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-4.png"
+    },
+    {
+      "path": "assets/img/logo-5.png",
+      "type": "registry:asset",
+      "target": "assets/img/logo-5.png"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/card-scroller",
+    "luna/chip",
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/theme-scroller",
+    "luna/themed-text"
+  ],
+  "category": "discovery",
+  "route": "/screens/search-form",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated"
+  ]
+}

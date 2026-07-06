@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/card-scroller",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/CardScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/CardScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "enableSnapping"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/friend-stake-row",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/friends/FriendStakeRow.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/FriendStakeRow.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "fitstake/whats-left-breakdown"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

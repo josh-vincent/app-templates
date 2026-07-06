@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/input",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/forms/Input.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Input.tsx"
+    }
+  ],
+  "dependencies": [
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword",
+      "isMultiline",
+      "inRow"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

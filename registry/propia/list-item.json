@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/list-item",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/layout/ListItem.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/ListItem.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/avatar",
+    "propia/icon",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "plain",
+      "bordered",
+      "contained"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [],
+  "group": "layout"
+}

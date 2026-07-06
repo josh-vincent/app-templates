@@ -1,0 +1,53 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    },
+    {
+      "path": "assets/img/banner-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-1.jpg"
+    },
+    {
+      "path": "assets/img/banner-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-2.jpg"
+    },
+    {
+      "path": "assets/img/banner-home.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-home.jpg"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/icon",
+    "evento/input",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-utils-use-shadow",
+    "evento/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "elevated",
+    "native-adaptive",
+    "animated"
+  ]
+}

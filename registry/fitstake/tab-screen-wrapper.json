@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/tab-screen-wrapper",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/TabScreenWrapper.tsx",
+      "type": "registry:ui",
+      "target": "components/TabScreenWrapper.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "fitstake/animated-view"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

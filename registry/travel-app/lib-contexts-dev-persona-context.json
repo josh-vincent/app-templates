@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/lib-contexts-dev-persona-context",
+  "type": "registry:lib",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "contexts/DevPersonaContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/DevPersonaContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-secure-store"
+  ],
+  "registryDependencies": []
+}

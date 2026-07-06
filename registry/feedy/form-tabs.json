@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/form-tabs",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/forms/FormTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/FormTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/lib-lib-utils",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isActive"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "forms"
+}

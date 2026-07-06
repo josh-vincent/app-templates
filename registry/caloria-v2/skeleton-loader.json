@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/skeleton-loader",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/SkeletonLoader.tsx",
+      "type": "registry:ui",
+      "target": "components/SkeletonLoader.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

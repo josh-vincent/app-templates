@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-welcome",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/welcome.tsx"
+    },
+    {
+      "path": "assets/img/uniwind-paper.png",
+      "type": "registry:asset",
+      "target": "assets/img/uniwind-paper.png"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/theme-toggle",
+    "uniwind/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/welcome",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ]
+}

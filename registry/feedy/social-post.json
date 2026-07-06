@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/social-post",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/SocialPost.tsx",
+      "type": "registry:ui",
+      "target": "components/SocialPost.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/avatar",
+    "feedy/card-scroller",
+    "feedy/icon",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

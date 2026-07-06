@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/search-bar",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/SearchBar.tsx",
+      "type": "registry:ui",
+      "target": "components/SearchBar.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/button",
+    "voyage/counter",
+    "voyage/date-range-calendar",
+    "voyage/divider",
+    "voyage/icon",
+    "voyage/lib-contexts-flight-search-context",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "glass",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

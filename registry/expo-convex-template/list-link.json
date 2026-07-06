@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/list-link",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/ListLink.tsx",
+      "type": "registry:ui",
+      "target": "components/ListLink.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon",
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showChevron",
+      "disabled",
+      "hasBorder"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-onboarding-welcome",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/onboarding/welcome.tsx",
+      "type": "registry:screen",
+      "target": "app/onboarding/welcome.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "auth",
+  "route": "/onboarding/welcome",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

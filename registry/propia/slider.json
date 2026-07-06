@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/slider",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/forms/Slider.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Slider.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "forms"
+}

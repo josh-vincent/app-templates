@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors",
+    "propia/screen-contexts-theme-context"
+  ]
+}

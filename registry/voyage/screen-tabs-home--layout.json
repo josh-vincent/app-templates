@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-tabs-home--layout",
+  "type": "registry:layout",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": []
+}

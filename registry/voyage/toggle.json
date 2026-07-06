@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/toggle",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/Toggle.tsx",
+      "type": "registry:ui",
+      "target": "components/Toggle.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

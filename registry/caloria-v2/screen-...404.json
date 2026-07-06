@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-...404",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/themed-text"
+  ]
+}

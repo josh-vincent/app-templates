@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-api--env.ts",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/api/_env.ts",
+      "type": "registry:screen",
+      "target": "app/api/_env.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

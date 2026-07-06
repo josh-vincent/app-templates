@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/expandable",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/Expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/Expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "defaultExpanded",
+      "expanded"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

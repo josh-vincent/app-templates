@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/placeholder",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/Placeholder.tsx",
+      "type": "registry:ui",
+      "target": "components/Placeholder.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "travel-app/button",
+    "travel-app/icon",
+    "travel-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "outlined"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/stack",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/layout/Stack.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Stack.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

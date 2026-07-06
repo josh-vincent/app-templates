@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-datepicker",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/datepicker.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/datepicker.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/date-picker",
+    "uniwind/header",
+    "uniwind/theme-scroller"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/datepicker",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

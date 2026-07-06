@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/theme-toggle",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/ThemeToggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeToggle.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "fitstake/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

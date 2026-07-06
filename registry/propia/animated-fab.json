@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/animated-fab",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/AnimatedFab.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedFab.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

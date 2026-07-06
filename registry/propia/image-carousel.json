@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/image-carousel",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ImageCarousel.tsx",
+      "type": "registry:ui",
+      "target": "components/ImageCarousel.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "showPagination",
+      "autoPlay",
+      "loop"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

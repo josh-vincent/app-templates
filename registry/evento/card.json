@@ -1,0 +1,57 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/card",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/Card.tsx",
+      "type": "registry:ui",
+      "target": "components/Card.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/favorite",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-utils-use-shadow",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "classic",
+      "overlay",
+      "compact",
+      "minimal"
+    ],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "full"
+    ],
+    "states": [
+      "hasShadow",
+      "showOverlay",
+      "hasFavorite"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "sharp",
+    "elevated"
+  ],
+  "group": "elements"
+}

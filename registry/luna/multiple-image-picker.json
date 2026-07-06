@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/multiple-image-picker",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/MultipleImagePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/MultipleImagePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "luna/card-scroller",
+    "luna/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasMainImage"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

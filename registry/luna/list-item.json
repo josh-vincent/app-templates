@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/list-item",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/layout/ListItem.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/ListItem.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/avatar",
+    "luna/icon",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "plain",
+      "bordered",
+      "contained"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "layout"
+}

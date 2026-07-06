@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/custom-card",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/CustomCard.tsx",
+      "type": "registry:ui",
+      "target": "components/CustomCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "border",
+      "background",
+      "elevation",
+      "horizontal"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

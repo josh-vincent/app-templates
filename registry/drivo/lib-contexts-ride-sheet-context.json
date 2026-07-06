@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-contexts-ride-sheet-context",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "contexts/RideSheetContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/RideSheetContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

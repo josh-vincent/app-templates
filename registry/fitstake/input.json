@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/input",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/forms/Input.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Input.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "fitstake/icon",
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword",
+      "isMultiline",
+      "inRow"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "forms"
+}

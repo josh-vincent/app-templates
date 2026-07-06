@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-map",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/map.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/map.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet",
+    "react-native-maps"
+  ],
+  "registryDependencies": [
+    "evento/header",
+    "evento/icon",
+    "evento/image-carousel",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/themed-text"
+  ],
+  "category": "maps",
+  "route": "/map",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive",
+    "maps",
+    "flat"
+  ]
+}

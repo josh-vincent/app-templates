@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-create",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/create.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/create.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/button",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/list-link",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "feature",
+  "route": "/create",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "charts",
+    "flat"
+  ]
+}

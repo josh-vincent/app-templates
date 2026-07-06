@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/skeleton",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/Skeleton.tsx",
+      "type": "registry:ui",
+      "target": "components/Skeleton.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

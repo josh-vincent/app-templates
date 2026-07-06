@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-notifications",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notifications.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "notifications",
+  "route": "/screens/notifications",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

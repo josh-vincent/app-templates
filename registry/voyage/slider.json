@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/slider",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/forms/Slider.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Slider.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "forms"
+}

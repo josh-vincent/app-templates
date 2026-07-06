@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-contexts-drawer-context",
+  "type": "registry:lib",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/contexts/DrawerContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/DrawerContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

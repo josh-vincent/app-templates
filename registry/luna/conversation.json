@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/conversation",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Conversation.tsx",
+      "type": "registry:ui",
+      "target": "components/Conversation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "react-native-markdown-display",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/divider",
+    "luna/icon",
+    "luna/lib-utils-use-shadow",
+    "luna/screen-contexts-theme-colors",
+    "luna/shimmer-text",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isStreaming",
+      "isTyping"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

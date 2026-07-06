@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-utils-discover-storage",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "utils/discoverStorage.ts",
+      "type": "registry:lib",
+      "target": "utils/discoverStorage.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": []
+}

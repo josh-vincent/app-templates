@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/poke-burst",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/modals/PokeBurst.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/PokeBurst.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "health-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

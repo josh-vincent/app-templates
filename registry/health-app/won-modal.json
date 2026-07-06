@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/won-modal",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/modals/WonModal.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/WonModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/placeholder",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Placeholder.tsx",
+      "type": "registry:ui",
+      "target": "components/Placeholder.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/icon",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

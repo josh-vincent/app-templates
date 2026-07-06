@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/friends-activity-card",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/friends/FriendsActivityCard.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/FriendsActivityCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

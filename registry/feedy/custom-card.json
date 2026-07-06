@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/custom-card",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/CustomCard.tsx",
+      "type": "registry:ui",
+      "target": "components/CustomCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "border",
+      "background",
+      "elevation",
+      "horizontal"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

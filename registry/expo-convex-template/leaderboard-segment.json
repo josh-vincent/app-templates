@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/leaderboard-segment",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/friends/segments/LeaderboardSegment.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/segments/LeaderboardSegment.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/friends-leaderboard"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

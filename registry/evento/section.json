@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/section",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/layout/Section.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Section.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-background-step-observer",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/useBackgroundStepObserver.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useBackgroundStepObserver.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/screen-hooks-use-health-steps.ts"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/slider-card",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/SliderCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SliderCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/image-carousel",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded"
+  ],
+  "group": "elements"
+}

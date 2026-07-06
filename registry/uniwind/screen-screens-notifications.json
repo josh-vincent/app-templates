@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-notifications",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notifications.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/avatar",
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/lib-hooks-use-notifications",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "notifications",
+  "route": "/screens/notifications",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

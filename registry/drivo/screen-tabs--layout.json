@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs--layout",
+  "type": "registry:layout",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/lib-contexts-ride-sheet-context",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-utils-use-shadow",
+    "drivo/ride-sheet",
+    "drivo/tab-button"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-native-features",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/native-features.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/native-features.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/header",
+    "voyage/section",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "feature",
+  "route": "/screens/native-features",
+  "kind": "screen",
+  "traits": []
+}

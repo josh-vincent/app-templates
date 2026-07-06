@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-languages",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/languages.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/languages.tsx"
+    }
+  ],
+  "dependencies": [
+    "country-flag-icons",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/languages",
+  "kind": "screen",
+  "traits": [
+    "outlined"
+  ]
+}

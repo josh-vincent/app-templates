@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/time-picker",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/forms/TimePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/TimePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "feedy/button",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "is24Hour",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

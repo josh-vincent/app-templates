@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-onboarding-start",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/onboarding-start.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding-start.tsx"
+    },
+    {
+      "path": "assets/img/onboarding-start.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/onboarding-start.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "onboarding",
+  "route": "/screens/onboarding-start",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/confirmation-modal",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/ConfirmationModal.tsx",
+      "type": "registry:ui",
+      "target": "components/ConfirmationModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "aurora/lib-contexts-theme-colors",
+    "aurora/lib-contexts-theme-context",
+    "aurora/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

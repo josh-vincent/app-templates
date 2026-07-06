@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/tab-button",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/TabButton.tsx",
+      "type": "registry:ui",
+      "target": "components/TabButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "fitstake/animated-view",
+    "fitstake/avatar",
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "labelAnimated",
+      "hasBadge"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

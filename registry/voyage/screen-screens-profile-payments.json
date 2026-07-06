@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-profile-payments",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/profile/payments.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/payments.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/button",
+    "voyage/card-scroller",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/input",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-payment-methods-storage",
+    "voyage/lib-utils-use-shadow",
+    "voyage/section",
+    "voyage/themed-text",
+    "voyage/toggle"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/payments",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

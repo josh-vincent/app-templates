@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-premium",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/premium.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/premium.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-contexts-premium-context"
+  ],
+  "category": "feature",
+  "route": "/screens/premium",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

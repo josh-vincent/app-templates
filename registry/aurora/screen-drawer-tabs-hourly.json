@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-drawer-tabs-hourly",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/hourly.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/hourly.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-segmented-control/segmented-control",
+    "@react-navigation/native",
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-primitives",
+    "aurora/sky-background",
+    "aurora/weather-icon"
+  ],
+  "category": "feature",
+  "route": "/hourly",
+  "kind": "tab",
+  "traits": []
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "casino-app/balance-header",
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-colors",
+    "casino-app/lib-contexts-theme-context"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": []
+}

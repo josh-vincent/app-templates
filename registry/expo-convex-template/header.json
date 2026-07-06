@@ -1,0 +1,47 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/header",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred",
+      "collapsibleTitle"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

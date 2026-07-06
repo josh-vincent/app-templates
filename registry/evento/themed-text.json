@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/themed-text",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/ThemedText.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemedText.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-services-ai",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "services/ai.ts",
+      "type": "registry:lib",
+      "target": "services/ai.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/lib-services-providers-claude",
+    "luna/lib-services-providers-gemini",
+    "luna/lib-services-providers-openai"
+  ]
+}

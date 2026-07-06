@@ -1,0 +1,45 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/home-tabs",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/HomeTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/HomeTabs.tsx"
+    },
+    {
+      "path": "assets/img/experience.png",
+      "type": "registry:asset",
+      "target": "assets/img/experience.png"
+    },
+    {
+      "path": "assets/img/house.png",
+      "type": "registry:asset",
+      "target": "assets/img/house.png"
+    },
+    {
+      "path": "assets/img/services.png",
+      "type": "registry:asset",
+      "target": "assets/img/services.png"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

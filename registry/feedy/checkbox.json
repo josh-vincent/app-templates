@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/checkbox",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/forms/Checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Checkbox.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "checked"
+    ]
+  },
+  "traits": [
+    "outlined"
+  ],
+  "group": "forms"
+}

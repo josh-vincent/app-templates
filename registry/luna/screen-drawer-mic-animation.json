@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-drawer-mic-animation",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/(drawer)/mic-animation.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/mic-animation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [
+    "luna/ai-circle",
+    "luna/bot-switch",
+    "luna/chat-input",
+    "luna/conversation",
+    "luna/drawer-button",
+    "luna/header",
+    "luna/lib-services-ai",
+    "luna/screen-contexts-theme-colors"
+  ],
+  "category": "feature",
+  "route": "/mic-animation",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "flat"
+  ]
+}

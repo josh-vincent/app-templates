@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/masonry",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Masonry.tsx",
+      "type": "registry:ui",
+      "target": "components/Masonry.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

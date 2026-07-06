@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/active-trip-companion",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/ActiveTripCompanion.tsx",
+      "type": "registry:ui",
+      "target": "components/ActiveTripCompanion.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/action-sheet-themed",
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-active-trip-context",
+    "voyage/lib-utils-trip-storage",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "active",
+      "destructive"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/small-circle-card",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/SmallCircleCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallCircleCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

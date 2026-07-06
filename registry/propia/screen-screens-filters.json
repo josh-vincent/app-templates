@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-filters",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/filters.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/filters.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/slider",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/chip",
+    "propia/counter",
+    "propia/form-tabs",
+    "propia/header",
+    "propia/section",
+    "propia/switch",
+    "propia/theme-footer",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "discovery",
+  "route": "/screens/filters",
+  "kind": "screen",
+  "traits": []
+}

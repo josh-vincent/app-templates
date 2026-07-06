@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-my-events",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/my-events.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/my-events.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "evento/action-sheet-themed",
+    "evento/button",
+    "evento/chip",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/progress-bar",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "feature",
+  "route": "/screens/my-events",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

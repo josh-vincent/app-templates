@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/lib-contexts-theme-context"
+  ]
+}

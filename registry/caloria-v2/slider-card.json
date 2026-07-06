@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/slider-card",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/SliderCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SliderCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/image-carousel",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

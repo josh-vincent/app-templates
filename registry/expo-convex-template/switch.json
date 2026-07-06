@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/switch",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/Switch.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Switch.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon",
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

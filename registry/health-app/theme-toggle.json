@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/theme-toggle",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/ThemeToggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeToggle.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/lib-contexts-theme-context"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

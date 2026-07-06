@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-push-notifications.ts",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/usePushNotifications.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/usePushNotifications.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage",
+    "expo-constants",
+    "expo-device",
+    "expo-notifications",
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

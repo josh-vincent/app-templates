@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/confirmation-modal",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/ConfirmationModal.tsx",
+      "type": "registry:ui",
+      "target": "components/ConfirmationModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-colors",
+    "feedy/screen-contexts-theme-context",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive",
+    "flat"
+  ],
+  "group": "elements"
+}

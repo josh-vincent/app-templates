@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-profile-currency",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/profile/currency.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/currency.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/button",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-utils-currency-storage",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/currency",
+  "kind": "screen",
+  "traits": []
+}

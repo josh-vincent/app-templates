@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/bot-switch",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/BotSwitch.tsx",
+      "type": "registry:ui",
+      "target": "components/BotSwitch.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "luna/action-sheet-themed",
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

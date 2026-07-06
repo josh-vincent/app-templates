@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/floating-button",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/FloatingButton.tsx",
+      "type": "registry:ui",
+      "target": "components/FloatingButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "fitstake/icon",
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "visible",
+      "isAnimated"
+    ]
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

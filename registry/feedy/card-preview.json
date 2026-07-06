@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/card-preview",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/CardPreview.tsx",
+      "type": "registry:ui",
+      "target": "components/CardPreview.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "soft-rounded"
+  ],
+  "group": "elements"
+}

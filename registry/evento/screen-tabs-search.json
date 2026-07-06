@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-search",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/search.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/search.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/card-scroller",
+    "evento/chip",
+    "evento/input",
+    "evento/lib-data-mock-events",
+    "evento/media-list",
+    "evento/section",
+    "evento/theme-scroller"
+  ],
+  "category": "discovery",
+  "route": "/search",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

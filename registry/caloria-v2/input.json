@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/input",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/forms/Input.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Input.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword",
+      "isMultiline",
+      "inRow"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-contexts-flight-search-context",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "contexts/FlightSearchContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/FlightSearchContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/lib-contexts-dev-persona-context",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "contexts/DevPersonaContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/DevPersonaContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-secure-store"
+  ],
+  "registryDependencies": []
+}

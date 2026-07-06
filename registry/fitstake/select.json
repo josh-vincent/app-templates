@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/select",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/forms/Select.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Select.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "fitstake/input"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

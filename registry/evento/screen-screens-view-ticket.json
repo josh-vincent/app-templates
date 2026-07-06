@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-view-ticket",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/view-ticket.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/view-ticket.tsx"
+    },
+    {
+      "path": "assets/img/qr.png",
+      "type": "registry:asset",
+      "target": "assets/img/qr.png"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/view-ticket",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

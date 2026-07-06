@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/container",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/Container.tsx",
+      "type": "registry:ui",
+      "target": "components/Container.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

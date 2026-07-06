@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-...404",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/header",
+    "propia/icon",
+    "propia/themed-text"
+  ]
+}

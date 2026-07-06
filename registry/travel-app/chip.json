@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/chip",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "travel-app/icon",
+    "travel-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

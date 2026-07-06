@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/multi-step",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

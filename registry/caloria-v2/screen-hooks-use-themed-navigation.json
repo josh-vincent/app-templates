@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/screen-contexts-theme-context"
+  ]
+}

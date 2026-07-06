@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/tab-screen-wrapper",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/TabScreenWrapper.tsx",
+      "type": "registry:ui",
+      "target": "components/TabScreenWrapper.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "health-app/animated-view"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

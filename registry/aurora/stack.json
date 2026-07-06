@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/stack",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/layout/Stack.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Stack.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

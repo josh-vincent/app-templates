@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/list-link",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/ListLink.tsx",
+      "type": "registry:ui",
+      "target": "components/ListLink.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showChevron",
+      "disabled",
+      "hasBorder"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

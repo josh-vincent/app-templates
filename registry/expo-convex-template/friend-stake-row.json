@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/friend-stake-row",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/friends/FriendStakeRow.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/FriendStakeRow.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/whats-left-breakdown"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

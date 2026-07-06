@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-drawer-tabs-blank",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/blank.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/blank.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/avatar",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/list-link",
+    "uniwind/theme-scroller",
+    "uniwind/theme-toggle",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/blank",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

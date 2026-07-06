@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-services-speech",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "services/speech.ts",
+      "type": "registry:lib",
+      "target": "services/speech.ts"
+    }
+  ],
+  "dependencies": [
+    "expo-audio",
+    "expo-file-system"
+  ],
+  "registryDependencies": []
+}

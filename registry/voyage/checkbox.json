@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/checkbox",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/forms/Checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Checkbox.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "checked"
+    ]
+  },
+  "traits": [],
+  "group": "forms"
+}

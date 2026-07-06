@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/animated-fab",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/AnimatedFab.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedFab.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "nativewind",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-chip",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/chip.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/chip.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/chip",
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/theme-scroller"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/chip",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

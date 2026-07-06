@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/floating-button",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/FloatingButton.tsx",
+      "type": "registry:ui",
+      "target": "components/FloatingButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "visible",
+      "isAnimated"
+    ]
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

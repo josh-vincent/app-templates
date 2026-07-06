@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/chip",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable",
+      "bordered"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/selectable",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/forms/Selectable.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Selectable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "health-app/animated-view",
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "selected"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "forms"
+}

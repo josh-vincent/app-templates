@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/date-picker",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/forms/DatePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/DatePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "fitstake/input",
+    "fitstake/lib-utils-date"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/text-input",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/forms/TextInput.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/TextInput.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

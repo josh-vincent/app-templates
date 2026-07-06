@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-drawer-lottie",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/(drawer)/lottie.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/lottie.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [
+    "luna/bot-switch",
+    "luna/chat-input",
+    "luna/conversation",
+    "luna/drawer-button",
+    "luna/header",
+    "luna/lib-services-ai",
+    "luna/screen-contexts-theme-colors",
+    "luna/sphere"
+  ],
+  "category": "feature",
+  "route": "/lottie",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "flat"
+  ]
+}

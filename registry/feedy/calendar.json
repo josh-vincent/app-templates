@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/calendar",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/Calendar.tsx",
+      "type": "registry:ui",
+      "target": "components/Calendar.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-calendars"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded"
+  ],
+  "group": "elements"
+}

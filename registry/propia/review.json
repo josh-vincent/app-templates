@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/review",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/Review.tsx",
+      "type": "registry:ui",
+      "target": "components/Review.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/avatar",
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

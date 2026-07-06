@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/multi-step",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/button",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

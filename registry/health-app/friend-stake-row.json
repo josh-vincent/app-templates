@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/friend-stake-row",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/friends/FriendStakeRow.tsx",
+      "type": "registry:ui",
+      "target": "components/friends/FriendStakeRow.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/pace-ring",
+    "health-app/whats-left-breakdown"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

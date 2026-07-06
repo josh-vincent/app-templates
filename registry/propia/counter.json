@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/counter",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/forms/Counter.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Counter.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "forms"
+}

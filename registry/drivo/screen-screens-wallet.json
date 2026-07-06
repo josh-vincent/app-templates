@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-wallet",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/wallet.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/wallet.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "drivo/action-sheet-themed",
+    "drivo/button",
+    "drivo/header",
+    "drivo/icon",
+    "drivo/input",
+    "drivo/lib-utils-use-shadow",
+    "drivo/theme-scroller",
+    "drivo/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/wallet",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

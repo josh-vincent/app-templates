@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/multi-step",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-contexts-drawer-context",
+  "type": "registry:lib",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/contexts/DrawerContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/DrawerContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

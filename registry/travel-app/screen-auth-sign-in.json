@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen-auth-sign-in",
+  "type": "registry:screen",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/(auth)/sign-in.tsx",
+      "type": "registry:screen",
+      "target": "app/(auth)/sign-in.tsx"
+    }
+  ],
+  "dependencies": [
+    "@convex-dev/auth",
+    "@expo/vector-icons",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "travel-app/icon"
+  ],
+  "category": "auth",
+  "route": "/sign-in",
+  "kind": "screen",
+  "traits": []
+}

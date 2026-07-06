@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": []
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-drawer--layout",
+  "type": "registry:layout",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/(drawer)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo-google-fonts/outfit",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "feedy/custom-drawer-content",
+    "feedy/screen-contexts-drawer-context",
+    "feedy/screen-contexts-theme-colors"
+  ]
+}

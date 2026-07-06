@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-hooks-use-recording",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "hooks/useRecording.ts",
+      "type": "registry:lib",
+      "target": "hooks/useRecording.ts"
+    }
+  ],
+  "dependencies": [
+    "expo-audio"
+  ],
+  "registryDependencies": []
+}

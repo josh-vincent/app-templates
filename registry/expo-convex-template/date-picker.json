@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/date-picker",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/DatePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/DatePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/input",
+    "expo-convex-template/lib-utils-date"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

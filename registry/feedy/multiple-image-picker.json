@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/multiple-image-picker",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/MultipleImagePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/MultipleImagePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "feedy/card-scroller",
+    "feedy/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasMainImage"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

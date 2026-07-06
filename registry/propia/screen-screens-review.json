@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-review",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/review.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/review.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/header",
+    "propia/input",
+    "propia/screen-contexts-theme-colors",
+    "propia/theme-footer",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "reviews",
+  "route": "/screens/review",
+  "kind": "screen",
+  "traits": []
+}

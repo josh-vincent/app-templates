@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/featured-course",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/FeaturedCourse.tsx",
+      "type": "registry:ui",
+      "target": "components/FeaturedCourse.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

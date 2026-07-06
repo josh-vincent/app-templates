@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/theme-tabs",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/ThemeTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "aurora/animated-view",
+    "aurora/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "scrollEnabled"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

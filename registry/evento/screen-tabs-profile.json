@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/avatar",
+    "evento/creator-switch",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-contexts-auth-context",
+    "evento/lib-contexts-creator-mode-context",
+    "evento/list-link",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/theme-toggle",
+    "evento/themed-text"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

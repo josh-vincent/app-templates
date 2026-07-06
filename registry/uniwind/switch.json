@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/switch",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/forms/Switch.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Switch.tsx"
+    }
+  ],
+  "dependencies": [
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

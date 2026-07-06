@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/placeholder",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/Placeholder.tsx",
+      "type": "registry:ui",
+      "target": "components/Placeholder.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/button",
+    "uniwind/icon",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

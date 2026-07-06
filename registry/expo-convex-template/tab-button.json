@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/tab-button",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/TabButton.tsx",
+      "type": "registry:ui",
+      "target": "components/TabButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/animated-view",
+    "expo-convex-template/avatar",
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "labelAnimated",
+      "hasBadge"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

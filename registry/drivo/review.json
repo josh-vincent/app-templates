@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/review",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/Review.tsx",
+      "type": "registry:ui",
+      "target": "components/Review.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

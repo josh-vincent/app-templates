@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/theme",
+  "type": "registry:theme",
+  "template": "uniwind",
+  "title": "Uniwind Starter — Component Showcase theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

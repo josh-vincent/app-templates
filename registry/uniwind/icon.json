@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/icon",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/Icon.tsx",
+      "type": "registry:ui",
+      "target": "components/Icon.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "uniwind/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

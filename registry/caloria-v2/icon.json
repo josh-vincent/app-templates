@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/icon",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/Icon.tsx",
+      "type": "registry:ui",
+      "target": "components/Icon.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/tab-screen-wrapper",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/TabScreenWrapper.tsx",
+      "type": "registry:ui",
+      "target": "components/TabScreenWrapper.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/animated-view"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

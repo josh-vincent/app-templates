@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/placeholder",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/Placeholder.tsx",
+      "type": "registry:ui",
+      "target": "components/Placeholder.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/icon",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "outlined"
+  ],
+  "group": "elements"
+}

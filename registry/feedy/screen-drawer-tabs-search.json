@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-drawer-tabs-search",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/search.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/search.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/icon",
+    "feedy/masonry",
+    "feedy/theme-scroller",
+    "feedy/themed-text"
+  ],
+  "category": "discovery",
+  "route": "/search",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

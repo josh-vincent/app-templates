@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-drawer-tabs--layout",
+  "type": "registry:layout",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

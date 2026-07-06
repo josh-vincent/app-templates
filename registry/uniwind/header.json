@@ -1,0 +1,48 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/header",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

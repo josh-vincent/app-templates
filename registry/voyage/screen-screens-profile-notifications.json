@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-profile-notifications",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/profile/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/notifications.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "voyage/header",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/section",
+    "voyage/switch",
+    "voyage/theme-scroller",
+    "voyage/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/notifications",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded"
+  ]
+}

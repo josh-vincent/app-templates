@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-status-bar",
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "evento/lib-utils-color-theme"
+  ]
+}

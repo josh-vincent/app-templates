@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/tab-button",
+  "type": "registry:ui",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "components/TabButton.tsx",
+      "type": "registry:ui",
+      "target": "components/TabButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "casino-app/icon",
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "labelAnimated"
+    ]
+  },
+  "traits": [],
+  "group": "elements"
+}

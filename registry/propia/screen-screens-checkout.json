@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-checkout",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/checkout.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/checkout.tsx"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/icon",
+    "propia/input",
+    "propia/multi-step",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/selectable",
+    "propia/show-rating",
+    "propia/themed-text",
+    "propia/toggle"
+  ],
+  "category": "commerce",
+  "route": "/screens/checkout",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

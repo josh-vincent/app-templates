@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/screen-contexts-theme-context"
+  ]
+}

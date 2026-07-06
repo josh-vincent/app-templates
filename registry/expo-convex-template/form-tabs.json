@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/form-tabs",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/FormTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/FormTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isActive"
+    ]
+  },
+  "traits": [],
+  "group": "forms"
+}

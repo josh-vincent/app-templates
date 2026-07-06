@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "convex",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "fitstake/screen-hooks-use-fit-stake-pro-gate.ts",
+    "fitstake/screen-hooks-use-health-steps.ts"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": []
+}

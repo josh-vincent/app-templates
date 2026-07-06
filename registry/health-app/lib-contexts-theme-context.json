@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/lib-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

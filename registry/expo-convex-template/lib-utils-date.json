@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/lib-utils-date",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "utils/date.ts",
+      "type": "registry:lib",
+      "target": "utils/date.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

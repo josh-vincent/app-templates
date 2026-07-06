@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/animated-fab",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/AnimatedFab.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedFab.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "aurora/icon",
+    "aurora/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/error-boundary",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/ErrorBoundary.tsx",
+      "type": "registry:ui",
+      "target": "components/ErrorBoundary.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-contexts-auth-context",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "contexts/AuthContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/AuthContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

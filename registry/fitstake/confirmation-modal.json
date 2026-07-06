@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/confirmation-modal",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/ConfirmationModal.tsx",
+      "type": "registry:ui",
+      "target": "components/ConfirmationModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

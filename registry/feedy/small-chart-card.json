@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/small-chart-card",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/SmallChartCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallChartCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-chart-kit"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "outlined",
+    "charts",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/select",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/forms/Select.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Select.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/input",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/lib-contexts-theme-context",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "forms"
+}

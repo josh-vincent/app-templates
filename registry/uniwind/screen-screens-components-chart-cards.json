@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-chart-cards",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/chart-cards.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/chart-cards.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/small-chart-card",
+    "uniwind/small-circle-card",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/chart-cards",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

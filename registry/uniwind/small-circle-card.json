@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/small-circle-card",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/SmallCircleCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallCircleCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/lib-utils-use-shadow",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "animated"
+  ],
+  "group": "elements"
+}

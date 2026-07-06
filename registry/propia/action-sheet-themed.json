@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/action-sheet-themed",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ActionSheetThemed.tsx",
+      "type": "registry:ui",
+      "target": "components/ActionSheetThemed.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

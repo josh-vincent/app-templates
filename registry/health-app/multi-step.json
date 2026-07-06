@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/multi-step",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/MultiStep.tsx",
+      "type": "registry:ui",
+      "target": "components/MultiStep.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "health-app/button",
+    "health-app/header",
+    "health-app/icon",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "optional",
+      "showHeader",
+      "showStepIndicator"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

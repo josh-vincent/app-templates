@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-contexts-theme-context"
+  ]
+}

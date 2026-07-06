@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/lib-utils-use-shadow",
+  "type": "registry:lib",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "utils/useShadow.ts",
+      "type": "registry:lib",
+      "target": "utils/useShadow.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

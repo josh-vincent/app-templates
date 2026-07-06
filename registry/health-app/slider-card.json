@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/slider-card",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/SliderCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SliderCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "health-app/lib-contexts-theme-colors",
+    "health-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-utils-date",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "utils/date.ts",
+      "type": "registry:lib",
+      "target": "utils/date.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

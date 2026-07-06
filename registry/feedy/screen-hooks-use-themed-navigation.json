@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-colors",
+    "feedy/screen-contexts-theme-context"
+  ]
+}

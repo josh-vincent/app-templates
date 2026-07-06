@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/form-tabs",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/forms/FormTabs.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/FormTabs.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/lib-lib-utils",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isActive"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "forms"
+}

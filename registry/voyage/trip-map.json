@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/trip-map",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/TripMap.tsx",
+      "type": "registry:ui",
+      "target": "components/TripMap.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-tracked-storage"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/lib-hooks-use-collapsible-header",
+  "type": "registry:lib",
+  "template": "evento",
+  "files": [
+    {
+      "path": "hooks/useCollapsibleHeader.ts",
+      "type": "registry:lib",
+      "target": "hooks/useCollapsibleHeader.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

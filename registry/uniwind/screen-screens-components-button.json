@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-button",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/button.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/button.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/button",
+  "kind": "screen",
+  "traits": [
+    "outlined",
+    "flat"
+  ]
+}

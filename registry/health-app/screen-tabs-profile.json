@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors",
+    "health-app/theme-toggle"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": []
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-drawer-tabs-progress",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/progress.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/progress.tsx"
+    },
+    {
+      "path": "assets/img/progress-2.png",
+      "type": "registry:asset",
+      "target": "assets/img/progress-2.png"
+    },
+    {
+      "path": "assets/img/progress.png",
+      "type": "registry:asset",
+      "target": "assets/img/progress.png"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-chart-kit",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "caloria-v2/avatar",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/section",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/progress",
+  "kind": "tab",
+  "traits": [
+    "elevated",
+    "outlined",
+    "animated",
+    "charts"
+  ]
+}

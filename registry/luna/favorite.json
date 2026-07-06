@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/favorite",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Favorite.tsx",
+      "type": "registry:ui",
+      "target": "components/Favorite.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "luna/action-sheet-themed",
+    "luna/button",
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "initialState",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "outlined"
+  ],
+  "group": "elements"
+}

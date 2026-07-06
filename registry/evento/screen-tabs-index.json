@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-tabs-index",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/(tabs)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/index.tsx"
+    },
+    {
+      "path": "assets/img/banner-home.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/banner-home.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/card",
+    "evento/card-scroller",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "animated"
+  ]
+}

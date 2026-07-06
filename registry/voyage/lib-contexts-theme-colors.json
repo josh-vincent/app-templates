@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-context"
+  ]
+}

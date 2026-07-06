@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-auth-sign-in",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/(auth)/sign-in.tsx",
+      "type": "registry:screen",
+      "target": "app/(auth)/sign-in.tsx"
+    }
+  ],
+  "dependencies": [
+    "@convex-dev/auth",
+    "@expo/vector-icons",
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "auth",
+  "route": "/sign-in",
+  "kind": "screen",
+  "traits": []
+}

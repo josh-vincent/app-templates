@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-notification-permission",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/notification-permission.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/notification-permission.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/icon",
+    "evento/themed-text"
+  ],
+  "category": "permissions",
+  "route": "/screens/notification-permission",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ]
+}

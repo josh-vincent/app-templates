@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/icon",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/Icon.tsx",
+      "type": "registry:ui",
+      "target": "components/Icon.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "health-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

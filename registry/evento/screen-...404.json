@@ -1,0 +1,22 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-...404",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/button",
+    "evento/header",
+    "evento/icon",
+    "evento/themed-text"
+  ]
+}

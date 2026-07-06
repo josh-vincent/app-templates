@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/lib-contexts-drawer-context",
+  "type": "registry:lib",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "contexts/DrawerContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/DrawerContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

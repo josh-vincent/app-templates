@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/balance-chart",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/BalanceChart.tsx",
+      "type": "registry:ui",
+      "target": "components/BalanceChart.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-chart-kit"
+  ],
+  "registryDependencies": [
+    "evento/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "charts"
+  ],
+  "group": "elements"
+}

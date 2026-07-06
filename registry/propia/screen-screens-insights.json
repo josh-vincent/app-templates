@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-insights",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/insights.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/insights.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/grid",
+    "propia/header",
+    "propia/icon",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/theme-footer",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "analytics",
+  "route": "/screens/insights",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/card-preview",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/CardPreview.tsx",
+      "type": "registry:ui",
+      "target": "components/CardPreview.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "soft-rounded"
+  ],
+  "group": "elements"
+}

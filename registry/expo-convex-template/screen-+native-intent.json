@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-+native-intent",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/+native-intent.tsx",
+      "type": "registry:screen",
+      "target": "app/+native-intent.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

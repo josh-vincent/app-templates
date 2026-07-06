@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/divider",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/layout/Divider.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Divider.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "aurora/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

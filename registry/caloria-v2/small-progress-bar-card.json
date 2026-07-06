@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/small-progress-bar-card",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/SmallProgressBarCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallProgressBarCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/price-marker",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/PriceMarker.tsx",
+      "type": "registry:ui",
+      "target": "components/PriceMarker.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-maps"
+  ],
+  "registryDependencies": [
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected"
+    ]
+  },
+  "traits": [
+    "native-adaptive",
+    "maps",
+    "flat"
+  ],
+  "group": "elements"
+}

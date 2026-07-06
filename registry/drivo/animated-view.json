@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/animated-view",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/AnimatedView.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedView.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "playOnlyOnce",
+      "triggerOnVisible"
+    ]
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

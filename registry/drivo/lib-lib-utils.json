@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/lib-lib-utils",
+  "type": "registry:lib",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "lib/utils.ts",
+      "type": "registry:lib",
+      "target": "lib/utils.ts"
+    }
+  ],
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": []
+}

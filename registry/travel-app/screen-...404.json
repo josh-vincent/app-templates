@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen-...404",
+  "type": "registry:screen",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/[...404].tsx",
+      "type": "registry:screen",
+      "target": "app/[...404].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "travel-app/header",
+    "travel-app/icon",
+    "travel-app/lib-contexts-theme-colors"
+  ]
+}

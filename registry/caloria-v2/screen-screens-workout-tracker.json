@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-workout-tracker",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/workout-tracker.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/workout-tracker.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "caloria-v2/action-sheet-themed",
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/input",
+    "caloria-v2/section",
+    "caloria-v2/theme-footer",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "feature",
+  "route": "/screens/workout-tracker",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "animated",
+    "flat"
+  ]
+}

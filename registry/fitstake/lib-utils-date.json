@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/lib-utils-date",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "utils/date.ts",
+      "type": "registry:lib",
+      "target": "utils/date.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

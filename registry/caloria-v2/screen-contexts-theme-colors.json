@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-contexts-theme-colors",
+  "type": "registry:lib",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeColors.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-context"
+  ]
+}

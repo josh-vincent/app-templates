@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/show-rating",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/ShowRating.tsx",
+      "type": "registry:ui",
+      "target": "components/ShowRating.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

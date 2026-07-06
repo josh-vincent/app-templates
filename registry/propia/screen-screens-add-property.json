@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-add-property",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/add-property.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/add-property.tsx"
+    },
+    {
+      "path": "assets/img/bed.png",
+      "type": "registry:asset",
+      "target": "assets/img/bed.png"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/chip",
+    "propia/counter",
+    "propia/grid",
+    "propia/icon",
+    "propia/input",
+    "propia/multi-step",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/selectable",
+    "propia/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/add-property",
+  "kind": "screen",
+  "traits": [
+    "pill"
+  ]
+}

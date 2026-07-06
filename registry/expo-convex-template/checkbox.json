@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/checkbox",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/Checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Checkbox.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon",
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "checked"
+    ]
+  },
+  "traits": [],
+  "group": "forms"
+}

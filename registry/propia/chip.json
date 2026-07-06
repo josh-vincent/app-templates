@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/chip",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/icon",
+    "propia/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

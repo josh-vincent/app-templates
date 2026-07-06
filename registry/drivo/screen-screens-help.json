@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-help",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/help.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/help.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/animated-view",
+    "drivo/button",
+    "drivo/expandable",
+    "drivo/header",
+    "drivo/list-link",
+    "drivo/section",
+    "drivo/theme-scroller",
+    "drivo/themed-text"
+  ],
+  "category": "support",
+  "route": "/screens/help",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

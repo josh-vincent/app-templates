@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen--layout",
+  "type": "registry:layout",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-busines-mode-context",
+    "propia/screen-contexts-theme-context",
+    "propia/screen-hooks-use-themed-navigation"
+  ]
+}

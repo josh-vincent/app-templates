@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/small-circle-card",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/SmallCircleCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SmallCircleCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "feedy/icon",
+    "feedy/lib-utils-use-shadow",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "animated"
+  ],
+  "group": "elements"
+}

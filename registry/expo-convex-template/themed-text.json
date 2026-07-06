@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/themed-text",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/ThemedText.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemedText.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

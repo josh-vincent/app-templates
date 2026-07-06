@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-chat-id",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/chat/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/action-sheet-themed",
+    "voyage/avatar",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/page-loader",
+    "voyage/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat/[id]",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "native-adaptive"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/animated-fab",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/AnimatedFab.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedFab.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

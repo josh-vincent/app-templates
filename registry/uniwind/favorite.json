@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/favorite",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/Favorite.tsx",
+      "type": "registry:ui",
+      "target": "components/Favorite.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "uniwind/action-sheet-themed",
+    "uniwind/button",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "initialState",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined"
+  ],
+  "group": "elements"
+}

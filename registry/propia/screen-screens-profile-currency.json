@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-profile-currency",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/profile/currency.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/currency.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/button",
+    "propia/header",
+    "propia/icon",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/currency",
+  "kind": "screen",
+  "traits": []
+}

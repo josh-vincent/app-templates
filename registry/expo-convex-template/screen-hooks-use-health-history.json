@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-health-history",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/useHealthHistory.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useHealthHistory.tsx"
+    }
+  ],
+  "dependencies": [
+    "@tanstack/react-query"
+  ],
+  "registryDependencies": []
+}

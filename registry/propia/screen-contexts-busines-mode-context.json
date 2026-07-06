@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-contexts-busines-mode-context",
+  "type": "registry:lib",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/contexts/BusinesModeContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/BusinesModeContext.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

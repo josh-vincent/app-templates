@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/tab-button",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/TabButton.tsx",
+      "type": "registry:ui",
+      "target": "components/TabButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/animated-view",
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "labelAnimated",
+      "hasBadge",
+      "isLabelVisible"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

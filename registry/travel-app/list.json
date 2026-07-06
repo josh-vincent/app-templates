@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/list",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/layout/List.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/List.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [
+      "plain",
+      "separated",
+      "divided"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

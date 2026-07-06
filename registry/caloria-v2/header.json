@@ -1,0 +1,47 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/header",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/Header.tsx",
+      "type": "registry:ui",
+      "target": "components/Header.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/icon",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "default",
+      "transparent",
+      "blurred"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showBackButton",
+      "collapsible",
+      "visible",
+      "hasBadge",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

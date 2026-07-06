@@ -1,0 +1,80 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/ride-sheet",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/RideSheet.tsx",
+      "type": "registry:ui",
+      "target": "components/RideSheet.tsx"
+    },
+    {
+      "path": "assets/img/black-suv.png",
+      "type": "registry:asset",
+      "target": "assets/img/black-suv.png"
+    },
+    {
+      "path": "assets/img/premium.png",
+      "type": "registry:asset",
+      "target": "assets/img/premium.png"
+    },
+    {
+      "path": "assets/img/standard.png",
+      "type": "registry:asset",
+      "target": "assets/img/standard.png"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    },
+    {
+      "path": "assets/img/user-5.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-5.jpg"
+    },
+    {
+      "path": "assets/img/user-6.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-6.jpg"
+    },
+    {
+      "path": "assets/img/user-7.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-7.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-utils-use-shadow",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "animated"
+  ],
+  "group": "elements"
+}

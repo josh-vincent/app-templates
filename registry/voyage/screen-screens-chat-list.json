@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-chat-list",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/chat/list.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat/list.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/avatar",
+    "voyage/header",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat/list",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

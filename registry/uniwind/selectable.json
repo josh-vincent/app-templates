@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/selectable",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/forms/Selectable.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Selectable.tsx"
+    }
+  ],
+  "dependencies": [
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "selected"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "forms"
+}

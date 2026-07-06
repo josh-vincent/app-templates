@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/theme-footer",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/ThemeFooter.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeFooter.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-paywall",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/paywall.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/paywall.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "uniwind/action-sheet-themed",
+    "uniwind/button",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "category": "monetization",
+  "route": "/screens/paywall",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

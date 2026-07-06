@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/page-loader",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/PageLoader.tsx",
+      "type": "registry:ui",
+      "target": "components/PageLoader.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

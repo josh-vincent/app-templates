@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/favorite",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/Favorite.tsx",
+      "type": "registry:ui",
+      "target": "components/Favorite.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "drivo/action-sheet-themed",
+    "drivo/button",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "initialState",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "pill",
+    "outlined"
+  ],
+  "group": "elements"
+}

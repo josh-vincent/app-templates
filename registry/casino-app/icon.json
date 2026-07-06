@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/icon",
+  "type": "registry:ui",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "components/Icon.tsx",
+      "type": "registry:ui",
+      "target": "components/Icon.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native"
+  ],
+  "registryDependencies": [
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

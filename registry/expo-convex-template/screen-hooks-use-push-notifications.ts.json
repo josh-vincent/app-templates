@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-hooks-use-push-notifications.ts",
+  "type": "registry:lib",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/hooks/usePushNotifications.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/usePushNotifications.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage",
+    "expo-constants",
+    "expo-device",
+    "expo-notifications",
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

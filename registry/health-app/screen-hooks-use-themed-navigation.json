@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "health-app/lib-contexts-theme-colors",
+    "health-app/lib-contexts-theme-context"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/chip",
+  "type": "registry:ui",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "components/Chip.tsx",
+      "type": "registry:ui",
+      "target": "components/Chip.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "health-app/icon",
+    "health-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isSelected",
+      "selectable"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/lib-utils-date",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "utils/date.ts",
+      "type": "registry:lib",
+      "target": "utils/date.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

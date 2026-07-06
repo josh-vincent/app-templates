@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-interests",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/interests.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/interests.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/chip",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "feature",
+  "route": "/screens/interests",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

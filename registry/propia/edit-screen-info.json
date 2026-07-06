@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/edit-screen-info",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/EditScreenInfo.tsx",
+      "type": "registry:ui",
+      "target": "components/EditScreenInfo.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

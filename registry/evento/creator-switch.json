@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/creator-switch",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/CreatorSwitch.tsx",
+      "type": "registry:ui",
+      "target": "components/CreatorSwitch.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-creator-mode-context",
+    "evento/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

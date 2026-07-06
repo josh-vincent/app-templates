@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/slider-card",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/SliderCard.tsx",
+      "type": "registry:ui",
+      "target": "components/SliderCard.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/image-carousel",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

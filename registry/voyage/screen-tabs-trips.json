@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-tabs-trips",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/(tabs)/trips.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/trips.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/lib-utils-trip-storage",
+    "voyage/themed-text"
+  ],
+  "category": "planning",
+  "route": "/trips",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

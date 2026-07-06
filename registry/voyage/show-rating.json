@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/show-rating",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/ShowRating.tsx",
+      "type": "registry:ui",
+      "target": "components/ShowRating.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

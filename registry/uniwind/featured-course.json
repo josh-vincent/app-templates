@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/featured-course",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/FeaturedCourse.tsx",
+      "type": "registry:ui",
+      "target": "components/FeaturedCourse.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "elements"
+}

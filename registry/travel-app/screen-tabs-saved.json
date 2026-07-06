@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/screen-tabs-saved",
+  "type": "registry:screen",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "app/(tabs)/saved.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/saved.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "travel-app/icon",
+    "travel-app/lib-contexts-theme-colors"
+  ],
+  "category": "collections",
+  "route": "/saved",
+  "kind": "tab",
+  "traits": []
+}

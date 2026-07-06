@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/lib-utils-payment-methods-storage",
+  "type": "registry:lib",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "utils/paymentMethodsStorage.ts",
+      "type": "registry:lib",
+      "target": "utils/paymentMethodsStorage.ts"
+    }
+  ],
+  "dependencies": [
+    "@react-native-async-storage/async-storage"
+  ],
+  "registryDependencies": []
+}

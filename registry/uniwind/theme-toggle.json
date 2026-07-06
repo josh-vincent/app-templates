@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/theme-toggle",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/ThemeToggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ThemeToggle.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "uniwind/lib-contexts-theme-context"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

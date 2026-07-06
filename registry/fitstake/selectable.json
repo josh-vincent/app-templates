@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/selectable",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/forms/Selectable.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Selectable.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui"
+  ],
+  "registryDependencies": [
+    "fitstake/animated-view",
+    "fitstake/icon",
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "selected"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "forms"
+}

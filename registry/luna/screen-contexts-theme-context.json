@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/contexts/ThemeContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "luna/lib-utils-color-theme"
+  ]
+}

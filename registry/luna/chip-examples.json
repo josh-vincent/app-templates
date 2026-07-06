@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/chip-examples",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ChipExamples.tsx",
+      "type": "registry:ui",
+      "target": "components/ChipExamples.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/avatar",
+    "luna/chip",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

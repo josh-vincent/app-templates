@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-tabs-challenges--layout",
+  "type": "registry:layout",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/(tabs)/challenges/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/challenges/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-tabs-home--layout",
+  "type": "registry:layout",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": []
+}

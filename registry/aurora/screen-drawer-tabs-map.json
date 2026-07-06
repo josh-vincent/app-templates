@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-drawer-tabs-map",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/map.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/map.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native",
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-overlays",
+    "aurora/glass-primitives",
+    "aurora/sky-background",
+    "aurora/weather-icon"
+  ],
+  "category": "maps",
+  "route": "/map",
+  "kind": "tab",
+  "traits": []
+}

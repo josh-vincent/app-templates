@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "health-app/screen--layout",
+  "type": "registry:layout",
+  "template": "health-app",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "health-app/error-boundary",
+    "health-app/lib-contexts-theme-context",
+    "health-app/screen-hooks-use-themed-navigation"
+  ]
+}

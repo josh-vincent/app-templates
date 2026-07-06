@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/counter",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/forms/Counter.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Counter.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "forms"
+}

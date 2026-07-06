@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen--layout",
+  "type": "registry:layout",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo-google-fonts/young-serif",
+    "@tanstack/react-query",
+    "expo-linking",
+    "expo-router",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-active-trip-context",
+    "voyage/lib-contexts-flight-search-context",
+    "voyage/lib-contexts-premium-context",
+    "voyage/lib-contexts-theme-context",
+    "voyage/lib-utils-price-watcher",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/react-native-grab-gate",
+    "voyage/screen-hooks-use-themed-navigation"
+  ]
+}

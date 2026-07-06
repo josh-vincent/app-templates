@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-chat-id",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/chat/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/avatar",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/page-loader",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat/[id]",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "native-adaptive",
+    "flat"
+  ]
+}

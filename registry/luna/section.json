@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/section",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/layout/Section.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Section.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

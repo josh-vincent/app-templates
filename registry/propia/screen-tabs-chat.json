@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-chat",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/chat.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/chat.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/avatar",
+    "propia/card-scroller",
+    "propia/chip",
+    "propia/header",
+    "propia/screen-hooks-use-collapsible-title.ts",
+    "propia/section",
+    "propia/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/chat",
+  "kind": "tab",
+  "traits": [
+    "pill"
+  ]
+}

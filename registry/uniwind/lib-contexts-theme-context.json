@@ -1,0 +1,18 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/lib-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-status-bar",
+    "uniwind"
+  ],
+  "registryDependencies": []
+}

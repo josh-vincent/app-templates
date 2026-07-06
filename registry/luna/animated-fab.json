@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/animated-fab",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/AnimatedFab.tsx",
+      "type": "registry:ui",
+      "target": "components/AnimatedFab.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/spacer",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/layout/Spacer.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/Spacer.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "layout"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/select",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/forms/Select.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Select.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/input",
+    "luna/screen-contexts-theme-colors",
+    "luna/screen-contexts-theme-context",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

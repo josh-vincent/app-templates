@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-chat-list",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/chat/list.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/chat/list.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "feedy/avatar",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/screens/chat/list",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

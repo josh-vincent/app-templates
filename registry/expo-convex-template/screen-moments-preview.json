@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-moments-preview",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/moments-preview.tsx",
+      "type": "registry:screen",
+      "target": "app/moments-preview.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/fit-stake-moment-card",
+    "expo-convex-template/permissions-moment-modal"
+  ],
+  "category": "reviews",
+  "route": "/moments-preview",
+  "kind": "screen",
+  "traits": []
+}

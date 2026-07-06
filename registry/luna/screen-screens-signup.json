@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-signup",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/signup.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/signup.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/input",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/signup",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

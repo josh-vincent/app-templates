@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-onboarding",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/onboarding.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-ruler-picker",
+    "react-native-wheel-picker-expo"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/calendar",
+    "caloria-v2/chip",
+    "caloria-v2/date-picker",
+    "caloria-v2/icon",
+    "caloria-v2/multi-step",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/section",
+    "caloria-v2/select",
+    "caloria-v2/selectable",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text",
+    "caloria-v2/time-picker"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined"
+  ]
+}

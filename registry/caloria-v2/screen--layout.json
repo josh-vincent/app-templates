@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen--layout",
+  "type": "registry:layout",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/screen-contexts-theme-context"
+  ]
+}

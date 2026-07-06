@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/multiple-image-picker",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/MultipleImagePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/MultipleImagePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "propia/card-scroller",
+    "propia/icon"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "hasMainImage"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

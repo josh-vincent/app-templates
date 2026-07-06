@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-proof-participant-id",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/proof/[participantId].tsx",
+      "type": "registry:screen",
+      "target": "app/proof/[participantId].tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-image-picker",
+    "expo-location",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "feature",
+  "route": "/proof/[participantId]",
+  "kind": "screen",
+  "traits": [
+    "native-adaptive"
+  ]
+}

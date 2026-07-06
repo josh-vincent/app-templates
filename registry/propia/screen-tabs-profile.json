@@ -1,0 +1,48 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-profile",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/profile.tsx"
+    },
+    {
+      "path": "assets/img/house.png",
+      "type": "registry:asset",
+      "target": "assets/img/house.png"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/avatar",
+    "propia/business-switch",
+    "propia/button",
+    "propia/divider",
+    "propia/header",
+    "propia/lib-utils-use-shadow",
+    "propia/list-link",
+    "propia/screen-contexts-busines-mode-context",
+    "propia/theme-scroller",
+    "propia/theme-toggle",
+    "propia/themed-text"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "elevated",
+    "charts"
+  ]
+}

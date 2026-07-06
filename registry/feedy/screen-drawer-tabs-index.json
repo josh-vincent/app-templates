@@ -1,0 +1,52 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-drawer-tabs-index",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/index.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/index.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/avatar",
+    "feedy/button",
+    "feedy/card-scroller",
+    "feedy/drawer-button",
+    "feedy/header",
+    "feedy/social-post",
+    "feedy/theme-scroller",
+    "feedy/themed-text"
+  ],
+  "category": "home",
+  "route": "/",
+  "kind": "tab",
+  "traits": [
+    "outlined",
+    "flat"
+  ]
+}

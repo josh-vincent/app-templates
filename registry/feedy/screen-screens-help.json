@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-help",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/help.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/help.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/animated-view",
+    "feedy/button",
+    "feedy/divider",
+    "feedy/expandable",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/section",
+    "feedy/themed-text"
+  ],
+  "category": "support",
+  "route": "/screens/help",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

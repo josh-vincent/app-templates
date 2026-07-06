@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-tabs-home",
+  "type": "registry:screen",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/(tabs)/home.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/home.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "casino-app/balance-header",
+    "casino-app/icon",
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "category": "home",
+  "route": "/home",
+  "kind": "tab",
+  "traits": []
+}

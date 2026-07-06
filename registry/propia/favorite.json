@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/favorite",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/Favorite.tsx",
+      "type": "registry:ui",
+      "target": "components/Favorite.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "propia/action-sheet-themed",
+    "propia/button",
+    "propia/icon",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "initialState",
+      "isWhite"
+    ]
+  },
+  "traits": [
+    "outlined"
+  ],
+  "group": "elements"
+}

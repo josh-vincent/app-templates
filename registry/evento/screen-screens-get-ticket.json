@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-get-ticket",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/get-ticket.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/get-ticket.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/icon",
+    "evento/input",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/multi-step",
+    "evento/selectable",
+    "evento/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/get-ticket",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

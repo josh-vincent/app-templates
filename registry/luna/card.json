@@ -1,0 +1,57 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/card",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/Card.tsx",
+      "type": "registry:ui",
+      "target": "components/Card.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/favorite",
+    "luna/icon",
+    "luna/lib-utils-use-shadow",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "classic",
+      "overlay",
+      "compact",
+      "minimal"
+    ],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "hasShadow",
+      "showOverlay",
+      "hasFavorite"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "sharp",
+    "elevated"
+  ],
+  "group": "elements"
+}

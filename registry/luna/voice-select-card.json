@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/voice-select-card",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/VoiceSelectCard.tsx",
+      "type": "registry:ui",
+      "target": "components/VoiceSelectCard.tsx"
+    },
+    {
+      "path": "assets/lottie/waves.json",
+      "type": "registry:asset",
+      "target": "assets/lottie/waves.json"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "lottie-react-native"
+  ],
+  "registryDependencies": [
+    "luna/button",
+    "luna/icon",
+    "luna/lib-utils-use-shadow",
+    "luna/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "soft-rounded",
+    "elevated",
+    "animated",
+    "lottie"
+  ],
+  "group": "elements"
+}

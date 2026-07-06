@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/theme",
+  "type": "registry:theme",
+  "template": "voyage",
+  "title": "Voyage — Flight Booking + AI Assistant theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

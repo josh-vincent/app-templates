@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-image-carousel",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/image-carousel.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/image-carousel.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/header",
+    "uniwind/image-carousel",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/image-carousel",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

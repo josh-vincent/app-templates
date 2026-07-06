@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/confirmation-modal",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/ConfirmationModal.tsx",
+      "type": "registry:ui",
+      "target": "components/ConfirmationModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-contexts-theme-context",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "native-adaptive"
+  ],
+  "group": "elements"
+}

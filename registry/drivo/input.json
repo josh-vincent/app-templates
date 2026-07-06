@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/input",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/forms/Input.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Input.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "isPassword",
+      "isMultiline",
+      "inRow"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

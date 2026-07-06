@@ -1,0 +1,23 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen--layout",
+  "type": "registry:layout",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-gesture-handler",
+    "react-native-keyboard-controller"
+  ],
+  "registryDependencies": [
+    "luna/screen-contexts-drawer-context",
+    "luna/screen-contexts-theme-context",
+    "luna/screen-hooks-use-themed-navigation"
+  ]
+}

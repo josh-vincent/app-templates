@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/balance-header",
+  "type": "registry:ui",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "components/BalanceHeader.tsx",
+      "type": "registry:ui",
+      "target": "components/BalanceHeader.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

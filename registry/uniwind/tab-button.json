@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/tab-button",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/TabButton.tsx",
+      "type": "registry:ui",
+      "target": "components/TabButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/avatar",
+    "uniwind/icon",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "labelAnimated",
+      "hasBadge",
+      "isLabelVisible"
+    ]
+  },
+  "traits": [
+    "pill",
+    "animated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/expandable",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/Expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/Expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "defaultExpanded",
+      "expanded",
+      "hasBorder"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

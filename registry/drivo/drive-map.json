@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/drive-map",
+  "type": "registry:ui",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "components/DriveMap.tsx",
+      "type": "registry:ui",
+      "target": "components/DriveMap.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-maps"
+  ],
+  "registryDependencies": [
+    "drivo/icon",
+    "drivo/lib-contexts-theme-context",
+    "drivo/lib-utils-use-shadow"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showsUserLocation",
+      "showLocateButton"
+    ]
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "maps"
+  ],
+  "group": "elements"
+}

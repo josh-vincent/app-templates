@@ -1,0 +1,55 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/card",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/Card.tsx",
+      "type": "registry:ui",
+      "target": "components/Card.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "@jv/ui",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/button",
+    "expo-convex-template/icon",
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "classic",
+      "overlay",
+      "compact",
+      "minimal"
+    ],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "hasShadow",
+      "showOverlay",
+      "hasFavorite"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "sharp",
+    "elevated"
+  ],
+  "group": "elements"
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-user-profile",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/user-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/user-profile.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "evento/action-sheet-themed",
+    "evento/animated-view",
+    "evento/avatar",
+    "evento/button",
+    "evento/card",
+    "evento/chip",
+    "evento/header",
+    "evento/icon",
+    "evento/lib-data-mock-events",
+    "evento/review",
+    "evento/section",
+    "evento/theme-tabs",
+    "evento/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/user-profile",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

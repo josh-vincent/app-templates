@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-onboarding-username",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/onboarding/username.tsx",
+      "type": "registry:screen",
+      "target": "app/onboarding/username.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "onboarding",
+  "route": "/onboarding/username",
+  "kind": "screen",
+  "traits": [
+    "native-adaptive"
+  ]
+}

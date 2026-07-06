@@ -1,0 +1,37 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-create-event",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/create-event.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/create-event.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/date-picker",
+    "evento/icon",
+    "evento/input",
+    "evento/lib-contexts-theme-colors",
+    "evento/lib-data-mock-events",
+    "evento/multi-step",
+    "evento/select",
+    "evento/selectable",
+    "evento/switch",
+    "evento/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/create-event",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

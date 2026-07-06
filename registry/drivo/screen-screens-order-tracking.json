@@ -1,0 +1,55 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-order-tracking",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/order-tracking.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/order-tracking.tsx"
+    },
+    {
+      "path": "assets/img/black-suv.png",
+      "type": "registry:asset",
+      "target": "assets/img/black-suv.png"
+    },
+    {
+      "path": "assets/img/car-black.png",
+      "type": "registry:asset",
+      "target": "assets/img/car-black.png"
+    },
+    {
+      "path": "assets/img/user-7.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-7.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-maps",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/drive-map",
+    "drivo/icon",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-utils-use-shadow",
+    "drivo/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/order-tracking",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "maps"
+  ]
+}

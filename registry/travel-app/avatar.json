@@ -1,0 +1,39 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/avatar",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/Avatar.tsx",
+      "type": "registry:ui",
+      "target": "components/Avatar.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "travel-app/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "xxs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "xxl"
+    ],
+    "rounded": [],
+    "states": [
+      "border"
+    ]
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "elements"
+}

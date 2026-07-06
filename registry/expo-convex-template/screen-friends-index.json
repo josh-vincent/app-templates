@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-friends-index",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/friends/index.tsx",
+      "type": "registry:screen",
+      "target": "app/friends/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/feed-segment",
+    "expo-convex-template/friends-top-switcher",
+    "expo-convex-template/leaderboard-segment",
+    "expo-convex-template/live-segment",
+    "expo-convex-template/manage-segment"
+  ],
+  "category": "home",
+  "route": "/friends",
+  "kind": "screen",
+  "traits": []
+}

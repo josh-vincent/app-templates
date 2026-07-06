@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/counter",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/forms/Counter.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Counter.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill",
+    "flat"
+  ],
+  "group": "forms"
+}

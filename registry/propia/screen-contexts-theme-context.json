@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/contexts/ThemeContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

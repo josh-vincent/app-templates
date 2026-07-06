@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-earn",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/earn.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/earn.tsx"
+    },
+    {
+      "path": "assets/img/black-suv.png",
+      "type": "registry:asset",
+      "target": "assets/img/black-suv.png"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/header",
+    "drivo/lib-utils-use-shadow",
+    "drivo/themed-text"
+  ],
+  "category": "commerce",
+  "route": "/screens/earn",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "elevated"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/card",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/Card.tsx",
+      "type": "registry:ui",
+      "target": "components/Card.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/favorite",
+    "propia/icon",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "classic",
+      "overlay",
+      "compact",
+      "minimal"
+    ],
+    "sizes": [],
+    "rounded": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "full"
+    ],
+    "states": [
+      "hasShadow",
+      "showOverlay",
+      "hasFavorite"
+    ]
+  },
+  "traits": [
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "sharp",
+    "elevated"
+  ],
+  "group": "elements"
+}

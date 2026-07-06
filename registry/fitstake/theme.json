@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/theme",
+  "type": "registry:theme",
+  "template": "fitstake",
+  "title": "FitStake — Step Wagering theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

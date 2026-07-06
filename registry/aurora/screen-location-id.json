@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/screen-location-id",
+  "type": "registry:screen",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "app/location/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/location/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "lucide-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "aurora/glass-overlays",
+    "aurora/glass-primitives",
+    "aurora/sky-background",
+    "aurora/weather-icon"
+  ],
+  "category": "maps",
+  "route": "/location/[id]",
+  "kind": "screen",
+  "traits": []
+}

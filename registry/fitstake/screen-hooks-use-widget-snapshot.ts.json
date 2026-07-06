@@ -1,0 +1,19 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-hooks-use-widget-snapshot.ts",
+  "type": "registry:lib",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/hooks/useWidgetSnapshot.ts",
+      "type": "registry:screen",
+      "target": "app/hooks/useWidgetSnapshot.ts"
+    }
+  ],
+  "dependencies": [
+    "convex"
+  ],
+  "registryDependencies": [
+    "fitstake/screen-hooks-use-health-steps.ts"
+  ]
+}

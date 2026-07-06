@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/theme",
+  "type": "registry:theme",
+  "template": "evento",
+  "title": "Evento — Events Discovery & Ticketing theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "utils/color-theme.ts",
+      "type": "registry:theme",
+      "target": "utils/color-theme.ts"
+    },
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

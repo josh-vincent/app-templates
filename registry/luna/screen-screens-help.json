@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/screen-screens-help",
+  "type": "registry:screen",
+  "template": "luna",
+  "files": [
+    {
+      "path": "app/screens/help.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/help.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "luna/animated-view",
+    "luna/button",
+    "luna/expandable",
+    "luna/header",
+    "luna/icon",
+    "luna/section",
+    "luna/themed-text"
+  ],
+  "category": "support",
+  "route": "/screens/help",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

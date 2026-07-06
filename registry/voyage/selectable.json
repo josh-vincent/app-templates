@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/selectable",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/forms/Selectable.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Selectable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "selected"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "flat"
+  ],
+  "group": "forms"
+}

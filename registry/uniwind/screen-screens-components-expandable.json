@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-screens-components-expandable",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/screens/components/expandable.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/components/expandable.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "uniwind/button",
+    "uniwind/chip",
+    "uniwind/expandable",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/section",
+    "uniwind/theme-scroller",
+    "uniwind/themed-text"
+  ],
+  "category": "showcase",
+  "route": "/screens/components/expandable",
+  "kind": "screen",
+  "traits": [
+    "outlined",
+    "flat"
+  ]
+}

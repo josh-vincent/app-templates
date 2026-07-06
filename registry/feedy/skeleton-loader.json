@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/skeleton-loader",
+  "type": "registry:ui",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "components/SkeletonLoader.tsx",
+      "type": "registry:ui",
+      "target": "components/SkeletonLoader.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "soft-rounded",
+    "animated",
+    "flat"
+  ],
+  "group": "elements"
+}

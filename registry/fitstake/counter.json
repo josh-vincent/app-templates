@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/counter",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/forms/Counter.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Counter.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "pill"
+  ],
+  "group": "forms"
+}

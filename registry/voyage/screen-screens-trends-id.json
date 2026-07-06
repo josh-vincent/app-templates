@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-trends-id",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/trends/[id].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/trends/[id].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-tracked-storage"
+  ],
+  "category": "feature",
+  "route": "/screens/trends/[id]",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

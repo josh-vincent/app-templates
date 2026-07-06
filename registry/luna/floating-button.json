@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/floating-button",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/FloatingButton.tsx",
+      "type": "registry:ui",
+      "target": "components/FloatingButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "luna/icon",
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "visible",
+      "isAnimated"
+    ]
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

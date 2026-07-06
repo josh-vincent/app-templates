@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/show-rating",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/ShowRating.tsx",
+      "type": "registry:ui",
+      "target": "components/ShowRating.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "propia/screen-contexts-theme-colors",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

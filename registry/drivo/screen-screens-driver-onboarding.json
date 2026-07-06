@@ -1,0 +1,38 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-driver-onboarding",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/driver-onboarding.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/driver-onboarding.tsx"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/icon",
+    "drivo/input",
+    "drivo/multi-step",
+    "drivo/select",
+    "drivo/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/driver-onboarding",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/screen-onboarding-notifications",
+  "type": "registry:screen",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "app/onboarding/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/onboarding/notifications.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "expo-notifications",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "category": "onboarding",
+  "route": "/onboarding/notifications",
+  "kind": "screen",
+  "traits": []
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/poke-burst",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/modals/PokeBurst.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/PokeBurst.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

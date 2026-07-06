@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-screens-profile-notifications",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/screens/profile/notifications.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile/notifications.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-navigation/native"
+  ],
+  "registryDependencies": [
+    "propia/button",
+    "propia/header",
+    "propia/section",
+    "propia/switch",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile/notifications",
+  "kind": "screen",
+  "traits": []
+}

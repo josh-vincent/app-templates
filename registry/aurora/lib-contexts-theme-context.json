@@ -1,0 +1,17 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/lib-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "type": "registry:lib",
+      "target": "contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "nativewind"
+  ],
+  "registryDependencies": []
+}

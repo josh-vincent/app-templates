@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/slider",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/forms/Slider.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Slider.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/ui",
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "forms"
+}

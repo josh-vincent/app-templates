@@ -1,0 +1,44 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-review",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/review.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/review.tsx"
+    },
+    {
+      "path": "assets/img/black-suv.png",
+      "type": "registry:asset",
+      "target": "assets/img/black-suv.png"
+    },
+    {
+      "path": "assets/img/user-6.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-6.jpg"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/button",
+    "drivo/chip",
+    "drivo/header",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/theme-footer",
+    "drivo/theme-scroller",
+    "drivo/themed-text"
+  ],
+  "category": "reviews",
+  "route": "/screens/review",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-help",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/help.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/help.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "caloria-v2/animated-view",
+    "caloria-v2/button",
+    "caloria-v2/divider",
+    "caloria-v2/expandable",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/section",
+    "caloria-v2/themed-text"
+  ],
+  "category": "support",
+  "route": "/screens/help",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "outlined",
+    "flat"
+  ]
+}

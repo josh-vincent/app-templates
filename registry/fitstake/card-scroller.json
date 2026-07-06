@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/card-scroller",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/CardScroller.tsx",
+      "type": "registry:ui",
+      "target": "components/CardScroller.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "fitstake/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "enableSnapping"
+    ]
+  },
+  "traits": [
+    "flat"
+  ],
+  "group": "elements"
+}

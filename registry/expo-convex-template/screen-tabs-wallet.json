@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/screen-tabs-wallet",
+  "type": "registry:screen",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "app/(tabs)/wallet.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/wallet.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "@jv/ui",
+    "react-native-purchases",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/lib-contexts-dev-persona-context",
+    "expo-convex-template/revenue-cat-provider"
+  ],
+  "category": "commerce",
+  "route": "/wallet",
+  "kind": "tab",
+  "traits": []
+}

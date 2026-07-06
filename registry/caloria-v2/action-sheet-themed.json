@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/action-sheet-themed",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/ActionSheetThemed.tsx",
+      "type": "registry:ui",
+      "target": "components/ActionSheetThemed.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-actions-sheet",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

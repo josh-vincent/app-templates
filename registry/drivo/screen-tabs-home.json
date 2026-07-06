@@ -1,0 +1,58 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs-home",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/home.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/home.tsx"
+    },
+    {
+      "path": "assets/img/car-black.png",
+      "type": "registry:asset",
+      "target": "assets/img/car-black.png"
+    },
+    {
+      "path": "assets/img/car-white.png",
+      "type": "registry:asset",
+      "target": "assets/img/car-white.png"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-router",
+    "expo-status-bar",
+    "react-native-keyboard-controller",
+    "react-native-maps",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/avatar",
+    "drivo/drive-map",
+    "drivo/icon",
+    "drivo/lib-contexts-ride-sheet-context",
+    "drivo/lib-contexts-theme-colors",
+    "drivo/lib-utils-use-shadow",
+    "drivo/themed-text"
+  ],
+  "category": "home",
+  "route": "/home",
+  "kind": "tab",
+  "traits": [
+    "glass",
+    "pill",
+    "elevated",
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "maps"
+  ]
+}

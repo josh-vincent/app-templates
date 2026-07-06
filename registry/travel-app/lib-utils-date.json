@@ -1,0 +1,15 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/lib-utils-date",
+  "type": "registry:lib",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "utils/date.ts",
+      "type": "registry:lib",
+      "target": "utils/date.ts"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

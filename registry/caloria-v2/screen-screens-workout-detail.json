@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-workout-detail",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/workout-detail.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/workout-detail.tsx"
+    },
+    {
+      "path": "assets/img/muscles.png",
+      "type": "registry:asset",
+      "target": "assets/img/muscles.png"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/animated-view",
+    "caloria-v2/avatar",
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/lib-utils-use-shadow",
+    "caloria-v2/list-link",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "detail",
+  "route": "/screens/workout-detail",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "elevated",
+    "outlined"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/floating-button",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/FloatingButton.tsx",
+      "type": "registry:ui",
+      "target": "components/FloatingButton.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "visible",
+      "isAnimated"
+    ]
+  },
+  "traits": [
+    "pill",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

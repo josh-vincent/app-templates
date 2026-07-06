@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-login",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/login.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/login.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "voyage/header",
+    "voyage/input"
+  ],
+  "category": "auth",
+  "route": "/screens/login",
+  "kind": "screen",
+  "traits": [
+    "soft-rounded"
+  ]
+}

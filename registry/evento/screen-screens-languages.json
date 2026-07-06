@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-languages",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/languages.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/languages.tsx"
+    }
+  ],
+  "dependencies": [
+    "country-flag-icons",
+    "react-native-svg"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/header",
+    "evento/icon",
+    "evento/section",
+    "evento/theme-scroller",
+    "evento/themed-text"
+  ],
+  "category": "settings",
+  "route": "/screens/languages",
+  "kind": "screen",
+  "traits": [
+    "outlined"
+  ]
+}

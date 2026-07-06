@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen-hooks-use-themed-navigation",
+  "type": "registry:lib",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/hooks/useThemedNavigation.tsx",
+      "type": "registry:screen",
+      "target": "app/hooks/useThemedNavigation.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "expo-status-bar"
+  ],
+  "registryDependencies": [
+    "casino-app/lib-contexts-theme-colors",
+    "casino-app/lib-contexts-theme-context"
+  ]
+}

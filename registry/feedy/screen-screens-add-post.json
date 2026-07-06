@@ -1,0 +1,58 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-add-post",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/add-post.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/add-post.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "react-native-actions-sheet"
+  ],
+  "registryDependencies": [
+    "feedy/action-sheet-themed",
+    "feedy/animated-view",
+    "feedy/avatar",
+    "feedy/button",
+    "feedy/card-scroller",
+    "feedy/header",
+    "feedy/icon",
+    "feedy/screen-contexts-theme-colors",
+    "feedy/theme-footer",
+    "feedy/themed-text"
+  ],
+  "category": "creation",
+  "route": "/screens/add-post",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

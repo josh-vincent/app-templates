@@ -1,0 +1,35 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "travel-app/list-item",
+  "type": "registry:ui",
+  "template": "travel-app",
+  "files": [
+    {
+      "path": "components/layout/ListItem.tsx",
+      "type": "registry:ui",
+      "target": "components/layout/ListItem.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "travel-app/avatar",
+    "travel-app/icon",
+    "travel-app/themed-text"
+  ],
+  "props": {
+    "variants": [
+      "plain",
+      "bordered",
+      "contained"
+    ],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [],
+  "group": "layout"
+}

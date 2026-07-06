@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-tabs-chat",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/(tabs)/chat.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/chat.tsx"
+    }
+  ],
+  "dependencies": [
+    "@ai-sdk/react",
+    "ai",
+    "expo",
+    "expo-router",
+    "react-native-markdown-display",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-tracked-storage",
+    "voyage/lib-utils-traveler-profile-storage",
+    "voyage/themed-text"
+  ],
+  "category": "messaging",
+  "route": "/chat",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "native-adaptive",
+    "animated"
+  ]
+}

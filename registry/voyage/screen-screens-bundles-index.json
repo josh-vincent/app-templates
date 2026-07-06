@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-bundles-index",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/bundles/index.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/bundles/index.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-utils-bundle-storage"
+  ],
+  "category": "home",
+  "route": "/screens/bundles",
+  "kind": "screen",
+  "traits": []
+}

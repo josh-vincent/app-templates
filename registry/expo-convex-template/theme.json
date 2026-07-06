@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/theme",
+  "type": "registry:theme",
+  "template": "expo-convex-template",
+  "title": "Expo + Convex Starter (FitStake base) theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

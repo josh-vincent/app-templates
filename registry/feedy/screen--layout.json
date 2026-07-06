@@ -1,0 +1,21 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen--layout",
+  "type": "registry:layout",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "feedy/screen-contexts-theme-colors",
+    "feedy/screen-contexts-theme-context"
+  ]
+}

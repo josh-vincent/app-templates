@@ -1,0 +1,29 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-home-services",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/(home)/services.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/(home)/services.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/card",
+    "propia/card-scroller",
+    "propia/header",
+    "propia/screen-tabs-home--layout",
+    "propia/section",
+    "propia/theme-scroller"
+  ],
+  "category": "home",
+  "route": "/services",
+  "kind": "tab",
+  "traits": [
+    "animated"
+  ]
+}

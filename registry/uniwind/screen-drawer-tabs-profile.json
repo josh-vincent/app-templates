@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/screen-drawer-tabs-profile",
+  "type": "registry:screen",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "app/(drawer)/(tabs)/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/(drawer)/(tabs)/profile.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "uniwind/animated-view",
+    "uniwind/avatar",
+    "uniwind/header",
+    "uniwind/icon",
+    "uniwind/list-link",
+    "uniwind/theme-scroller",
+    "uniwind/theme-toggle",
+    "uniwind/themed-text"
+  ],
+  "category": "profile",
+  "route": "/profile",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

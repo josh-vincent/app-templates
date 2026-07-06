@@ -1,0 +1,41 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "uniwind/select",
+  "type": "registry:ui",
+  "template": "uniwind",
+  "files": [
+    {
+      "path": "components/forms/Select.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Select.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-navigation-bar",
+    "react-native-actions-sheet",
+    "react-native-safe-area-context",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "uniwind/icon",
+    "uniwind/input",
+    "uniwind/lib-contexts-theme-colors",
+    "uniwind/lib-contexts-theme-context",
+    "uniwind/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/screen-screens-onboarding",
+  "type": "registry:screen",
+  "template": "evento",
+  "files": [
+    {
+      "path": "app/screens/onboarding.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/animated-view",
+    "evento/chip",
+    "evento/icon",
+    "evento/input",
+    "evento/lib-data-mock-events",
+    "evento/multi-step",
+    "evento/switch",
+    "evento/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding",
+  "kind": "screen",
+  "traits": []
+}

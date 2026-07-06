@@ -1,0 +1,34 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-edit-profile",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/edit-profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/edit-profile.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/icon",
+    "caloria-v2/input",
+    "caloria-v2/section",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/edit-profile",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

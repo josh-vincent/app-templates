@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/switch",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/forms/Switch.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Switch.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/lib-contexts-theme-colors",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "value",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

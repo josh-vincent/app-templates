@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-calendar",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/calendar.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/calendar.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-calendars"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/card-scroller",
+    "propia/chip",
+    "propia/header",
+    "propia/screen-contexts-theme-colors",
+    "propia/section",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "planning",
+  "route": "/calendar",
+  "kind": "tab",
+  "traits": [
+    "pill",
+    "flat"
+  ]
+}

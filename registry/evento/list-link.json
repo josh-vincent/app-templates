@@ -1,0 +1,36 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "evento/list-link",
+  "type": "registry:ui",
+  "template": "evento",
+  "files": [
+    {
+      "path": "components/ListLink.tsx",
+      "type": "registry:ui",
+      "target": "components/ListLink.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "evento/icon",
+    "evento/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "showChevron",
+      "disabled",
+      "hasBorder"
+    ]
+  },
+  "traits": [
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ],
+  "group": "elements"
+}

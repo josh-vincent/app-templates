@@ -1,0 +1,61 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "feedy/screen-screens-onboarding",
+  "type": "registry:screen",
+  "template": "feedy",
+  "files": [
+    {
+      "path": "app/screens/onboarding.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding.tsx"
+    },
+    {
+      "path": "assets/img/thomino.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/thomino.jpg"
+    },
+    {
+      "path": "assets/img/user-1.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-1.jpg"
+    },
+    {
+      "path": "assets/img/user-2.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-2.jpg"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    },
+    {
+      "path": "assets/img/user-4.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-4.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-image-picker",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "feedy/avatar",
+    "feedy/button",
+    "feedy/chip",
+    "feedy/icon",
+    "feedy/input",
+    "feedy/multi-step",
+    "feedy/selectable",
+    "feedy/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "flat"
+  ]
+}

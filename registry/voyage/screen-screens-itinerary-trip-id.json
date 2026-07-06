@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/screen-screens-itinerary-trip-id",
+  "type": "registry:screen",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "app/screens/itinerary/[tripId].tsx",
+      "type": "registry:screen",
+      "target": "app/screens/itinerary/[tripId].tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/animated-view",
+    "voyage/icon",
+    "voyage/lib-contexts-theme-colors",
+    "voyage/lib-utils-discover-storage",
+    "voyage/lib-utils-stays-storage",
+    "voyage/lib-utils-trip-storage"
+  ],
+  "category": "planning",
+  "route": "/screens/itinerary/[tripId]",
+  "kind": "screen",
+  "traits": [
+    "pill",
+    "soft-rounded"
+  ]
+}

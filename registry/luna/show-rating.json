@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "luna/show-rating",
+  "type": "registry:ui",
+  "template": "luna",
+  "files": [
+    {
+      "path": "components/ShowRating.tsx",
+      "type": "registry:ui",
+      "target": "components/ShowRating.tsx"
+    }
+  ],
+  "dependencies": [
+    "@expo/vector-icons"
+  ],
+  "registryDependencies": [
+    "luna/screen-contexts-theme-colors",
+    "luna/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

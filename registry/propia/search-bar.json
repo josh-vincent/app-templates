@@ -1,0 +1,48 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/search-bar",
+  "type": "registry:ui",
+  "template": "propia",
+  "files": [
+    {
+      "path": "components/SearchBar.tsx",
+      "type": "registry:ui",
+      "target": "components/SearchBar.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-router",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/button",
+    "propia/counter",
+    "propia/date-range-calendar",
+    "propia/divider",
+    "propia/icon",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-contexts-theme-colors",
+    "propia/theme-scroller",
+    "propia/theme-toggle-old",
+    "propia/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "glass",
+    "pill",
+    "soft-rounded",
+    "elevated",
+    "native-adaptive",
+    "animated"
+  ],
+  "group": "elements"
+}

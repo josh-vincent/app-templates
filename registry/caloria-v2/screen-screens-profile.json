@@ -1,0 +1,42 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-profile",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/profile.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/profile.tsx"
+    },
+    {
+      "path": "assets/img/user-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/user-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "caloria-v2/animated-view",
+    "caloria-v2/avatar",
+    "caloria-v2/button",
+    "caloria-v2/header",
+    "caloria-v2/lib-utils-use-shadow",
+    "caloria-v2/list-link",
+    "caloria-v2/theme-scroller",
+    "caloria-v2/theme-toggle",
+    "caloria-v2/themed-text"
+  ],
+  "category": "profile",
+  "route": "/screens/profile",
+  "kind": "screen",
+  "traits": [
+    "gradient",
+    "soft-rounded",
+    "elevated",
+    "outlined"
+  ]
+}

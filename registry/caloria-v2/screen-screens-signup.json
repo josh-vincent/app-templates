@@ -1,0 +1,46 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-signup",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/signup.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/signup.tsx"
+    },
+    {
+      "path": "assets/img/wallpaper-3.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/wallpaper-3.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-blur",
+    "expo-linear-gradient",
+    "expo-router",
+    "expo-status-bar",
+    "lottie-react-native",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/animated-view",
+    "caloria-v2/button",
+    "caloria-v2/icon",
+    "caloria-v2/input",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/signup",
+  "kind": "screen",
+  "traits": [
+    "glass",
+    "gradient",
+    "pill",
+    "soft-rounded",
+    "outlined",
+    "native-adaptive",
+    "lottie"
+  ]
+}

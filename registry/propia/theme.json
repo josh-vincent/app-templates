@@ -1,0 +1,26 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/theme",
+  "type": "registry:theme",
+  "template": "propia",
+  "title": "Propia — Property Booking Marketplace theme",
+  "files": [
+    {
+      "path": "global.css",
+      "type": "registry:theme",
+      "target": "global.css"
+    },
+    {
+      "path": "app/contexts/ThemeColors.tsx",
+      "type": "registry:theme",
+      "target": "app/contexts/ThemeColors.tsx"
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "registry:theme",
+      "target": "tailwind.config.js"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": []
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-screens-login",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/screens/login.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/login.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "drivo/button",
+    "drivo/input",
+    "drivo/themed-text"
+  ],
+  "category": "auth",
+  "route": "/screens/login",
+  "kind": "screen",
+  "traits": [
+    "flat"
+  ]
+}

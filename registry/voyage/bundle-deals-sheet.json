@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "voyage/bundle-deals-sheet",
+  "type": "registry:ui",
+  "template": "voyage",
+  "files": [
+    {
+      "path": "components/BundleDealsSheet.tsx",
+      "type": "registry:ui",
+      "target": "components/BundleDealsSheet.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-image",
+    "expo-router",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "voyage/geo-glyph",
+    "voyage/icon",
+    "voyage/lib-utils-bundle-storage"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [],
+  "group": "elements"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "propia/screen-tabs-trips",
+  "type": "registry:screen",
+  "template": "propia",
+  "files": [
+    {
+      "path": "app/(tabs)/trips.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/trips.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "propia/animated-view",
+    "propia/header",
+    "propia/lib-utils-use-shadow",
+    "propia/screen-hooks-use-collapsible-title.ts",
+    "propia/theme-scroller",
+    "propia/themed-text"
+  ],
+  "category": "planning",
+  "route": "/trips",
+  "kind": "tab",
+  "traits": [
+    "soft-rounded",
+    "elevated"
+  ]
+}

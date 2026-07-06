@@ -1,0 +1,24 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "casino-app/screen--layout",
+  "type": "registry:layout",
+  "template": "casino-app",
+  "files": [
+    {
+      "path": "app/_layout.tsx",
+      "type": "registry:screen",
+      "target": "app/_layout.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router",
+    "nativewind",
+    "react-native-gesture-handler"
+  ],
+  "registryDependencies": [
+    "casino-app/error-boundary",
+    "casino-app/lib-contexts-balance-context",
+    "casino-app/lib-contexts-theme-context",
+    "casino-app/screen-hooks-use-themed-navigation"
+  ]
+}

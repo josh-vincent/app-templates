@@ -1,0 +1,31 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "drivo/screen-tabs-search",
+  "type": "registry:screen",
+  "template": "drivo",
+  "files": [
+    {
+      "path": "app/(tabs)/search.tsx",
+      "type": "registry:screen",
+      "target": "app/(tabs)/search.tsx"
+    }
+  ],
+  "dependencies": [],
+  "registryDependencies": [
+    "drivo/animated-view",
+    "drivo/card",
+    "drivo/card-scroller",
+    "drivo/chip",
+    "drivo/header",
+    "drivo/icon",
+    "drivo/input",
+    "drivo/section",
+    "drivo/theme-scroller"
+  ],
+  "category": "discovery",
+  "route": "/search",
+  "kind": "tab",
+  "traits": [
+    "flat"
+  ]
+}

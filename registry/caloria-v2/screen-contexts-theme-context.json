@@ -1,0 +1,20 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-contexts-theme-context",
+  "type": "registry:lib",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/contexts/ThemeContext.tsx",
+      "type": "registry:screen",
+      "target": "app/contexts/ThemeContext.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-status-bar",
+    "nativewind"
+  ],
+  "registryDependencies": [
+    "caloria-v2/lib-utils-color-theme"
+  ]
+}

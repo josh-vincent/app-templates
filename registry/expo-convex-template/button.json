@@ -1,0 +1,43 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "expo-convex-template/button",
+  "type": "registry:ui",
+  "template": "expo-convex-template",
+  "files": [
+    {
+      "path": "components/Button.tsx",
+      "type": "registry:ui",
+      "target": "components/Button.tsx"
+    }
+  ],
+  "dependencies": [
+    "expo-router"
+  ],
+  "registryDependencies": [
+    "expo-convex-template/icon"
+  ],
+  "props": {
+    "variants": [
+      "primary",
+      "secondary",
+      "outline",
+      "ghost"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "rounded": [],
+    "states": [
+      "loading",
+      "disabled"
+    ]
+  },
+  "traits": [
+    "pill",
+    "sharp",
+    "outlined"
+  ],
+  "group": "elements"
+}

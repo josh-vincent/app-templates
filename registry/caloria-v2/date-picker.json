@@ -1,0 +1,40 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/date-picker",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/forms/DatePicker.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/DatePicker.tsx"
+    }
+  ],
+  "dependencies": [
+    "@react-native-community/datetimepicker",
+    "react-native-modal"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/icon",
+    "caloria-v2/input",
+    "caloria-v2/lib-utils-date",
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": [
+      "disabled"
+    ]
+  },
+  "traits": [
+    "outlined",
+    "native-adaptive",
+    "animated",
+    "flat"
+  ],
+  "group": "forms"
+}

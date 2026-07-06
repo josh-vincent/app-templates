@@ -1,0 +1,27 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "aurora/weather-icon",
+  "type": "registry:ui",
+  "template": "aurora",
+  "files": [
+    {
+      "path": "components/WeatherIcon.tsx",
+      "type": "registry:ui",
+      "target": "components/WeatherIcon.tsx"
+    }
+  ],
+  "dependencies": [
+    "lucide-react-native"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated"
+  ],
+  "group": "elements"
+}

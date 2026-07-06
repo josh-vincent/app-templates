@@ -1,0 +1,33 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/screen-screens-onboarding-start",
+  "type": "registry:screen",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "app/screens/onboarding-start.tsx",
+      "type": "registry:screen",
+      "target": "app/screens/onboarding-start.tsx"
+    },
+    {
+      "path": "assets/img/welcome.jpg",
+      "type": "registry:asset",
+      "target": "assets/img/welcome.jpg"
+    }
+  ],
+  "dependencies": [
+    "expo-linear-gradient",
+    "expo-status-bar",
+    "react-native-safe-area-context"
+  ],
+  "registryDependencies": [
+    "caloria-v2/button",
+    "caloria-v2/themed-text"
+  ],
+  "category": "onboarding",
+  "route": "/screens/onboarding-start",
+  "kind": "screen",
+  "traits": [
+    "gradient"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "fitstake/streak-modal",
+  "type": "registry:ui",
+  "template": "fitstake",
+  "files": [
+    {
+      "path": "components/modals/StreakModal.tsx",
+      "type": "registry:ui",
+      "target": "components/modals/StreakModal.tsx"
+    }
+  ],
+  "dependencies": [
+    "@jv/tokens",
+    "expo-linear-gradient"
+  ],
+  "registryDependencies": [],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "gradient",
+    "elevated",
+    "animated"
+  ],
+  "group": "elements"
+}

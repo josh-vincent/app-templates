@@ -1,0 +1,32 @@
+{
+  "$schema": "../registry-item.schema.json",
+  "name": "caloria-v2/slider",
+  "type": "registry:ui",
+  "template": "caloria-v2",
+  "files": [
+    {
+      "path": "components/forms/Slider.tsx",
+      "type": "registry:ui",
+      "target": "components/forms/Slider.tsx"
+    }
+  ],
+  "dependencies": [
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "caloria-v2/screen-contexts-theme-colors",
+    "caloria-v2/themed-text"
+  ],
+  "props": {
+    "variants": [],
+    "sizes": [],
+    "rounded": [],
+    "states": []
+  },
+  "traits": [
+    "elevated",
+    "animated"
+  ],
+  "group": "forms"
+}
