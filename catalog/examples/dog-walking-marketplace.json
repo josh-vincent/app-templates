@@ -9,6 +9,7 @@
   "archetypes": ["marketplace"],
   "capabilities": ["skeleton-shell", "auth", "onboarding"],
   "screens": [
+    { "template": "propia", "screen": "app/(tabs)/(home)/index.tsx", "category": "home" },
     { "template": "propia", "screen": "app/(tabs)/listings.tsx", "category": "commerce" },
     { "template": "propia", "screen": "app/screens/product-detail.tsx", "category": "detail" },
     { "template": "propia", "screen": "app/screens/booking-detail.tsx", "category": "commerce" },

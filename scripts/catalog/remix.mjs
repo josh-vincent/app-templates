@@ -35,6 +35,23 @@ import { pullScreen, resolveScreenArg, collectDependencyClosure } from './pull.m
 import { STYLE_KEYWORDS } from './style.mjs';
 import { loadFates, parseIdeaForFates, effectiveCapabilities, resolveCapabilityPulls } from './fates.mjs';
 
+/** Add each effective capability's screens to a screen list (idempotent, no-auth aware). */
+function withCapabilityScreens(screens, effCaps, fatesData, index, baseTemplate) {
+  const out = [...screens];
+  const have = new Set(out.map((s) => s.template + '|' + (s.screen || s.path)));
+  const noAuth = effCaps.includes('no-auth');
+  for (const capName of effCaps) {
+    for (const pick of resolveCapabilityPulls(fatesData.capabilities[capName] || {}, index, baseTemplate)) {
+      if (noAuth && /login|signup|forgot/.test(pick.screen)) continue;
+      const key = pick.template + '|' + pick.screen;
+      if (have.has(key)) continue;
+      have.add(key);
+      out.push({ ...pick, via: `capability:${capName}` });
+    }
+  }
+  return out;
+}
+
 const STOPWORDS = new Set(['a', 'an', 'the', 'and', 'or', 'with', 'for', 'app', 'of', 'to', 'in', 'that', 'my', 'like', 'then', 'style']);
 // Domain synonyms so plain-English ideas hit catalog tags/categories.
 const SYNONYMS = {
@@ -170,16 +187,8 @@ function suggest(idea, { max = 12, style = {}, fate = null, archetypes = [], cap
   };
 
   // Capability pulls: append the screens each effective capability needs
+  plan.screens = withCapabilityScreens(plan.screens, effCaps, fatesData, index, base.name);
   const have = new Set(plan.screens.map((s) => s.template + '|' + s.screen));
-  for (const capName of effCaps) {
-    for (const pick of resolveCapabilityPulls(fatesData.capabilities[capName], index, base.name)) {
-      if (noAuth && /login|signup|forgot/.test(pick.screen)) continue;
-      const key = pick.template + '|' + pick.screen;
-      if (have.has(key)) continue;
-      have.add(key);
-      plan.screens.push({ ...pick, via: `capability:${capName}` });
-    }
-  }
 
   // Fate-required screen categories: fill any still missing from the base template
   if (fate) {
@@ -215,7 +224,11 @@ function applyPlan(planFile, args) {
   if (!targetRoot) fail('--to <target app root> is required');
   const dryRun = !!args['dry-run'];
   const variant = args.variant || 'base';
-  const screens = resolveVariant(plan, variant);
+  // Capability screens are materialized at apply time too, so hand-written
+  // plans (that never went through suggest) still get them.
+  const applyFates = loadFates();
+  const applyEffCaps = effectiveCapabilities(applyFates, plan.fate, plan.capabilities || []);
+  const screens = withCapabilityScreens(resolveVariant(plan, variant), applyEffCaps, applyFates, loadIndex(), plan.base?.template);
 
   if (!exists(targetRoot)) {
     if (dryRun) console.log(`[dry-run] target ${targetRoot} does not exist yet — would be created`);
