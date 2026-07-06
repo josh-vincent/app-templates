@@ -1,0 +1,616 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "health-app",
+  "title": "HealthPulse — Health Tracker",
+  "description": "> **This is the product doc for the HealthPulse example app that ships with > the template** — not your project's product doc. When the template's > rename script runs, every occurrence of `HealthPulse` in this file is > substituted with your code name, which makes the doc nonsense if your > project",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./health-app"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "convex",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-purchases",
+      "react-native-health",
+      "expo-notifications",
+      "@tanstack/react-query"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "stack",
+      "group": "(tabs)/(home)"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:home:index",
+      "path": "app/(tabs)/(home)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:add",
+      "path": "app/(tabs)/add.tsx",
+      "route": "/add",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "add"
+      ],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "traits": [],
+      "components": [
+        "Icon",
+        "ThemeToggle"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:workouts",
+      "path": "app/(tabs)/workouts.tsx",
+      "route": "/workouts",
+      "kind": "tab",
+      "category": "feature",
+      "tags": [
+        "workouts"
+      ],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "traits": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "Button",
+      "Card",
+      "CardScroller",
+      "Chip",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "ErrorBoundary",
+      "FitStakeMomentCard",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ListLink",
+      "MultiStep",
+      "PaceRing",
+      "PageLoader",
+      "Placeholder",
+      "RevenueCatProvider",
+      "SafeWrapper",
+      "ScreenContent",
+      "Skeleton",
+      "SkeletonLoader",
+      "SliderCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle",
+      "ReactNativeGrabGate",
+      "FriendStakeRow",
+      "FriendsActivityCard",
+      "FriendsLeaderboard",
+      "FriendsTopSwitcher",
+      "H2HSideBySide",
+      "WhatsLeftBreakdown",
+      "FeedSegment",
+      "LeaderboardSegment",
+      "LiveSegment",
+      "ManageSegment",
+      "CelebrationsHost",
+      "PermissionsMomentModal",
+      "PokeBurst",
+      "RunningOutModal",
+      "StreakModal",
+      "WonModal"
+    ],
+    "forms": [
+      "Checkbox",
+      "Counter",
+      "DatePicker",
+      "FormTabs",
+      "Input",
+      "Select",
+      "Selectable",
+      "Slider",
+      "Switch",
+      "TextInput",
+      "TimePicker"
+    ],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "componentTraits": {
+    "AnimatedFab": [
+      "animated",
+      "flat"
+    ],
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined"
+    ],
+    "Card": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "sharp",
+      "elevated"
+    ],
+    "CardScroller": [
+      "flat"
+    ],
+    "Chip": [
+      "pill"
+    ],
+    "ConfirmationModal": [
+      "native-adaptive"
+    ],
+    "CustomCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "native-adaptive"
+    ],
+    "FloatingButton": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "animated"
+    ],
+    "Icon": [
+      "pill"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined"
+    ],
+    "Skeleton": [
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated"
+    ],
+    "SliderCard": [
+      "soft-rounded"
+    ],
+    "TabButton": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "ThemeScroller": [
+      "animated"
+    ],
+    "ThemeTabs": [
+      "animated"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Toast": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Toggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Counter": [
+      "pill"
+    ],
+    "DatePicker": [
+      "native-adaptive",
+      "animated"
+    ],
+    "Input": [
+      "animated"
+    ],
+    "Select": [
+      "native-adaptive",
+      "animated"
+    ],
+    "Selectable": [
+      "soft-rounded",
+      "flat"
+    ],
+    "Slider": [
+      "elevated",
+      "animated"
+    ],
+    "Switch": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "TextInput": [
+      "animated"
+    ],
+    "TimePicker": [
+      "native-adaptive",
+      "animated"
+    ],
+    "PermissionsMomentModal": [
+      "gradient",
+      "elevated"
+    ],
+    "PokeBurst": [
+      "elevated",
+      "animated"
+    ],
+    "RunningOutModal": [
+      "gradient",
+      "elevated",
+      "animated"
+    ],
+    "StreakModal": [
+      "gradient",
+      "elevated",
+      "animated"
+    ],
+    "WonModal": [
+      "gradient",
+      "elevated",
+      "animated"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "Card",
+        "path": "components/Card.tsx",
+        "variants": [
+          "classic",
+          "overlay",
+          "compact",
+          "minimal"
+        ],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "soft-rounded",
+          "sharp",
+          "elevated"
+        ]
+      },
+      {
+        "component": "CustomCard",
+        "path": "components/CustomCard.tsx",
+        "variants": [],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "native-adaptive"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "animated"
+        ],
+        "labeled": false
+      }
+    ],
+    "inputs": [
+      {
+        "component": "Input",
+        "path": "components/forms/Input.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "animated"
+        ]
+      },
+      {
+        "component": "Select",
+        "path": "components/forms/Select.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "native-adaptive",
+          "animated"
+        ]
+      },
+      {
+        "component": "Selectable",
+        "path": "components/forms/Selectable.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "soft-rounded",
+          "flat"
+        ]
+      },
+      {
+        "component": "Switch",
+        "path": "components/forms/Switch.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ]
+      }
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "animated",
+      "pill",
+      "gradient",
+      "elevated",
+      "soft-rounded",
+      "native-adaptive"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 24,
+      "flat": 7,
+      "pill": 16,
+      "sharp": 2,
+      "outlined": 2,
+      "gradient": 12,
+      "soft-rounded": 5,
+      "elevated": 10,
+      "native-adaptive": 5,
+      "glass": 3
+    }
+  },
+  "counts": {
+    "screens": 5,
+    "layouts": 3,
+    "components": 72
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "idea": "Minimal health/workout tracker on the Convex template base",
+  "curation": {}
+}

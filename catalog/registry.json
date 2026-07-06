@@ -1,0 +1,19 @@
+{
+  "$comment": "Source of truth for which templates the factory knows about. localPath is relative to this repo's root — external repos are expected as sibling checkouts. Run `node scripts/catalog/scan.mjs --all` after editing.",
+  "templates": {
+    "caloria-v2": { "repo": "ExpoStartup/caloria-v2", "localPath": "../caloria-v2", "kind": "external" },
+    "drivo": { "repo": "ExpoStartup/drivo", "localPath": "../drivo", "kind": "external" },
+    "evento": { "repo": "ExpoStartup/evento", "localPath": "../evento", "kind": "external" },
+    "feedy": { "repo": "ExpoStartup/feedy", "localPath": "../feedy", "kind": "external" },
+    "luna": { "repo": "ExpoStartup/luna", "localPath": "../luna", "kind": "external" },
+    "uniwind": { "repo": "ExpoStartup/uniwind", "localPath": "../uniwind", "kind": "external" },
+    "propia": { "repo": "ExpoStartup/propia", "localPath": "./propia", "kind": "embedded" },
+    "aurora": { "repo": "josh-vincent/app-templates", "localPath": "./aurora", "kind": "embedded" },
+    "casino-app": { "repo": "josh-vincent/app-templates", "localPath": "./casino-app", "kind": "embedded" },
+    "expo-convex-template": { "repo": "josh-vincent/app-templates", "localPath": "./expo-convex-template", "kind": "embedded" },
+    "fitstake": { "repo": "josh-vincent/app-templates", "localPath": "./fitstake", "kind": "embedded" },
+    "health-app": { "repo": "josh-vincent/app-templates", "localPath": "./health-app", "kind": "embedded" },
+    "travel-app": { "repo": "josh-vincent/app-templates", "localPath": "./travel-app", "kind": "embedded" },
+    "voyage": { "repo": "josh-vincent/app-templates", "localPath": "./voyage", "kind": "embedded" }
+  }
+}

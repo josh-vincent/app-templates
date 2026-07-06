@@ -1,0 +1,1245 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "drivo",
+  "title": "Drivo — Ride Hailing",
+  "description": "A React Native ride hailing app built with Expo, NativeWind, and TypeScript. Includes live Google Maps tracking with real road routing, animated search, driver simulation, ride tracking, and 40+ UI components.",
+  "source": {
+    "repo": "ExpoStartup/drivo",
+    "localPath": "../drivo"
+  },
+  "stack": {
+    "expo": "57",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "none",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-maps",
+      "lottie-react-native",
+      "expo-notifications"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "utils/color-theme.ts",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "tabs:account",
+      "path": "app/(tabs)/account.tsx",
+      "route": "/account",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "account"
+      ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "tabs:activity",
+      "path": "app/(tabs)/activity.tsx",
+      "route": "/activity",
+      "kind": "tab",
+      "category": "planning",
+      "tags": [
+        "activity"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "Section",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/premium.png",
+        "assets/img/standard.png",
+        "assets/img/thomino.jpg",
+        "assets/img/user-4.jpg",
+        "assets/img/user-5.jpg",
+        "assets/img/user-6.jpg",
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "tabs:home",
+      "path": "app/(tabs)/home.tsx",
+      "route": "/home",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "traits": [
+        "glass",
+        "pill",
+        "elevated",
+        "outlined",
+        "native-adaptive",
+        "animated",
+        "maps"
+      ],
+      "components": [
+        "Avatar",
+        "DriveMap",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/RideSheetContext.tsx",
+        "contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-blur",
+        "expo-router",
+        "expo-status-bar",
+        "react-native-keyboard-controller",
+        "react-native-maps",
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/car-black.png",
+        "assets/img/car-white.png",
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "elevated",
+        "outlined"
+      ],
+      "components": [
+        "AnimatedView",
+        "Avatar",
+        "Header",
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:search",
+      "path": "app/(tabs)/search.tsx",
+      "route": "/search",
+      "kind": "tab",
+      "category": "discovery",
+      "tags": [
+        "search"
+      ],
+      "traits": [
+        "flat"
+      ],
+      "components": [
+        "AnimatedView",
+        "Card",
+        "CardScroller",
+        "Chip",
+        "Header",
+        "Icon",
+        "Input",
+        "Section",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "traits": [],
+      "components": [],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:business-profile",
+      "path": "app/screens/business-profile.tsx",
+      "route": "/screens/business-profile",
+      "kind": "screen",
+      "category": "profile",
+      "tags": [
+        "business",
+        "profile"
+      ],
+      "traits": [
+        "flat"
+      ],
+      "components": [
+        "Button",
+        "Header",
+        "Input",
+        "Select",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-keyboard-controller"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:chat",
+      "path": "app/screens/chat.tsx",
+      "route": "/screens/chat",
+      "kind": "screen",
+      "category": "messaging",
+      "tags": [
+        "chat"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-keyboard-controller",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "screens:driver-onboarding",
+      "path": "app/screens/driver-onboarding.tsx",
+      "route": "/screens/driver-onboarding",
+      "kind": "screen",
+      "category": "onboarding",
+      "tags": [
+        "driver",
+        "onboarding"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
+      "components": [
+        "Avatar",
+        "Icon",
+        "Input",
+        "MultiStep",
+        "Select",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:earn",
+      "path": "app/screens/earn.tsx",
+      "route": "/screens/earn",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "earn"
+      ],
+      "traits": [
+        "pill",
+        "elevated"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Header",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:help",
+      "path": "app/screens/help.tsx",
+      "route": "/screens/help",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "help"
+      ],
+      "traits": [
+        "flat"
+      ],
+      "components": [
+        "AnimatedView",
+        "Button",
+        "Expandable",
+        "Header",
+        "ListLink",
+        "Section",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:location-permission",
+      "path": "app/screens/location-permission.tsx",
+      "route": "/screens/location-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "location",
+        "permission"
+      ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-location",
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:login",
+      "path": "app/screens/login.tsx",
+      "route": "/screens/login",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "login"
+      ],
+      "traits": [
+        "flat"
+      ],
+      "components": [
+        "Button",
+        "Input",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-permission",
+      "path": "app/screens/notification-permission.tsx",
+      "route": "/screens/notification-permission",
+      "kind": "screen",
+      "category": "permissions",
+      "tags": [
+        "notification",
+        "permission"
+      ],
+      "traits": [
+        "soft-rounded",
+        "flat"
+      ],
+      "components": [
+        "Button",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:notification-settings",
+      "path": "app/screens/notification-settings.tsx",
+      "route": "/screens/notification-settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "notification",
+        "settings"
+      ],
+      "traits": [
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
+      "components": [
+        "Header",
+        "Section",
+        "Switch",
+        "ThemeScroller"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:notifications",
+      "path": "app/screens/notifications.tsx",
+      "route": "/screens/notifications",
+      "kind": "screen",
+      "category": "notifications",
+      "tags": [
+        "notifications"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "outlined",
+        "flat"
+      ],
+      "components": [
+        "Chip",
+        "Header",
+        "Icon",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [],
+      "assets": []
+    },
+    {
+      "id": "screens:order-tracking",
+      "path": "app/screens/order-tracking.tsx",
+      "route": "/screens/order-tracking",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "order",
+        "tracking"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "elevated",
+        "outlined",
+        "native-adaptive",
+        "animated",
+        "maps"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "DriveMap",
+        "Icon",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-maps",
+        "react-native-reanimated",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/car-black.png",
+        "assets/img/user-7.jpg"
+      ]
+    },
+    {
+      "id": "screens:review",
+      "path": "app/screens/review.tsx",
+      "route": "/screens/review",
+      "kind": "screen",
+      "category": "reviews",
+      "tags": [
+        "review"
+      ],
+      "traits": [
+        "pill",
+        "outlined"
+      ],
+      "components": [
+        "Avatar",
+        "Button",
+        "Chip",
+        "Header",
+        "ThemeFooter",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx"
+      ],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-router"
+      ],
+      "assets": [
+        "assets/img/black-suv.png",
+        "assets/img/user-6.jpg"
+      ]
+    },
+    {
+      "id": "screens:safety",
+      "path": "app/screens/safety.tsx",
+      "route": "/screens/safety",
+      "kind": "screen",
+      "category": "support",
+      "tags": [
+        "safety"
+      ],
+      "traits": [
+        "flat"
+      ],
+      "components": [
+        "Icon",
+        "ListLink",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:settings",
+      "path": "app/screens/settings.tsx",
+      "route": "/screens/settings",
+      "kind": "screen",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "traits": [
+        "pill"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Avatar",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "ListLink",
+        "Selectable",
+        "ThemeScroller",
+        "ThemeToggle",
+        "ThemedText"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "contexts/ThemeContext.tsx"
+      ],
+      "packages": [
+        "expo-image-picker",
+        "react-native-actions-sheet"
+      ],
+      "assets": [
+        "assets/img/user-2.jpg"
+      ]
+    },
+    {
+      "id": "screens:signup",
+      "path": "app/screens/signup.tsx",
+      "route": "/screens/signup",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "signup"
+      ],
+      "traits": [],
+      "components": [
+        "Icon",
+        "MultiStep",
+        "ThemedText"
+      ],
+      "modules": [],
+      "packages": [
+        "expo-image-picker",
+        "expo-router",
+        "expo-status-bar",
+        "nativewind"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:wallet",
+      "path": "app/screens/wallet.tsx",
+      "route": "/screens/wallet",
+      "kind": "screen",
+      "category": "commerce",
+      "tags": [
+        "wallet"
+      ],
+      "traits": [
+        "pill",
+        "soft-rounded",
+        "elevated",
+        "outlined"
+      ],
+      "components": [
+        "ActionSheetThemed",
+        "Button",
+        "Header",
+        "Icon",
+        "Input",
+        "ThemeScroller",
+        "ThemedText"
+      ],
+      "modules": [
+        "utils/useShadow.ts"
+      ],
+      "packages": [
+        "react-native-actions-sheet"
+      ],
+      "assets": []
+    },
+    {
+      "id": "screens:welcome",
+      "path": "app/screens/welcome.tsx",
+      "route": "/screens/welcome",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "welcome"
+      ],
+      "traits": [
+        "gradient",
+        "pill",
+        "lottie",
+        "flat"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [],
+      "packages": [
+        "@expo/vector-icons",
+        "expo-linear-gradient",
+        "expo-router",
+        "expo-status-bar",
+        "lottie-react-native",
+        "react-native-safe-area-context"
+      ],
+      "assets": [
+        "assets/lottie/welcome-1.json",
+        "assets/lottie/welcome-2.json"
+      ]
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedView",
+      "Avatar",
+      "BalanceChart",
+      "BarChartCard",
+      "Button",
+      "Card",
+      "CardPreview",
+      "CardScroller",
+      "Chip",
+      "CustomDrawerContent",
+      "DrawerButton",
+      "DriveMap",
+      "Expandable",
+      "Favorite",
+      "FeaturedCourse",
+      "Header",
+      "Icon",
+      "ImageCarousel",
+      "ListLink",
+      "MultiStep",
+      "Placeholder",
+      "ProgressBar",
+      "Review",
+      "RideSheet",
+      "ShowRating",
+      "SkeletonLoader",
+      "SmallChartCard",
+      "SmallCircleCard",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText"
+    ],
+    "forms": [
+      "DatePicker",
+      "Input",
+      "Select",
+      "Selectable",
+      "Switch"
+    ],
+    "layout": [
+      "Divider",
+      "List",
+      "ListItem",
+      "Section"
+    ]
+  },
+  "componentTraits": {
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "BalanceChart": [
+      "charts"
+    ],
+    "BarChartCard": [
+      "animated",
+      "charts"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined",
+      "flat"
+    ],
+    "Card": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "sharp",
+      "elevated"
+    ],
+    "CardPreview": [
+      "gradient",
+      "soft-rounded"
+    ],
+    "Chip": [
+      "pill",
+      "flat"
+    ],
+    "CustomDrawerContent": [
+      "pill",
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "DrawerButton": [
+      "pill"
+    ],
+    "DriveMap": [
+      "pill",
+      "elevated",
+      "maps"
+    ],
+    "Expandable": [
+      "pill",
+      "outlined",
+      "native-adaptive",
+      "animated"
+    ],
+    "Favorite": [
+      "pill",
+      "outlined"
+    ],
+    "FeaturedCourse": [
+      "gradient",
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "native-adaptive",
+      "animated"
+    ],
+    "Icon": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ImageCarousel": [
+      "pill",
+      "soft-rounded",
+      "flat"
+    ],
+    "ListLink": [
+      "pill",
+      "outlined"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined",
+      "flat"
+    ],
+    "ProgressBar": [
+      "pill",
+      "animated"
+    ],
+    "RideSheet": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "outlined",
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated",
+      "flat"
+    ],
+    "SmallChartCard": [
+      "elevated",
+      "outlined",
+      "charts"
+    ],
+    "SmallCircleCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "outlined",
+      "animated"
+    ],
+    "TabButton": [
+      "gradient",
+      "pill",
+      "animated"
+    ],
+    "TabScreenWrapper": [
+      "flat"
+    ],
+    "ThemeFooter": [
+      "flat"
+    ],
+    "ThemeScroller": [
+      "flat"
+    ],
+    "ThemeTabs": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "DatePicker": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Input": [
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "Select": [
+      "outlined",
+      "native-adaptive",
+      "animated",
+      "flat"
+    ],
+    "Selectable": [
+      "soft-rounded",
+      "outlined",
+      "flat"
+    ],
+    "Switch": [
+      "pill",
+      "outlined",
+      "animated",
+      "flat"
+    ],
+    "ListItem": [
+      "outlined",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      },
+      {
+        "component": "RideSheet",
+        "path": "components/RideSheet.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "outlined",
+          "animated"
+        ],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined",
+          "flat"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "Card",
+        "path": "components/Card.tsx",
+        "variants": [
+          "classic",
+          "overlay",
+          "compact",
+          "minimal"
+        ],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "soft-rounded",
+          "sharp",
+          "elevated"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "flat"
+        ]
+      }
+    ],
+    "drawers": [
+      {
+        "component": "CustomDrawerContent",
+        "path": "components/CustomDrawerContent.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "outlined",
+          "flat"
+        ]
+      },
+      {
+        "component": "DrawerButton",
+        "path": "components/DrawerButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "native-adaptive",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "gradient",
+          "pill",
+          "animated"
+        ],
+        "labeled": true
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      }
+    ],
+    "inputs": [
+      {
+        "component": "Input",
+        "path": "components/forms/Input.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Select",
+        "path": "components/forms/Select.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "outlined",
+          "native-adaptive",
+          "animated",
+          "flat"
+        ]
+      },
+      {
+        "component": "Selectable",
+        "path": "components/forms/Selectable.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "soft-rounded",
+          "outlined",
+          "flat"
+        ]
+      },
+      {
+        "component": "Switch",
+        "path": "components/forms/Switch.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "outlined",
+          "animated",
+          "flat"
+        ]
+      }
+    ],
+    "settings": [
+      "grouped",
+      "list-chevron",
+      "profile-header",
+      "sheet-pickers",
+      "toggles"
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "pill",
+      "outlined",
+      "animated",
+      "gradient",
+      "soft-rounded",
+      "charts"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 16,
+      "pill": 22,
+      "outlined": 18,
+      "flat": 21,
+      "charts": 6,
+      "sharp": 2,
+      "gradient": 10,
+      "soft-rounded": 9,
+      "elevated": 5,
+      "maps": 2,
+      "native-adaptive": 5,
+      "glass": 3
+    }
+  },
+  "counts": {
+    "screens": 23,
+    "layouts": 2,
+    "components": 45
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "idea": "Uber-style ride hailing with live Google Maps routing, driver simulation, wallet and safety flows",
+  "curation": {}
+}

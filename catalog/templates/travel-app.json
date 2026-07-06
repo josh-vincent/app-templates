@@ -1,0 +1,526 @@
+{
+  "$schema": "../schema/template.schema.json",
+  "name": "travel-app",
+  "title": "Voyager — Trips & Saved Places",
+  "description": "> **This is the product doc for the Voyager example app that ships with > the template** — not your project's product doc. When the template's > rename script runs, every occurrence of `Voyager` in this file is > substituted with your code name, which makes the doc nonsense if your > project isn't a",
+  "source": {
+    "repo": "josh-vincent/app-templates",
+    "localPath": "./travel-app"
+  },
+  "stack": {
+    "expo": "55",
+    "navigation": "expo-router",
+    "styling": "nativewind",
+    "backend": "convex",
+    "typescript": true,
+    "usesSharedLibrary": false,
+    "notable": [
+      "react-native-purchases",
+      "react-native-health",
+      "expo-notifications",
+      "@tanstack/react-query"
+    ]
+  },
+  "design": {
+    "theming": "css-variables",
+    "themeFiles": [
+      "global.css",
+      "contexts/ThemeColors.tsx",
+      "tailwind.config.js"
+    ],
+    "darkMode": true
+  },
+  "layouts": [
+    {
+      "path": "app/(auth)/_layout.tsx",
+      "type": "stack",
+      "group": "(auth)"
+    },
+    {
+      "path": "app/(tabs)/(home)/_layout.tsx",
+      "type": "stack",
+      "group": "(tabs)/(home)"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "type": "tabs",
+      "group": "(tabs)"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "type": "root",
+      "group": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "auth:sign-in",
+      "path": "app/(auth)/sign-in.tsx",
+      "route": "/sign-in",
+      "kind": "screen",
+      "category": "auth",
+      "tags": [
+        "auth",
+        "sign",
+        "in"
+      ],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [],
+      "packages": [
+        "@convex-dev/auth",
+        "@expo/vector-icons",
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:home:index",
+      "path": "app/(tabs)/(home)/index.tsx",
+      "route": "/",
+      "kind": "tab",
+      "category": "home",
+      "tags": [],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:profile",
+      "path": "app/(tabs)/profile.tsx",
+      "route": "/profile",
+      "kind": "tab",
+      "category": "profile",
+      "tags": [
+        "profile"
+      ],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "tabs:saved",
+      "path": "app/(tabs)/saved.tsx",
+      "route": "/saved",
+      "kind": "tab",
+      "category": "collections",
+      "tags": [
+        "saved"
+      ],
+      "traits": [],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "index",
+      "path": "app/index.tsx",
+      "route": "/",
+      "kind": "entry",
+      "category": "home",
+      "tags": [],
+      "traits": [],
+      "components": [],
+      "modules": [
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router"
+      ],
+      "assets": []
+    },
+    {
+      "id": "place:new",
+      "path": "app/place/new.tsx",
+      "route": "/place/new",
+      "kind": "screen",
+      "category": "feature",
+      "tags": [
+        "place",
+        "new"
+      ],
+      "traits": [
+        "native-adaptive"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "trip:id",
+      "path": "app/trip/[id].tsx",
+      "route": "/trip/[id]",
+      "kind": "screen",
+      "category": "planning",
+      "tags": [
+        "trip"
+      ],
+      "traits": [
+        "native-adaptive"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    },
+    {
+      "id": "trip:new",
+      "path": "app/trip/new.tsx",
+      "route": "/trip/new",
+      "kind": "screen",
+      "category": "planning",
+      "tags": [
+        "trip",
+        "new"
+      ],
+      "traits": [
+        "native-adaptive"
+      ],
+      "components": [
+        "Icon"
+      ],
+      "modules": [
+        "contexts/ThemeColors.tsx",
+        "convex/_generated/api.js"
+      ],
+      "packages": [
+        "expo-router",
+        "react-native-safe-area-context"
+      ],
+      "assets": []
+    }
+  ],
+  "apiRoutes": [],
+  "components": {
+    "elements": [
+      "ActionSheetThemed",
+      "AnimatedFab",
+      "AnimatedView",
+      "Avatar",
+      "Button",
+      "Chip",
+      "ConfirmationModal",
+      "Container",
+      "CustomCard",
+      "ErrorBoundary",
+      "FloatingButton",
+      "Header",
+      "Icon",
+      "ListLink",
+      "MultiStep",
+      "PageLoader",
+      "Placeholder",
+      "SafeWrapper",
+      "ScreenContent",
+      "Skeleton",
+      "SkeletonLoader",
+      "TabButton",
+      "TabScreenWrapper",
+      "ThemeFlatList",
+      "ThemeFooter",
+      "ThemeScroller",
+      "ThemeTabs",
+      "ThemeToggle",
+      "ThemedText",
+      "Toast",
+      "Toggle"
+    ],
+    "forms": [],
+    "layout": [
+      "Divider",
+      "Grid",
+      "List",
+      "ListItem",
+      "Section",
+      "Spacer",
+      "Stack"
+    ]
+  },
+  "componentTraits": {
+    "AnimatedFab": [
+      "animated",
+      "flat"
+    ],
+    "AnimatedView": [
+      "animated"
+    ],
+    "Avatar": [
+      "pill"
+    ],
+    "Button": [
+      "pill",
+      "sharp",
+      "outlined"
+    ],
+    "Chip": [
+      "pill"
+    ],
+    "ConfirmationModal": [
+      "native-adaptive"
+    ],
+    "CustomCard": [
+      "pill",
+      "soft-rounded",
+      "elevated",
+      "native-adaptive"
+    ],
+    "FloatingButton": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Header": [
+      "glass",
+      "gradient",
+      "pill",
+      "animated"
+    ],
+    "Icon": [
+      "pill"
+    ],
+    "MultiStep": [
+      "pill",
+      "animated"
+    ],
+    "Placeholder": [
+      "pill",
+      "outlined"
+    ],
+    "Skeleton": [
+      "animated"
+    ],
+    "SkeletonLoader": [
+      "soft-rounded",
+      "animated"
+    ],
+    "TabButton": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "ThemeScroller": [
+      "animated"
+    ],
+    "ThemeTabs": [
+      "animated"
+    ],
+    "ThemeToggle": [
+      "pill",
+      "animated",
+      "flat"
+    ],
+    "Toast": [
+      "pill",
+      "elevated",
+      "animated"
+    ],
+    "Toggle": [
+      "pill",
+      "animated",
+      "flat"
+    ]
+  },
+  "patterns": {
+    "sheets": [
+      {
+        "component": "ActionSheetThemed",
+        "path": "components/ActionSheetThemed.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [],
+        "gesture": false
+      }
+    ],
+    "buttons": [
+      {
+        "component": "Button",
+        "path": "components/Button.tsx",
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost"
+        ],
+        "rounded": [],
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "traits": [
+          "pill",
+          "sharp",
+          "outlined"
+        ]
+      }
+    ],
+    "chips": [
+      {
+        "component": "Chip",
+        "path": "components/Chip.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "component": "CustomCard",
+        "path": "components/CustomCard.tsx",
+        "variants": [],
+        "rounded": [
+          "none",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+          "2xl",
+          "full"
+        ],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "soft-rounded",
+          "elevated",
+          "native-adaptive"
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "component": "Header",
+        "path": "components/Header.tsx",
+        "variants": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "glass",
+          "gradient",
+          "pill",
+          "animated"
+        ],
+        "modes": [
+          "default",
+          "transparent",
+          "blurred",
+          "collapsibleTitle"
+        ]
+      }
+    ],
+    "tabbars": [
+      {
+        "component": "TabButton",
+        "path": "components/TabButton.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "pill",
+          "animated",
+          "flat"
+        ],
+        "labeled": false
+      },
+      {
+        "component": "ThemeTabs",
+        "path": "components/ThemeTabs.tsx",
+        "variants": [],
+        "rounded": [],
+        "sizes": [],
+        "traits": [
+          "animated"
+        ],
+        "labeled": false
+      }
+    ]
+  },
+  "styleProfile": {
+    "family": "flat",
+    "dominant": [
+      "animated",
+      "pill",
+      "elevated",
+      "glass",
+      "outlined",
+      "native-adaptive"
+    ],
+    "tally": {
+      "theme-aware": 0,
+      "animated": 13,
+      "flat": 4,
+      "pill": 13,
+      "sharp": 1,
+      "outlined": 2,
+      "native-adaptive": 2,
+      "soft-rounded": 2,
+      "elevated": 3,
+      "glass": 3,
+      "gradient": 2
+    }
+  },
+  "counts": {
+    "screens": 8,
+    "layouts": 4,
+    "components": 38
+  },
+  "generatedBy": "app-templates/scripts/catalog/scan.mjs",
+  "idea": "Travel planner with trips and saved places on the Convex template base",
+  "curation": {}
+}
